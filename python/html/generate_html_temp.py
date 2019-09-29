@@ -1,0 +1,289 @@
+import re
+import os
+import string
+
+import analyze_path
+
+html_header = '''
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Report</title>
+        <style type="text/css">
+        body, p
+        {
+            font-family:Neo Sans Intel, Calibri, sans-serif;
+        }
+        
+        h3, h4
+        {
+            font-family:Neo Sans Intel, Calibri, sans-serif;
+            font-weight:bold;
+        }
+        
+        h3
+        {
+            font-size:1.5em;
+            margin-bottom:0.5em;
+        }
+        
+        h4
+        {
+            font-size:0.8em;
+            margin-bottom:0.2em;
+        }
+        
+        pre
+        {
+            margin-top:0.0em;
+            margin-bottom:0.0em;
+        }
+        
+        table
+        {
+            border-collapse:collapse;
+            margin-top:0.0em;
+            margin-bottom:1.0em;
+        }
+        
+        table, td, th
+        {
+            font-family:Neo Sans Intel, Calibri, sans-serif;
+            border:1px solid DarkCyan;
+            text-align:left;
+            vertical-align:middle;
+        }
+        
+        td, th 
+        {
+            font-size:0.75em;
+            padding:0px 5px;
+            margin-bottom:0.0em;
+        }
+        
+        th 
+        {
+            color:#FFFFFF;
+            background-color:CadetBlue;
+            font-weight:bold;
+        }
+        
+        .pass {
+            color:LimeGreen;
+            font-weight:bold;
+        }
+        .fail {
+            color:Red;
+            font-weight:bold;
+        }
+        
+        a:link {text-decoration:none;}
+        a:visited {text-decoration:none;}
+        a:hover {text-decoration:underline;}
+        a:active {text-decoration:underline;}
+        
+        /*a:hover {background:#ffffff; text-decoration:none;} /*BG color is a must for IE6*/
+        a.tooltip_err  {color:Red;}
+        a.tooltip_err span {display:none; padding:5px; margin-left:20px; width:auto; text-align:left; font-family:monospace; color:Red; text-decoration:none; z-index:1; position:absolute; background:#ffffcc}
+        a.tooltip_err:hover span {display:block}
+        
+        a.tooltip_info {color:Blue;}
+        a.tooltip_info span {display:none; padding:5px; margin-left:20px; width:auto; text-align:left; font-family:monospace; color:Blue; text-decoration:none; z-index:1; position:absolute; background:#ffffcc}
+        a.tooltip_info:hover span {display:block}
+                </style>
+            </head>
+'''
+#print html_header
+
+html_body = '''
+    <body>
+        <h3><a href="xg732.html">Results</a></h3>
+        <!--jenkins begin-->
+        <pre>Chip:   xg732 es1</pre>
+        <pre>Branch: latest</pre>
+        <pre>Target: HW level 1</pre>
+        <pre>Start:  06-Mar-2017 18:40:40</pre>
+        <pre>End:    06-Mar-2017 18:44:03</pre>
+        <pre>-</pre>
+        <!--jenkins end-->
+        <h3>Detailed results</h3>
+'''
+
+table_header = '''
+        <table id="myTable" data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-filter="true" data-input="#filterTable-input">
+            <tr>
+                <th rowspan="2" style="width:10px;">Index</th>
+                <th rowspan="2" style="width:80px;">TestEntry</th>
+                <th rowspan="2" style="width:150px;">TestCases</th>
+                <th rowspan="2" style="width:150px;">RunTime</th>
+                <th rowspan="2" style="width:80px;">xtRiscTb.m</th>
+                <th rowspan="2" style="width:80px;">Verdict</th>
+                <th rowspan="2" style="width:100px;">Tester Name</th>
+                <th rowspan="2" style="width:80px;">Run Log</th>
+            </tr>
+
+            <tr>
+            </tr>
+
+'''
+
+more_status_info1 = '''
+                <th colspan="2" style="text-align:center;">Gen duration</th>
+                <th colspan="2" style="text-align:center;">Job info</th>
+            </tr>
+'''
+
+more_status_info2 = '''
+            <tr>
+                <th style="width:50px;text-align:center;">XML gen</th>
+                <th style="width:50px;text-align:center;">XML cnv</th>
+                <th style="width:30px;text-align:center;">Log</th>
+                <th style="width:150px;text-align:center;">Scheduling</th>
+            </tr>
+'''
+
+html_tail = '''
+    </body>
+</html>
+'''
+table_tail = '''
+        </table>
+'''
+
+func_for_search = '''
+<script>
+    function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+</script>
+'''
+
+search_input = '''
+        <h4>Input keyword to Filter</h4>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for keywordss ..." title="Type in a name">
+'''
+
+########################################################################
+#
+#  get testEntry and test from analyze_path
+#
+########################################################################
+
+tests = analyze_path.get_test_info_from_testlist_split()
+items = tests.items()
+
+########################################################################
+#
+#  generate the html for reporting
+#
+########################################################################
+html_file = open('test.html', 'w')
+html_file.write('<!DOCTYPE html>')
+html_file.write(html_header)
+html_file.write(html_body)
+html_file.write(search_input)
+html_file.write(table_header)
+
+#testEntry_index     = 1
+#testEntry_name      = 2
+#test_report_folder  = 3
+#test_report_name    = 4
+#test_verdict        = 5
+TEST_INDEX          = 0
+TEST_ENTRY_NAME     = 1
+TEST_REPORT_FOLDER  = 2
+TEST_REPORT_NAME    = 3
+TEST_CASE           = 3
+TEST_NUMBER         = 4
+TEST_TIME           = 5
+TEST_VERDICT        = 4
+indent_4  = '    '
+indent_8  = '%s%s' % (indent_4, indent_4)
+indent_8  = '%s%s' % (indent_8, indent_4)
+
+
+file_list = os.popen('find . -name "*.txt" | xargs ls | xargs grep Result')
+#print file_list.read()
+info = file_list.readlines()
+for line in info:
+    line = line.strip('\r\n')
+
+    #just for debugging
+    print line
+
+    #./647/bwcSwSystemRx_paraPdcchOnly_01_level1/reports_lingkong/case_001__2017-05-31_07_30_05.txt:Result: PASS
+    #pattern = re.compile(r'^\.\/(\d+)\/(\w+)\/(\w+)\/(.+\.txt):Result:\ (\w+)')
+    #pattern = re.compile(r'^\.\/(\d+)\/(\w+)\/(\w+)\/(case.+)\.txt:Result:\ (\w+)')
+    pattern = re.compile(r'\.\/(\w+)\/(\w+)\/(case.+)\.txt:Result:\ (\w+)')
+
+    #separate test name
+    #pattern = re.compile(r'\.\/(\w+)\/(\w+)\/(case|cases)_(\d+\w+\d+)__(\w+)\.txt:Result:\ (\w+)')
+    #pattern = re.compile(r'^\.\/(\w+)\/(\w+)\/(case.+)\.txt:Result:\ (\w+)')
+
+    match = pattern.match(line)
+    if match:
+        print match.groups()
+        test_index         = match.group(TEST_INDEX)
+        test_entry         = match.group(TEST_ENTRY_NAME)
+        test_report_folder = match.group(TEST_REPORT_FOLDER)
+        #test_report_name   = match.group(TEST_CASE) + '_' + match.group(TEST_NUMBER)+ '__' + match.group(TEST_TIME)
+        test_report_name   = match.group(TEST_REPORT_NAME)
+        test_verdict       = match.group(TEST_VERDICT)
+
+        testcase    = test_report_name.split('__')
+        tester_name = test_report_folder.split('_')
+        print tester_name
+
+        html_file.write('%s<tr>\n' % indent_8)
+        #Index
+        #html_file.write('\t\t\t\t<td style="width:90px;"><a href="./%s">%s</a></td>\n' % (test_index, '-'))
+        html_file.write('                <td style="width:120px;"><a href="./%s">%s</a></td>\n' % (test_entry, tests[test_entry][1]))
+        
+        #TestEntry
+        html_file.write('                <td style="width:90px;"><a href="./%s">%s</a></td>\n' % (test_entry, test_entry))
+        
+        
+        html_file.write('                <td style="width:90px;"><a href="./%s/%s/%s.txt">%s</a></td>\n' % (test_entry, test_report_folder, test_report_name, testcase[0]))
+        html_file.write('                <td style="width:90px;">%s</td>\n' % (testcase[1]))
+        html_file.write('                <td style="width:90px;"><a href="./%s/%s/%s">xtRiscTb.m</a></td>\n' % (test_entry, testcase[0], 'xtRiscTb.m'))
+
+        if test_verdict == 'PASS':
+            html_file.write('                <td><span class="pass">%s</span></td>\n' % (test_verdict))
+        else:
+            html_file.write('                <td><span class="fail">%s</span></td>\n' % (test_verdict))
+        
+        #html_file.write('\t\t\t\t<td style="text-align:center;">-</td>\n')
+        html_file.write('                <td style="text-align:center;">%s</td>\n' % (tester_name[1]))
+
+        html_file.write('                <td style="width:90px;"><a href="./%s/%s_run/%s">log</a></td>\n' % (test_entry, test_report_folder, test_report_name))
+        
+        #todo for later enhancement
+        #html_file.write('\t\t\t\t<td style="text-align:center;">-</td>\n')
+        #html_file.write('\t\t\t\t<td style="padding:0px"><div style="background-color:SeaShell"><div style="background-color:LightSalmon;left:0.0%;width:100.0%;position:relative;">&nbsp;</div></div></td>\n')
+
+        html_file.write('            </tr>\n\n')
+
+        #print match.group(1)
+        #print match.group(3)
+    else:
+        print 'no match found...'
+html_file.write(table_tail)
+
+html_file.write(func_for_search)
+
+html_file.write(html_tail)
+html_file.close()
