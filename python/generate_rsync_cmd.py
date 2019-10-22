@@ -3,7 +3,7 @@ import sys
 import re
 
 #rsync command for the specified user and path
-PATH_AT_IMU = r"rsync -rv lingkong@musxhawk037.imu.intel.com:/p/libdev/lte_ip.work2/lingkong/xg766_es1_latest_hw"
+PATH_AT_IMU = r"rsync -rv username@server_folder_path"
 #print(PATH_AT_IMU)
 
 #the result will be wrint to rsync_cmd_file

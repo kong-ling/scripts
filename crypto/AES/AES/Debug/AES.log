@@ -1,0 +1,8 @@
+﻿  AES.cpp
+c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(38): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 3 has type 'unsigned char *'
+c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(43): warning C4477: 'printf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 3 has type 'unsigned int (*)[4]'
+c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(51): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(51): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(51): note: the missing variadic argument 2 is required by format string '%c'
+  c:\posv_cv_script-scripts\crypto\aes\aes\aes.cpp(51): note: this argument is used as a buffer size
+  AES.vcxproj -> C:\posv_cv_script-scripts\crypto\AES\Debug\AES.exe

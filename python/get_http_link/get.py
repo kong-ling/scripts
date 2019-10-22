@@ -1,14 +1,12 @@
 #-*-coding:utf-8-*-
 import urllib2
 
-#proxy_handler = urllib2.ProxyHandler({"https":"accad-cfe-sh.intel.com:912"})
-#proxy_handler = urllib2.ProxyHandler({"https":"http://proxy-chain.intel.com:912"})
-proxy_handler = urllib2.ProxyHandler({"http":"http://proxy-chain.intel.com:911"})
+proxy_handler = urllib2.ProxyHandler({"http":"http://server:port"})
 proxy_auth_handler = urllib2.HTTPBasicAuthHandler()
-proxy_auth_handler.add_password('realm', '', 'lingkong', 'Tswcby/6')
+proxy_auth_handler.add_password('realm', '', 'name', 'password')
 
 opener = urllib2.build_opener(proxy_handler, proxy_auth_handler)
-f = opener.open('https://employeeportal.intel.com/irj/portal')
+f = opener.open('link')
 content = f.read()
 print content
 
@@ -17,8 +15,7 @@ herf='index.html'
 while True:
     f=file(herf,'w')
     #urlh='http://sebug.net/paper/python/'
-    #urlh='http://old.sebug.net/paper/python/'
-    urlh='https://employeeportal.intel.com/irj/portal'
+    urlh='http://old.sebug.net/paper/python/'
     #url=urlh+herf
     url=urlh
     print url
