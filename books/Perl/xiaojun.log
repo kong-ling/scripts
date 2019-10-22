@@ -1,0 +1,48 @@
+cmdLine_cp_defult = cp xtRiscTb.m xtRiscTb_default.m
+cmdLine_cp_fix    = cp xtRiscTb.m xtRiscTb_fix.m
+(BwcStimuliConvert.pl) [32mINFO: [0mSyntax checking of XML: bwcSwSystemRx_dump.xml ...
+(BwcStimuliConvert.pl) [32mINFO: [0mValidating XML: bwcSwSystemRx_dump.xml
+(BwcStimuliConvert.pl) [31mERROR: [0mXML not valid: use 'BwcStimuliConvert.pl -x bwcSwSystemRx_dump.xml -validate' for more information
+(BwcStimuliConvert.pl) [34mDEBUG: [0mXML syntax checking of /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/ipxact/xgold766_es_1_0/inc/lteIrqVector.xml successfully
+(BwcStimuliConvert.pl) [34mDEBUG: [0mpass
+(BwcStimuliConvert.pl) [34mDEBUG: [0m/home/git.view/xiajunm/xmm7660/lte_phy/lte_se/ipxact/xgold766_es_1_0/inc/lteIrqVector.xml
+(BwcStimuliConvert.pl) [34mDEBUG: [0mXML syntax checking of /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/algorithms/lteHw/xgold766_es_1_0/backend/maps/sysrx.xml successfully
+(BwcStimuliConvert.pl) [32mINFO: [0mSplitting XML file (bwcSwSystemRx_dump.xml) ...
+Can't exec "xml_split": No such file or directory at /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/tools/ltephyhostmatlab/BwcStimuliConvert/bin/BwcStimuliConvert.pl line 523.
+grep: ./bwcSwSystemRx_dump-0000.xml: No such file or directory
+(BwcStimuliConvert.pl) [32mINFO: [0m...done ().
+Argument "" isn't numeric in numeric lt (<) at /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/tools/ltephyhostmatlab/BwcStimuliConvert/bin/BwcStimuliConvert.pl line 532.
+(BwcStimuliConvert.pl) [31mERROR: [0mno file after xml_split
+cp: cannot stat `xtRiscTb.m': No such file or directory
+/home/git.view/xiajunm/xmm7660/lte_phy/lte_se/ipxact/xgold766_es_1_0/libunits
+(BwcStimuliConvert.pl) [32mINFO: [0mSyntax checking of XML: bwcSwSystemRx_dump_fix.xml ...
+(BwcStimuliConvert.pl) [32mINFO: [0mValidating XML: bwcSwSystemRx_dump_fix.xml
+(BwcStimuliConvert.pl) [32mINFO: [0mXML validated successfully
+(BwcStimuliConvert.pl) [34mDEBUG: [0mXML syntax checking of /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/ipxact/xgold766_es_1_0/inc/lteIrqVector.xml successfully
+(BwcStimuliConvert.pl) [34mDEBUG: [0mpass
+(BwcStimuliConvert.pl) [34mDEBUG: [0m/home/git.view/xiajunm/xmm7660/lte_phy/lte_se/ipxact/xgold766_es_1_0/inc/lteIrqVector.xml
+(BwcStimuliConvert.pl) [34mDEBUG: [0mXML syntax checking of /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/algorithms/lteHw/xgold766_es_1_0/backend/maps/sysrx.xml successfully
+(BwcStimuliConvert.pl) [32mINFO: [0mSplitting XML file (bwcSwSystemRx_dump_fix.xml) ...
+Can't exec "xml_split": No such file or directory at /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/tools/ltephyhostmatlab/BwcStimuliConvert/bin/BwcStimuliConvert.pl line 523.
+grep: ./bwcSwSystemRx_dump_fix-0000.xml: No such file or directory
+(BwcStimuliConvert.pl) [32mINFO: [0m...done ().
+Argument "" isn't numeric in numeric lt (<) at /home/git.view/xiajunm/xmm7660/lte_phy/lte_se/tools/ltephyhostmatlab/BwcStimuliConvert/bin/BwcStimuliConvert.pl line 532.
+(BwcStimuliConvert.pl) [31mERROR: [0mno file after xml_split
+cp: cannot stat `xtRiscTb.m': No such file or directory
+ERROR cannot open xtRiscTb.m for reading
+cp: cannot stat `xtRiscTb_added.m': No such file or directory
+Moving the following output files to /p/libdev/lte_ip.work2/xiajunm/xg766_es1_latest_hw/bwcSwSystemRx_paraInterfFeicic_01_level1/case_001
+                BwcStimuliConvert.log
+                                bwcSimulationApi.xsd
+                                                bwcSwSystemRx_dump.xml
+                                                                bwcSwSystemRx_dump_fix.xml
+                                                                                route.ssl
+                                                                                Error using lteDoTest (line 313)
+                                                                                Stimuli conversion error. See job log for details.
+
+                                                                                Error in lteDoTest (line 313)
+                                                                                          error('Stimuli conversion error. See job log for details.');
+
+                                                                                          Error in lteGenHwTest (line 6)
+                                                                                          [varargout{1:nargout}] = lteDoTest('GEN', TestEntry, TestCases, varargin{:}, 'Target','HW');
+

@@ -1,0 +1,1 @@
+ rsync -rv user@server:folder/rsync_cmd_file . ; source rsync_cmd_file

@@ -1,0 +1,28 @@
+''' 
+
+CONFIG NAME: xgold766_a0_test
+CC  arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 6.3.1 20170620 (release) [ARM/embedded-6-branch revision 249437]
+LD  GNU ld (GNU Tools for ARM Embedded Processors 6-2017-q2-update) 2.28.0.20170620
+SPL 2016.09-03863-gcc95e07 (Oct 26 2018 - 17:35:03 +0530) Released by lingkong@bgsxyew004
+
+Warning: Polling failed, val = 0x30 in address(0x20900074), exp = 0x40, mask = 0x40
+
+Please enable CONFIG_XGOLD_I2C_DUMP to dump all i2c registers
+ERROR: Voltage read back failed, expected: 900, got 1520
+
+CHIPID: 0x6800
+SNUM1: 0x84601200 SNUM2: 0xD805A SNUM3: 0xFFFFFFFF
+FusePCONF: 0xFE07
+STEPPING_ID: 0x0
+
+PPVS Fuse:
+PPVS Revision: 0x0
+VDD_DIG_CLASS,Active: 0x0, Retention: 0x0
+VDD_SRAM_CLASS,Active: 0x0, Retention: 0x0
+VDD_ARM_PLOW_CLASS: 0x0
+VDD_UPC_PLOW_CLASS: 0x0
+VDD_DIG_SORT,Active: 0x14, Retention: 0x15
+VDD_SRAM_SORT,Active: 0x0, Retention: 0x0
+VDD_CORE_PLOW_SORT: 0x15
+
+'''

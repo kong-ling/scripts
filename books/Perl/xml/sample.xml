@@ -1,0 +1,7 @@
+<opt>
+    <user login="grep" fullname="Gary R Epstein" />
+    <user login="stty" fullname="Simon T Tyson" >
+        <session pid="12345"/>
+    </user>
+    <text>This is a test.</text>
+</opt>

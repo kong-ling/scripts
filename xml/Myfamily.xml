@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="family.xsd">
+
+<person>
+<full_name>Tony Smith</full_name>
+<child_name>Cecilie</child_name>
+</person>
+
+<person>
+<full_name>David Smith</full_name>
+<child_name>Jogn</child_name>
+<child_name>mike</child_name>
+<child_name>kyle</child_name>
+<child_name>mary</child_name>
+</person>
+
+<person>
+<full_name>Michael Smith</full_name>
+</person>
+
+</persons>

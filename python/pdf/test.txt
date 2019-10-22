@@ -1,0 +1,64 @@
+Arteris od16681v1
+
+Arteris od16681v1
+
+Arteris od16681v1
+
+Arteris od16681v1
+
+3GPP TS 35.215 V11.0.0 (2012-09)
+
+Technical Specification 
+
+3rd Generation Partnership Project;
+Technical Specification Group Services and System Aspects;
+Specification of the 3GPP Confidentiality and Integrity 
+Algorithms UEA2 & UIA2;
+Document 1: UEA2 and UIA2 specifications
+(Release 11)
+
+The present document has been developed within the 3rd Generation Partnership Project (3GPP TM) and may be further elaborated for the purposes of 3GPP.
+
+The present document has not been subject to any approval process by the 3GPP Organizational Partners and shall not be implemented. 
+This Specification is provided for future development work within 3GPP only. The Organizational Partners accept no liability for any use of this Specification.
+Specifications and reports for implementation of the 3GPP TM system should be obtained via the 3GPP Organizational Partners' Publications Offices. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Release 11
+
+2
+
+3GPP TS 35.215 V11.0.0 (2012-09)
+
+Keywords 
+
+UMTS, security, algorithm 
+
+3GPP 
+
+Postal address 
+
+3GPP support office address 
+
+650 Route des Lucioles - Sophia Antipolis 
+Valbonne - FRANCE 
+Tel.: +33 4 92 94 42 00 Fax: +33 4 93 65 47 16 
+
+Internet 
+
+http://www.3gpp.org 
+
+Copyright Notification 
+
+No part may be reproduced except as authorized by written permission. 
+The copyright and the foregoing restriction extend to reproduction in all media. 
+

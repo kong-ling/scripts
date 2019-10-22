@@ -1,0 +1,2689 @@
+[     0.420]
+[     0.421]DDR Version 1.00 20151110
+[     0.424]In
+[     0.425]533MHz
+[     0.429]LPDDR3
+[     0.433](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.439]OUT
+[     0.484]--- Start PSI FLASH ---
+[     0.487]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.492]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.498]FPSI: SCU_RSTSR: 0x80008003
+[     0.609]logic_slb_loader command= status= recovery=
+[     0.632]Jump to SLB:0x00000500
+[     0.790]-----BOOT_REASON_LONG_ON_KEY-----
+[     0.794]mode reason 1
+[     0.991]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.996]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     1.005]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.143]the rk818 chid is 818
+[     1.150]charger driver is success register
+[     1.155]the mea voltage is 3956
+[     1.158]Load SLB without any Charger
+[     1.162]the flag is 1
+[     1.165]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.171]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.196]Transition to mode 2
+[     1.290]------display screen start------
+[     1.301]width=600,height=600,bpp=4,start_block=1
+[     1.358]Display Driver Version: v1.1.7
+[     1.375]display_drv_update_screen: ret=0, boot logo on=1
+[     1.566]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.581]vmm compiled time:15-12-10/11:27:39
+[     1.585]Cleaning up before jumping to system: 0x1CC48A20
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.14.0 (wlq@rk-intel-1) (gcc version 4.6.4 (Ubuntu/Linaro 4.6.4-6ubuntu2) ) #73 SMP PREEMPT Mon Dec 14 10:43:58 CST 2015
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000001bbfffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] bootconsole [earlyxgold0] enabled
+[    0.000000] APIC Verbosity level sofia not recognised use apic=verbose or apic=debug
+[    0.000000] Malformed early option 'apic'
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x00000000023fffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002400000-0x000000000248000f] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002480010-0x000000001bbfffff] usable
+[    0.000000] reserve setup_data: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] e820: last_pfn = 0x40000 max_arch_pfn = 0x1000000
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7050400070106, new 0x7010600070106
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000] init_memory_mapping: [mem 0x3fe00000-0x3fffffff]
+[    0.000000] init_memory_mapping: [mem 0x3c000000-0x3fdfffff]
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x1bbfffff]
+[    0.000000] init_memory_mapping: [mem 0x20000000-0x3bffffff]
+[    0.000000] Reserved memory: 'region@0' reserve CMA default limit 0x00000000, size 135 MiB
+[    0.000000] cma: CMA: reserved 136 MiB at 37800000
+[    0.000000] RAMDISK: [mem 0x00400000-0x005affff]
+[    0.000000] 0MB HIGHMEM available.
+[    0.000000] 1024MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 40000000
+[    0.000000]   low ram: 0 - 40000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   Normal   [mem 0x01000000-0x3fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009ffff]
+[    0.000000]   node   0: [mem 0x00100000-0x1bbfffff]
+[    0.000000]   node   0: [mem 0x20000000-0x3fffffff]
+[    0.000000] Using APIC driver sofia
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] e820: [mem 0x40000000-0xffffffff] available for PCI devices
+[    0.000000] Booting XGOLD kernel
+[    0.000000] setup_percpu: NR_CPUS:4 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 12 pages/cpu @b6f48000 s27392 r0 d21760 u49152
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 242591
+[    0.000000] Kernel command line: androidboot.bootloader=1550.400_M1S1 androidboot.serialno=0123456789012345678901234567890 pmu_rst_src=0x00010008 pmu_shutdwn_src=0x00000000 scu_rsts=0x80008003 scu_bcfg=0x00078100 loader_voltage=3956 androidboot.mode=normal panelsource=0 console=ttyFIQ0,115200n8 idle=halt earlyprintk=xgold notsc apic=sofia androidboot.hardware=sofiaboard nolapic_pm firmware_class.path=/system/vendor/firmware androidboot.selinux=permissive x86_intel_xgold_timer=soctimer_only vmalloc=512m slub_max_order=2 mvpipe.at_dbg_port=1
+[    0.000000] tsc: Kernel compiled with CONFIG_X86_TSC, cannot disable TSC completely
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] Initializing HighMem for node 0 (00000000:00000000)
+[    0.000000] Memory: 813944K/978556K available (6877K kernel code, 1248K rwdata, 2608K rodata, 336K init, 1872K bss, 164612K reserved, 0K highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfffa7000 - 0xfffff000   ( 352 kB)
+[    0.000000]     pkmap   : 0xff800000 - 0xffa00000   (2048 kB)
+[    0.000000]     vmalloc : 0xc0800000 - 0xff7fe000   (1007 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+[    0.000000]       .init : 0x8307f000 - 0x830d3000   ( 336 kB)
+[    0.000000]       .data : 0x82cb77b1 - 0x8307d040   (3862 kB)
+[    0.000000]       .text : 0x82600000 - 0x82cb77b1   (6877 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: HWalign=64, Order=0-2, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] NR_IRQS:16 nr_irqs:16 0
+[    0.000000] vpic_of_init: Initializing SoFIA vpic
+[    0.000000] vpic_of_init: xgold-vpic register remapping: Reg: c0800000, entries c0804000
+[    0.000000] irq-xgold: new irq domain: intel,sofia-main-hirq - 1 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_eint - 30 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_abb - 32 irqs
+[    0.000000] irq-xgold: new irq domain: intel,sofia-hirq - 512 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_pmu - 24 irqs
+[    0.000000] --> x86_xgold_time_init
+[    0.000000] Intel x86 xgold using soctimer only
+[    0.000000] xgold_of_timer_map:Initializing STM FAF to 0x319
+[    0.000000] xgold_of_timer_map:Clock event device rating set to 0x32
+[    0.000000] XGOLD STM:Clock frequency 26MHz
+[    0.000000] XGOLD STM:Clock event min precision 1000000ns
+[    0.000000] XGOLD STM:Clock event max precision 1000000000ns
+[    0.000000] xgold_of_timer_map: Masking cpu0 for STM usage
+[    0.000000] xgold_of_timer_map: Masking cpu1 for STM usage
+[    0.000000] XGOLD STM timer used to provide sched clock
+[    0.000000] sched_clock: 32 bits at 26MHz, resolution 38ns, wraps every 165191049177ns
+[    0.000000] XGOLD STM timer clkevent [1000000ns-1000000000ns]
+[    0.000000] xgold_timer_cc_init:Clock event device rating set to 0x32
+[    0.000000] xgold_timer_cc_init:Input clock rate set to 0x18cba80
+[    0.000000] xgold_timer_cc_init:Clock event min set to 1000000
+[    0.000000] xgold_timer_cc_init:Clock event max set to 1000000000
+[    0.000000] xgold_timer_cc_init: Set cpu2 as valid for CC usage
+[    0.000000] xgold_timer_cc_init: Set cpu3 as valid for CC usage
+[    0.000000] CAPCOM: Registering cc event HW:
+[    0.000000] 	26000000 Hz, mask c, rating 50
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 4,cc id 0, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 8,cc id 1, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] <-- x86_xgold_time_init
+[    0.000000] logger: created 256K log 'log_kern_bot'
+[    0.000000] console [logk-1] enabled
+[    0.000000] logger: register logcat console
+[    0.000000] xgold_calibrate_tsc: Run it for 10 ms
+[    0.000000] xgold_calibrate_tsc: LAPIC Timer frequency is 260.0337 MHz.
+[    0.000000] tsc: Detected 9372.214 MHz processor
+[    0.050000] Calibrating delay loop... 1036.28 BogoMIPS (lpj=5181440)
+[    0.080137] pid_max: default: 32768 minimum: 301
+[    0.084728] Security Framework initialized
+[    0.088718] SELinux:  Initializing.
+[    0.090114] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.096606] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.146849] Initializing cgroup subsys debug
+[    0.148283] Initializing cgroup subsys freezer
+[    0.150623] CPU: Physical Processor ID: 0
+[    0.153979] CPU: Processor Core ID: 2
+[    0.157775] Last level iTLB entries: 4KB 48, 2MB 0, 4MB 0
+[    0.157775] Last level dTLB entries: 4KB 128, 2MB 16, 4MB 16, 1GB 0
+[    0.157775] tlb_flushall_shift: 6
+[    0.163701] Freeing SMP alternatives memory: 24K (830d3000 - 830d9000)
+[    0.167804] smpboot: CPU0: Genuine Intel(R) CPU         @ 728 (fam: 06, model: 5d, stepping: 01)
+[    0.251865] last_log: 0x36a00000 map to 0xc0f81000 and copy to 0xc1003000, size 0x80000 early 0x295a (version 3.0)
+[    0.259441] Performance Events: generic architected perfmon, full-width counters, Intel PMU driver.
+[    0.265995] ... version:                3
+[    0.269997] ... bit width:              40
+[    0.270032] ... generic registers:      2
+[    0.273989] ... value mask:             000000ffffffffff
+[    0.279301] ... max period:             000000ffffffffff
+[    0.280033] ... fixed-purpose events:   3
+[    0.283988] ... event mask:             0000000700000003
+[    0.320056] Initializing Xgold Reset controller driver.
+[    0.323930] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.329193] Registering Xgold Reset controller @c0806000
+[    0.330048] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.336720] Registering Xgold Reset controller @c0856010
+[    0.340246] xgold_reset_do_sanity: Using R/W register access scheme
+[    0.346291] Registering Xgold Reset controller @c0858100
+[    0.370239] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.390413] x86: Booting SMP configuration:
+[    0.391747] .... node  #0, CPUs:      #1
+[    0.050000] Initializing CPU#1
+[    0.430780]  #2
+[    0.050000] Initializing CPU#2
+[    0.435489] TSC synchronization [CPU#0 -> CPU#2]:
+[    0.440000] Measured 1368 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.440000] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.480399]  #3
+[    0.050000] Initializing CPU#3
+[    0.500167] x86: Booted up 1 node, 4 CPUs
+[    0.504397] smpboot: Total of 4 processors activated (4145.15 BogoMIPS)
+[    0.520317] pinctrl core: initialized pinctrl subsystem
+[    0.522950] regulator-dummy: no parameters
+[    0.529227] NET: Registered protocol family 16
+[    0.531591] cpuidle: using governor ladder
+[    0.534049] cpuidle: using governor menu
+[    0.537972] RÅB¥Ñ*¹Ñ?¢½
+???2¥Å"	?ÉùjR´		&©¦&¦WH¬Ëk?«Ò+W/T©*LWY·X±¶ed
+[    0.544263] bootconsole [earlyxg ld0] disabled
+ 0.540722] console [ttyFIQ0] enabled
+[    0.544263] bootconsole [earlyxgold0] disabled
+[    0.548816] Registered fiq debugger ttyFIQ0
+[    0.550610] Initializing DMA ops for non coherent architecture
+[    0.550632] --> xgold_init_machine
+[    0.550809] register chip revision 0x10
+[    0.579273] rk_iommu e2d00800.vpu_mmu: (vpu) Enter
+[    0.579438] rk_iommu e2d00800.vpu_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579463] rk_iommu e2d00800.vpu_mmu: (vpu) Initialized
+[    0.579714] rk_iommu e2d00440.hevc_mmu: (hevc) Enter
+[    0.579826] rk_iommu e2d00440.hevc_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579850] rk_iommu e2d00440.hevc_mmu: (hevc) Initialized
+[    0.580108] rk_iommu e1000300.vop_mmu: (vop) Enter
+[    0.580230] rk_iommu e1000300.vop_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.580254] rk_iommu e1000300.vop_mmu: (vop) Initialized
+[    0.752227] <-- xgold_init_machine
+[    0.754086] xgold_pm_of_init: 120 pm users added
+[    0.755341] xgold_pm_of_init: 36 pm class added
+[    0.758221] pinctrl-single e4600000.pinmux: 640 pins at pa c0862000 size 2560
+[    0.758973] pinctrl-single e6300000.pinmux: 384 pins at pa c0864000 size 1536
+[    0.759690] gpio: gpio: io: linux-@:c0866000
+[    0.759713] gpio: XGold gpio probed base:0 num:106 gpios from gpio
+[    0.759935] gpio: missing property:intel,gpio-to-irq-num
+[    0.759965] gpio: gpio: io: linux-@:c0868000
+[    0.759982] gpio: XGold gpio probed base:107 num:45 gpios from gpio
+[    0.760562] VPOWER: Running in async mode
+[    0.760614] fmdev_init()
+[    0.760739] fmdev_init(): Success! retval: 0
+[    0.762876] pmic_reg_access: cannot find node 'vmm_pmic-ext'
+[    0.783982] bio: create slab <bio-0> at 0
+[    0.787285] xgold_cpuidle_init: Initializing xgold cpuidle driver
+[    0.787327] idle xgold: Name | latency | residency | power | flags | vmmid
+[    0.787348] 	S0 [mclk gated in MC4]	 22	 50	 3	 1 1
+[    0.787921] Enter xgold_dma_probe
+[    0.788653] pl08xdmac pl08xdmac: initialized 8 virtual memcpy channels
+[    0.788683] pl08xdmac pl08xdmac: initialized 15 virtual slave channels
+[    0.790463] pl08xdmac pl08xdmac: DMA: PL080 rev0 at 0xe0100000 irq 106
+[    0.791202] Registering device PM controlled regulator
+[    0.791700] lmmc1: 1800 <--> 2900 mV 
+[    0.791998] #PM: Error in dev
+[    0.792021] regulator regulator.2: Error while setting disable state
+[    0.792041] lemmc: 1800 <--> 2900 mV 
+[    0.792272] lcd: 2900 mV 
+[    0.792506] XGOLD Network On Chip (NoC) initialisation
+[    0.793028] xgold-noc ef000000.l1_noc: XGOLD NoC driver initialization ef000000.l1_noc
+[    0.793446] xgold-noc ef000000.l1_noc: 3 probe(s), 4 filter(s), 2 counter(s)
+[    0.793519] xgold-noc ef000000.l1_noc: intel,LCDC-qos-settings added to list(0)
+[    0.793582] xgold-noc ef000000.l1_noc: intel,VPU-qos-settings added to list(0)
+[    0.793631] xgold-noc ef000000.l1_noc: intel,VPU128R-qos-settings added to list(0)
+[    0.793688] xgold-noc ef000000.l1_noc: intel,CPU1-qos-settings added to list(1)
+[    0.793751] xgold-noc ef000000.l1_noc: intel,GPUGP-qos-settings added to list(0)
+[    0.793812] xgold-noc ef000000.l1_noc: intel,GPUPP-qos-settings added to list(0)
+[    0.793865] xgold-noc ef000000.l1_noc: intel,CIF-qos-settings added to list(0)
+[    0.793915] xgold-noc ef000000.l1_noc: intel,RGA-qos-settings added to list(0)
+[    0.796332] xgold-noc ef010000.l2_noc: XGOLD NoC driver initialization ef010000.l2_noc
+[    0.796784] xgold-noc ef010000.l2_noc: 1 probe(s), 4 filter(s), 2 counter(s)
+[    0.796809] xgold-noc ef010000.l2_noc: no QoS config list
+[    0.798373] SCSI subsystem initialized
+[    0.799127] usbcore: registered new interface driver usbfs
+[    0.799193] usbcore: registered new interface driver hub
+[    0.799533] usbcore: registered new device driver usb
+[    0.800909] intel-usb2phy e4800000.phy: iphy->otg_host_det 0
+[    0.800947] intel-usb2phy e4800000.phy: power budget set to 500 mA
+[    0.802358] intel-usb2phy e4800000.phy: OTG runtime idle
+[    0.803333] I2C: Enterring xgold_i2c_core_probe
+[    0.806956] i2c i2c-1: 1 i2c clients have been registered at 0x0c
+[    0.807494] i2c i2c-1: 2 i2c clients have been registered at 0x0c
+[    0.808099] i2c i2c-1: 3 i2c clients have been registered at 0x0c
+[    0.810004] I2C: Enterring xgold_i2c_core_probe
+[    0.814626] of_dma_request_slave_channel: dma-names property of node '/xgold/noc/l2_noc/ahb_per@1/i2c_4' missing or empty
+[    0.814660] I2C: Enterring xgold_i2c_core_probe
+[    0.819958] Linux video capture interface: v2.00
+[    0.821009] rk_ion heap cma-heap base:0x00000000 length:0x141557760 type 4
+[    0.822219] Advanced Linux Sound Architecture Driver Initialized.
+[    0.822851] i2c-core: driver [syr82x] using legacy suspend method
+[    0.822873] i2c-core: driver [syr82x] using legacy resume method
+[    0.823645] rk818 2-001c: RK81X chip id is rk818
+[    0.824160] rk818 2-001c: ON_SOURCE:0x80 OFF_SOURCE:0x00
+[    0.828571] rk818 2-001c: DATA18 = 0, DATA19 = f0
+[    0.828696] rk818 2-001c: rk818 irq number: 306, notify_usb_det: 0
+[    0.840878] i2c-core: driver [rk818] using legacy suspend method
+[    0.840905] i2c-core: driver [rk818] using legacy resume method
+[    0.841282] rk818-rtc rk818-rtc: rk818_rtc_probe,line=498
+[    0.851370] rk818-rtc rk818-rtc: rtc core: registered rk818 as rtc0
+[    0.851401] rk818-rtc rk818-rtc: per_irq = 313, alm_irq = 312
+[    0.853023] rk818-rtc rk818-rtc: rk818_rtc_probe:ok
+[    0.854436] Switched to clocksource xgold_stm_clocksource
+[    0.854778] i2c-core: driver [lvds] using legacy suspend method
+[    0.854797] i2c-core: driver [lvds] using legacy resume method
+[    0.855369] loader-logo-on:1
+[    0.855394] create rockchip ion client
+[    0.855442] rockchip-fb rockchip-fb: rockchip framebuffer driver probe
+[    0.856626] rockchip-screen screen.206: rockchip screen probe success
+[    0.857329] nanosilicon-lvds nanosilicon-lvds: nanosilicon lvds driver probe success
+[    0.858790] graphics fb0: rockchip framebuffer registered:fb0
+[    0.859438] graphics fb1: rockchip framebuffer registered:fb1
+[    0.859601] graphics fb2: rockchip framebuffer registered:fb2
+[    0.861174] rockchip-vop vop0: vop0: dclk:0>>fps:60 
+[    0.861203] rockchip-vop vop0: wakeup from standby!
+[    0.879860] graphics fb0: fb0:phy:10000000>>vir:c1981000>>len:0xc00000
+[    0.879899] graphics fb0: copy fb data 600 x 600  from  addr:0x10000200 to addr:0x10000000
+[    0.907492] rk_iommu e1000300.vop_mmu: Attached IOMMU with pgtable 0x36072000
+[    0.907523] rockchip-vop vop0: vop0 probe ok, iommu enabled
+[    0.908039] cat66121_hdmi 4-004c: cat66121_hdmi_i2c_probe, line=375
+[    0.908849] CAT66121: reg[0-3] = 0x[54].[49].[12].[16]
+[    0.927836] ----------------------------------------
+[    0.927836] Init HDMITX
+[    0.927836] ----------------------------------------
+[    0.930040] REG_TX_INT_STAT1=0
+[    0.930059] REG_TX_INT_STAT2=0
+[    0.930073] REG_TX_INT_STAT3=0
+[    0.932161] REG_TX_INT_STAT4=0
+[    0.932649] HPD unplug
+[    0.932731] cat66121_hdmi 4-004c: cat66121 hdmi i2c probe ok
+[    0.934897] NET: Registered protocol family 2
+[    0.935676] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.935747] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.935838] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.935920] TCP: reno registered
+[    0.935942] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.935978] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.936216] NET: Registered protocol family 1
+[    0.936258] <<-GTP-INFO->> GTP driver installing...
+[    0.938136] rk818-battery rk818-battery: invalid fcc(0x0), use design capacity
+[    0.938994] rk818-battery rk818-battery: update fcc : 3914
+[    0.957173] rk818-battery rk818-battery: v=3884, ov=4006, rv=0, c=2512, pwroff_min=0
+[    0.959047] rk818-battery rk818-battery: update fcc : 3914
+[    0.989947] rk818-battery rk818-battery: battery driver version 3.0.0
+[    0.990251] Trying to unpack rootfs image as initramfs...
+[    1.098685] Freeing initrd memory: 1728K (80400000 - 805b0000)
+[    1.102731] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    1.102914] audit: initializing netlink subsys (disabled)
+[    1.110293] fuse init (API version 7.22)
+[    1.110665] Registering sdcardfs 2.1.3
+[    1.110800] msgmni has been set to 1865
+[    1.122128] alg: No test for stdrng (krng)
+[    1.122407] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    1.122433] io scheduler noop registered
+[    1.122556] io scheduler cfq registered (default)
+[    1.125406] pwm-backlight.203 supply power not found, using dummy regulator
+[    1.133114] rga: create rockchip ion client for RGA
+[    1.133274] rga: Driver loaded successfully
+[    1.133602] mvpipe enumerate instance name at
+[    1.134203] mvpipe enumerate instance name at2
+[    1.134848] mvpipe enumerate instance name atc
+[    1.135353] mvpipe enumerate instance name at2c
+[    1.135855] mvpipe enumerate instance name at-dbg
+[    1.136350] mvpipe enumerate instance name echo
+[    1.136850] mvpipe enumerate instance name secmd
+[    1.137357] mvpipe enumerate instance name sedat0
+[    1.137856] mvpipe enumerate instance name oec_dat
+[    1.138360] mvpipe enumerate instance name vpu
+[    1.138884] mvpipe enumerate instance name vpu_ion
+[    1.139412] mvpipe enumerate instance name GTI
+[    1.139927] mvpipe enumerate instance name veth_ctrl
+[    1.140824] NVM: probe nb_partition =3, name = /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.141237] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.141261] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID023
+[    1.141280] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID024
+[    1.141381] VOEMCRYPTO-FE: Initializing.
+[    1.141914] VOEMCRYPTO-FE: Initialized.
+[    1.141934] vdump: init
+[    1.142079] vdump: Kernel vdump Thread create.
+[    1.142358] vdump: Kernel vdump Thread: vdump Thread
+[    1.142397] vdump: Kernel vdump Thread enter.
+[    1.142418] vdump: vdump_detect[/system/etc/vdump.conf]
+[    1.142471] vdump: Gadget fp=fffffffe open failed!
+[    1.142697] mveth: virtual Ethernet device driver 1.0.
+[    1.143144] mveth enumerate instance name veth0
+[    1.144081] mveth enumerate instance name veth1
+[    1.144658] virtual Ethernet device driver initialized
+[    1.145877] TEE_RPC REGISTERED major : 233
+[    1.146622] IDI AG6x0 client init
+[    1.146693] Registering IDI driver
+[    1.149465] idi idi-0: : Rev: 4   Mod ID: 130   TS Rev: 777
+[    1.149495] idi idi-0: : Software check: 16 channels
+[    1.149514] idi idi-0: : SRB Multiple Source: 0x0000000c
+[    1.149532] idi idi-0: : SRB Error Config: 0x0000000c
+[    1.151025] AG6x0 idi_client-0: AGold using secure access
+[    1.153805] : Miss PM info
+[    1.154680] idi-error idierror-0: imc_idi_error_probe: probe return 0
+[    1.155773] idi_bus_match:btif-0-ttyBT: Using peripheral type for registration process is deprecated
+[    1.155799] idi_bus_match:btif-0-ttyBT: Please idi device id and driver id table
+[    1.155864] ttyBT btif-0: No kernel clock available
+[    1.155883] ttyBT btif-0: No BTIP 78M clock available
+[    1.155901] ttyBT btif-0: No BTIP 104M clock available
+[    1.155918] ttyBT btif-0: No BTIP 32kHz clock available
+[    1.155935] ttyBT btif-0: No BTIP VCXO request available
+[    1.155953] ttyBT btif-0: No BTIP PWM ON request available
+[    1.155970] ttyBT btif-0: No BTIP RF ON request available
+[    1.156066] BTIF device PM registration success
+[    1.156204] btif-0: ttyBT0 at MMIO 0xe7200000 (irq = 0, base_baud = 0) is a XGOLD/BTIF
+[    1.160415] XGOLD USIF serial driver
+[    1.161491] tadi_driver_probe: trace port:[mem 0x80000000-0x80ffffff] - ioremap:c2d80000
+[    1.161520] tadi_driver_probe: Register tdcons console
+[    1.162428] mali-utgard e2e00000.gpu: mali cores = 4
+[    1.162526] mali-utgard e2e00000.gpu: drv_data->pm_states[0].name = disable
+[    1.162550] mali-utgard e2e00000.gpu: drv_data->pm_states[1].name = low_perf
+[    1.162572] mali-utgard e2e00000.gpu: drv_data->pm_states[2].name = mid_perf
+[    1.162593] mali-utgard e2e00000.gpu: drv_data->pm_states[3].name = high_perf
+[    1.162614] mali-utgard e2e00000.gpu: drv_data->pm_states[4].name = ultra_high_perf
+[    1.162635] mali-utgard e2e00000.gpu: mali pm_state init 4[ultra_high_perf]
+[    1.163197] mali-utgard e2e00000.gpu: mali_platform_init, success
+[    1.163331] mali-utgard e2e00000.gpu: Already power up
+[    1.165689] Mali: Mali device driver loaded
+[    1.167256] brd: module loaded
+[    1.170107] loop: module loaded
+[    1.170523] zram: Created 1 device(s) ...
+[    1.171234] xgold Vibrator init
+[    1.171450] inv_mpu_probe    client->irq=303
+[    1.171533] /xgold/noc/l2_noc/ahb_per@1/i2c_3/mpu6xxx: arguments longer than property
+[    1.171582] int_config=16,level_shifter=0,client.addr=68,client.irq=12f
+[    1.171599] 0 -1 0 1 0 0 0 0 1 
+[    1.171654] data->sec_slave_type=2,data->sec_slave_id=18,data->secondary_i2c_addr=d 
+[    1.171671] -1 0 0 0 -1 0 0 0 1 
+[    1.171801] vibra-xgold e6501400.vibrator: AGold vibrator using secure access
+[    1.171827] vibra-xgold e6501400.vibrator: linux_vibrator_time_adjust = 10
+[    1.171848] vibra-xgold e6501400.vibrator: linux_vibrator_intensity = 100
+[    1.172041] vibra-xgold e6501400.vibrator: Vibrator driver probed
+[    1.172564] vcodec e2d00000.vpu_combo: probe device.
+[    1.172681] ->state: high_perf
+[    1.172893] e2d00000.vpu_combo: power on.
+[    1.176052] ->state: disable
+[    1.176189] e2d00000.vpu_combo: power off.
+[    1.176216] vcodec e2d00000.vpu_combo: init success.
+[    1.177377] tun: Universal TUN/TAP device driver, 1.6
+[    1.177401] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.177510] PPP generic driver version 2.4.2
+[    1.177633] PPP BSD Compression module registered
+[    1.177651] PPP Deflate Compression module registered
+[    1.177675] PPP MPPE Compression module registered
+[    1.177693] NET: Registered protocol family 24
+[    1.177792] usbcore: registered new interface driver catc
+[    1.177843] usbcore: registered new interface driver kaweth
+[    1.177862] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.177912] usbcore: registered new interface driver pegasus
+[    1.177962] usbcore: registered new interface driver rtl8150
+[    1.178012] usbcore: registered new interface driver r8152
+[    1.178073] usbcore: registered new interface driver asix
+[    1.178123] usbcore: registered new interface driver ax88179_178a
+[    1.178178] usbcore: registered new interface driver cdc_ether
+[    1.178229] usbcore: registered new interface driver cdc_eem
+[    1.178278] usbcore: registered new interface driver dm9601
+[    1.178328] usbcore: registered new interface driver sr9700
+[    1.178394] usbcore: registered new interface driver CoreChips
+[    1.178457] usbcore: registered new interface driver smsc75xx
+[    1.178518] usbcore: registered new interface driver smsc95xx
+[    1.178568] usbcore: registered new interface driver gl620a
+[    1.178623] usbcore: registered new interface driver net1080
+[    1.178674] usbcore: registered new interface driver plusb
+[    1.178724] usbcore: registered new interface driver rndis_host
+[    1.178774] usbcore: registered new interface driver cdc_subset
+[    1.178824] usbcore: registered new interface driver zaurus
+[    1.178875] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    1.178946] usbcore: registered new interface driver int51x1
+[    1.178996] usbcore: registered new interface driver ipheth
+[    1.179046] usbcore: registered new interface driver cx82310_eth
+[    1.179114] usbcore: registered new interface driver cdc_ncm
+[    1.179167] usbcore: registered new interface driver huawei_cdc_ncm
+[    1.179218] usbcore: registered new interface driver cdc_mbim
+[    1.180636] e2100000.usb supply vusb_d not found, using dummy regulator
+[    1.180730] e2100000.usb supply vusb_a not found, using dummy regulator
+[    1.214591] dwc2 e2100000.usb: EPs: 16, dedicated fifos, 4672 entries in SPRAM
+[    1.308817] inv_mpu_probe    st->irq=303
+[    1.309153] i2c i2c-3: mpu6050 is ready to go!
+[    2.076080] dwc2 e2100000.usb: DWC OTG Controller
+[    2.076130] dwc2 e2100000.usb: new USB bus registered, assigned bus number 1
+[    2.076178] dwc2 e2100000.usb: irq 51, io mem 0x00000000
+[    2.635652] hub 1-0:1.0: USB hub found
+[    2.635733] hub 1-0:1.0: 1 port detected
+[    2.636604] usbcore: registered new interface driver cdc_wdm
+[    2.636690] usbcore: registered new interface driver usb-storage
+[    2.636822] usbcore: registered new interface driver usbserial
+[    2.636872] usbcore: registered new interface driver option
+[    2.636917] usbserial: USB Serial support registered for GSM modem (1-port)
+[    2.636975] dwc_otg: version 3.10b 20-MAY-2013
+[    2.644883] mousedev: PS/2 mouse device common for all mice
+[    2.645914] xgold_keypad_init
+[    2.646435] xgold_keypad_probe main irq = 70
+[    2.646486] kpd-xgold e4200000.keypad: get keypad,kp_in0 error
+[    2.646508] kpd-xgold e4200000.keypad: get keypad,kp_in1 error
+[    2.646529] kpd-xgold e4200000.keypad: get keypad,kp_in2 error
+[    2.646554] kpd-xgold e4200000.keypad: get keypad,kp_in5 error
+[    2.646575] kpd-xgold e4200000.keypad: get keypad,kp_in6 error
+[    2.646595] kpd-xgold e4200000.keypad: get keypad,kp_in7 error
+[    2.646614] =============xgold_keypad_probe, here dump dts configs for kpd=======================
+[    2.646632] num_row_gpios = 4, num_col_gpios = 8
+[    2.646650] kpd-xgold e4200000.keypad: onre irq not found
+[    2.646668] kpd-xgold e4200000.keypad: onfe irq not found
+[    2.646918] input: kpd-xgold as /devices/soc0/e0000000.noc/ef010000.l2_noc/e4000000.ahb_per/e4200000.keypad/input/input0
+[    2.647164] kpd-xgold e4200000.keypad: keypad probed
+[    2.648353] input: xgold-on-button as /devices/soc0/e0000000.noc/ef010000.l2_noc/e6100000.idi_per/e6600000.agold/on_button.178/input/input1
+[    2.648733] i2c-core: driver [imc-ts] using legacy suspend method
+[    2.648753] i2c-core: driver [imc-ts] using legacy resume method
+[    2.648773] ==gsl_ts_init==
+[    2.648837] ret=0
+[    2.649051] 4-0001 supply i2c not found, using dummy regulator
+[    2.649125] 4-0001 supply i2ca not found, using dummy regulator
+[    2.649634] ===========================icn85xx_ts_init=====================
+[    2.650043] l3gd20_gyr: gyroscope sysfs driver init
+[    2.650109] lsm303dlhc_acc accelerometer driver init
+[    2.650160] lsm303dlhc_mag magnetometer driver init
+[    2.650275] sensor_register_slave:mma8452,id=17
+[    2.650294] sensor_register_slave:bma2xx_acc,id=24
+[    2.650311] sensor_register_slave:lsm303c_acc,id=25
+[    2.650326] sensor_register_slave:lsm6ds3_acc,id=26
+[    2.650342] sensor_register_slave:ls_cm36682,id=61
+[    2.650358] sensor_register_slave:ls_tmd2772,id=60
+[    2.650373] sensor_register_slave:ls_rpr0521,id=62
+[    2.650389] sensor_register_slave:ps_tmd2772,id=67
+[    2.650420] sensor_register_slave:ps_cm36682,id=68
+[    2.650436] sensor_register_slave:ps_rpr0521,id=69
+[    2.651052] i2c /dev entries driver
+[    2.651545] lm3642 1-0063: probing...
+[    2.651573] lm3642 1-0063: probing successful
+[    2.651679] wv511 1-000c-2: probing...
+[    2.651701] wv511 1-000c-2: probing successful
+[    2.651790] ad5823 1-000c: probing...
+[    2.651811] ad5823 1-000c: probing successful
+[    2.651947] vm149c 1-000c-1: probing...
+[    2.651970] vm149c 1-000c-1: probing successful
+[    2.652220] OV8858 1-0010: probing...
+[    2.652275] OV8858.pltfrm_camera_module_get_data: camera module has auto focus controller vm149c
+[    2.652366] OV8858.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.652393] OV8858.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.679603] i2c i2c-1: M13: NACK recvd.
+[    2.679633] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.679657] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.679718] i2c i2c-1: M13: NACK recvd.
+[    2.679737] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.679759] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300c failed with error -121
+[    2.679780] OV8858.OV8858_check_camera_id(2941) ERR: register read failed, camera module powered off?
+[    2.679799] OV8858.OV8858_check_camera_id(2976) ERR: failed with error (-121)
+[    2.679903] OV8858.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.679927] OV8858 1-0010: probing failed with error (-121)
+[    2.679976] OV8858: probe of 1-0010 failed with error -22
+[    2.680167] dw9714 1-000c-3: probing...
+[    2.680191] dw9714 1-000c-3: probing successful
+[    2.680554] ov2680 1-0036: probing...
+[    2.680642] ov2680.pltfrm_camera_module_get_data(409) ERR: could not get module rockchip,camera-module-orientation from dts!
+[    2.680669] ov2680.pltfrm_camera_module_get_data(420) ERR: could not get module rockchip,camera-module-flip from dts!
+[    2.680691] ov2680.pltfrm_camera_module_get_data(431) ERR: could not get module rockchip,camera-module-mirror from dts!
+[    2.680715] ov2680.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.680739] ov2680.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.680878] ov2680.pltfrm_camera_module_init_gpio: reset gpio has been inited, return!
+[    2.717980] i2c i2c-1: M13: NACK recvd.
+[    2.718011] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718036] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300a failed with error -121
+[    2.718097] i2c i2c-1: M13: NACK recvd.
+[    2.718116] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718138] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.718159] ov2680.ov2680_check_camera_id(850) ERR: register read failed, camera module powered off?
+[    2.718179] ov2680.ov2680_check_camera_id(868) ERR: failed with error (-121)
+[    2.718278] ov2680.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.718301] ov2680 1-0036: probing failed with error (-121)
+[    2.718348] ov2680: probe of 1-0036 failed with error -121
+[    2.719865] usbcore: registered new interface driver uvcvideo
+[    2.719889] USB Video Class driver (1.1.1)
+[    2.719904] FMR: Intel FM Radio driver version : 1.00
+[    2.719937] idi_bus_match:fmr-0-ag6x0_fmr: Using peripheral type for registration process is deprecated
+[    2.719958] idi_bus_match:fmr-0-ag6x0_fmr: Please idi device id and driver id table
+[    2.720021] FMR: Device probe called
+[    2.720040] FMR: V4l2 device registration
+[    2.720183] FMR: Registration with Frequency manager successful
+[    2.720243] FMR: FM Radio device PM registration successful
+[    2.720330] FMR: driver initialised successfully
+[    2.721746] spcu_thermal e4700000.spcu_thermal0: Thermal zone device registered, type=coretemp0
+[    2.722281] spcu_thermal e4700000.spcu_thermal1: Thermal zone device registered, type=coretemp1
+[    2.722907] spcu_thermal e4700000.spcu_thermal3: Thermal zone device registered, type=coretemp3
+[    2.723381] spcu_thermal e4700000.spcu_thermal4: Thermal zone device registered, type=coretemp4
+[    2.723862] spcu_thermal e4700000.spcu_thermal5: Thermal zone device registered, type=coretemp5
+[    2.724320] device-mapper: uevent: version 1.0.3
+[    2.724698] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    2.725058] idi_bus_match:gnss-0-ttyGNSS: Using peripheral type for registration process is deprecated
+[    2.725084] idi_bus_match:gnss-0-ttyGNSS: Please idi device id and driver id table
+[    2.725553] ttyGNSS gnss-0: missing usif reset controller
+[    2.725762] ttyGNSS gnss-0: default 50ms fci poll
+[    2.725786] ttyGNSS gnss-0: runtime_pm_enabled is disable
+[    2.725806] ttyGNSS gnss-0: runtime_pm_debug is disable
+[    2.725827] ttyGNSS gnss-0: rpm_suspend_delay set to 5000
+[    2.725847] ttyGNSS gnss-0: auto_suspend_enable is disable
+[    2.725865] ttyGNSS gnss-0: Data path property set to IDI
+[    2.726544] gnss-0: ttyGNSS0 at MMIO 0xe7700000 (irq = 296, base_baud = 6500000) is a XGOLD_USIF
+[    2.728333] xgold_cpufreq_probe:platform_get_irq_byname(CPU_CLK_CHANGE) (virq:302)
+[    2.728945] sdhci: Secure Digital Host Controller Interface driver
+[    2.728968] sdhci: Copyright(c) Pierre Ossman
+[    2.728983] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.729629] xgold-sdhci e2800000.emmc: sdhci: io: linux-@:c4100000
+[    2.729967] sdhci: e2800000.emmc, rpm = 1
+[    2.730219] mmc0: Failed to enable vqmmc regulator: -1
+[    2.730246] mmc0: no vmmc regulator found
+[    2.730577] xgold-sdhci e2800000.emmc: Set tap values to mode 0, val = 0x080400f5
+[    2.734737] dwc2 e2100000.usb: _dwc2_hcd_suspend()
+[    2.774553] mmc0: SDHCI controller on e2800000.emmc [e2800000.emmc] using ADMA
+[    2.774898] xgold-sdhci e1400000.sd: sdhci: io: linux-@:c4400000
+[    2.775755] sdhci: e1400000.sd, rpm = 1
+[    2.775979] mmc1: no vmmc regulator found
+[    2.776284] xgold-sdhci e1400000.sd: Set tap values to mode 0, val = 0x080400f5
+[    2.824618] mmc1: SDHCI controller on e1400000.sd [e1400000.sd] using ADMA
+[    2.826678] xgold keypad bl init
+[    2.827923] mmc0: BKOPS_EN bit is not set
+[    2.828914] usbcore: registered new interface driver usbhid
+[    2.828941] usbhid: USB HID core driver
+[    2.828994] ion_snapshot: 0x0x34c40000 map to 0xc1201000 and copy to 0x8324a3c0 (version 0.1)
+[    2.830470] xgold-sdhci e2800000.emmc: Set tap values to mode 1, val = 0x08040004
+[    2.831201] xgold-sdhci e2800000.emmc: Set tap values to mode 5, val = 0x000400b5
+[    2.831504] mmc0: new high speed DDR MMC card at address 0001
+[    2.831964] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832277] mmcblk0: mmc0:0001 Q7XSAB 7.28 GiB 
+[    2.832433] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832710] mmcblk0boot0: mmc0:0001 Q7XSAB partition 1 4.00 MiB
+[    2.832867] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.833143] mmcblk0boot1: mmc0:0001 Q7XSAB partition 2 4.00 MiB
+[    2.838876]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16
+[    2.842858]  mmcblk0boot1: unknown partition table
+[    2.844093]  mmcblk0boot0: unknown partition table
+[    2.856722] ashmem: initialized
+[    2.856878] logger: created 256K log 'log_kernel'
+[    2.857248] logger: created 256K log 'log_main'
+[    2.857428] logger: created 256K log 'log_events'
+[    2.857592] logger: created 256K log 'log_radio'
+[    2.857761] logger: created 256K log 'log_system'
+[    2.859326] ag620_meas meas-0: Initializing MEAS AG620 HAL
+[    2.859563] ag620_meas: meas_ag620_probe: agold_chip_rev=0x0021
+[    2.859628] ag620_meas meas-0: meas_ag620_probe: getting handlers for dev pm states...
+[    2.860076] intel_adc: Registering AGOLD 620 MEAS HAL, 10 channels available.
+[    2.860115] intel_adc: 	chan=0, id=21
+[    2.860134] intel_adc: 	chan=1, id=8
+[    2.860152] intel_adc: 	chan=2, id=17
+[    2.860169] intel_adc: 	chan=3, id=22
+[    2.860186] intel_adc: 	chan=4, id=23
+[    2.860202] intel_adc: 	chan=5, id=24
+[    2.860218] intel_adc: 	chan=6, id=0
+[    2.860235] intel_adc: 	chan=7, id=1
+[    2.860251] intel_adc: 	chan=8, id=2
+[    2.860268] intel_adc: 	chan=9, id=12
+[    2.860284] intel_adc: All HALs were registered, probing the abstraction layer...
+[    2.860332] ag620_meas meas-0: Probing the ADC
+[    2.861703] intel_adc_sensors: platform_name = ag620
+[    2.863426] oct: oct resource: [mem 0xe4d00000-0xe4dfffff] - ioremap: c4700000
+[    2.863426] 
+[    2.864616] oct: Kernel OCT Thread: OCT Thread
+[    2.864724] oct: Gadget fp=fffffffe open failed!
+[    2.866623] usbcore: registered new interface driver snd-usb-audio
+[    2.869175] dsp_audio_drv_probe: ioremap for [mem 0xe3600000-0xe3603fff] returned c0e10000
+[    2.869276] dsp_audio_drv_probe: ioremap for [mem 0xe3604000-0xe3803fff] returned c4880000
+[    2.869755] snd: dsp: read dsp-supply property failed
+[    2.870018] dsp_clock_init set state return 0
+[    2.872648] DSP initialization done 0
+[    2.873840] XGOLD_MACHINE sound.207: ASoC: CPU DAI (null) not registered
+[    2.873957] snd: mac: xgold_mc_probe: unable to register sound card err -517
+[    2.874023] platform sound.207: Driver XGOLD_MACHINE requests probe deferral
+[    2.875656] snd: voice: xgold_voice_probe :
+[    2.876611] xgold_bt_sco btauif-0: No 48k clock available
+[    2.876746] BTAUIF device PM registration success
+[    2.877113] u32 classifier
+[    2.877143]     Actions configured
+[    2.877184] Netfilter messages via NETLINK v0.30.
+[    2.877286] nf_conntrack version 0.5.0 (14921 buckets, 59684 max)
+[    2.877875] ctnetlink v0.93: registering with nfnetlink.
+[    2.878300] xt_time: kernel timezone is -0000
+[    2.878354] ip_set: protocol 6
+[    2.879883] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.880133] arp_tables: (C) 2002 David S. Miller
+[    2.880943] TCP: cubic registered
+[    2.880987] Initializing XFRM netlink socket
+[    2.881507] NET: Registered protocol family 10
+[    2.883131] mip6: Mobile IPv6
+[    2.883218] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.896650] sit: IPv6 over IPv4 tunneling driver
+[    2.897426] NET: Registered protocol family 17
+[    2.897510] NET: Registered protocol family 15
+[    2.897603] l2tp_core: L2TP core driver, V2.0
+[    2.897659] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    2.898362] pmic_swfg_hal: pmic_swfg_hal_init: was executed
+[    2.900781] Using IPI No-Shortcut mode
+[    2.901252] registered taskstats version 1
+[    2.901594] regulator-dummy: disabling
+[    2.903820] snd-soc-dummy snd-soc-dummy: ASoC: Failed to create platform debugfs directory
+[    2.903934] control 2:0:0:DSP Audio send cmd:0 is already present
+[    2.903986] Speech Probe speech_probe.176: ASoC: Failed to add DSP Audio send cmd: -16
+[    2.904088] snd: jack: xgold_jack_setup
+[    2.906239] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.906506] XGOLD_MACHINE sound.207: ag620_afe <-> pcm_voice.175 mapping ok
+[    2.908485] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.910402] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.910690] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.910912] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.911125] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.913085] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.916190] input: xgold_afe-audio Headset as /devices/sound.207/sound/card0/input2
+[    2.917030] snd: jack: ioremap c0e0ec00
+[    2.917398] snd: jack: could not get default pinstate
+[    2.917431] snd: jack: could not get sleep pinstate
+[    2.917451] snd: jack: could not get inactive pinstate
+[    2.917623] snd: jack: of_xgold_jack_probe: use ACD interrupt
+[    2.917654] snd: jack: of_xgold_jack_probe jack->jack_irq = 282
+[    2.917703] snd: jack: xgold_jack_acc_det_write: write val 0x800B, mode IO
+[    2.919042] snd: jack: xgold_jack_detection
+[    2.919092] snd: jack: --> configure_vbias: XGOLD_VBIAS_ENABLE
+[    2.919578] snd: jack: <-- configure_vbias
+[    2.920412] Getting PM state handlers: OK
+[    2.920909] ag620-vbus-det ag620_chrg-0: sofia charger detect driver probe
+[    2.921410] file system registered
+[    2.922231] ag620-vbus-det ag620_chrg-0: chg_ctl_reg_1 = 0x808cc523, c0_fs_reg_1 = 0x000001a2
+[    2.922938] using random self ethernet address
+[    2.922982] using random host ethernet address
+[    2.923090] Number of LUNs=2
+[    2.923115] Mass Storage Function, version: 2009/09/11
+[    2.923139] LUN: removable file: (no medium)
+[    2.923161] LUN: removable file: (no medium)
+[    2.923518] android_usb gadget: android_usb ready
+[    2.927234] dwc2 e2100000.usb: bound driver android_usb
+[    2.927917] ===========================icn83xx_ts_init=====================
+[    2.928013] nvt_driver_init step
+[    2.928070] i2c-core: driver [NVT-ts] using legacy suspend method
+[    2.928091] i2c-core: driver [NVT-ts] using legacy resume method
+[    2.929082] i2c i2c-3: sensor_probe: ps_tmd2772,0xb613f800
+[    2.929212] i2c i2c-3: M13: NACK recvd.
+[    2.929238] i2c i2c-3: xgold_i2c_error_reg_status, device: 0x38 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.929264] [ALS/PS] tmd2772_init_client 220 : init dev: -121
+[    2.929283] sensor_initial:fail to init sensor
+[    2.929300] sensor_chip_init:fail to init sensor
+[    2.929321] i2c i2c-3: sensor_probe failed -121
+[    2.929321] 
+[    2.929374] sensors: probe of 3-0038 failed with error -121
+[    2.929463] i2c i2c-3: sensor_probe: ls_tmd2772,0xb610ae00
+[    2.929503] sensors 3-0039: could not get default pinstate
+[    2.929525] sensors 3-0039: could not get sleep pinstate
+[    2.929547] sensors 3-0039: could not get inactive pinstate
+[    2.930439] dll sensor_get_id:devid=0x39
+[    2.930461] sensor_chip_init:ls_tmd2772:devid=0x39,ops=0x83040140
+[    2.930700] input: lightsensor-level as /devices/soc0/e0000000.noc/ef010000.l2_noc/e1000000.ahb_per/e1600000.i2c_3/i2c-3/3-0039/input/input3
+[    2.930927] sensor_misc_device_register:miscdevice: lightsensor
+[    2.930952] sensor_probe:initialized ok,sensor name:ls_tmd2772,type:5,id=60
+[    2.930952] 
+[    2.931156] sensor_init: Probe name sensors
+[    2.931198] sensor-dev.c v1.4 add angle calculation support between two gsensors 2013-09-01
+[    2.931522] intel-usb2phy e4800000.phy: Avail curr from USB = 0
+[    2.931600] rk818-battery rk818-battery: limit current:0
+[    2.931665] intel-usb2phy e4800000.phy: OTG runtime suspend
+[    2.934018] rk818-rtc rk818-rtc: setting system clock to 2013-01-21 08:50:09 UTC (1358758209)
+[    2.934115] idi_bus_match:i2c_5-0-xgold-i2c-idi: Using peripheral type for registration process is deprecated
+[    2.934151] idi_bus_match:i2c_5-0-xgold-i2c-idi: Please idi device id and driver id table
+[    2.934604] xgold-i2c-idi i2c_5: Error parsing intel,i2c,b100 propery of node i2c_5
+[    2.934647] xgold-i2c-idi i2c_5: Error during dts file parsing
+[    2.934717] xgold-i2c-idi: probe of i2c_5 failed with error -22
+[    2.935467] CIF ISP2.0 xgold_v4l2_drv_probe: probing...
+[    2.935613] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1233) ERR: could not get default pinstate
+[    2.935647] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1239) ERR: could not get pins_sleep pinstate
+[    2.935671] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1245) ERR: could not get pins_inactive pinstate
+[    2.935918] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.936027] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.936137] cif_isp20 e2000000.cif: failed with error 0
+[    2.936168] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-0
+[    2.936237] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.936337] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.936440] cif_isp20 e2000000.cif: failed with error 0
+[    2.936470] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-1
+[    2.936494] CIF ISP2.0 cif_isp20_img_srcs_init(1063) ERR: failed with error -14
+[    2.936517] CIF ISP2.0 cif_isp20_create(5676) ERR: failed with error -14
+[    2.936893] ag620_swfgh: dt: parsing 'sense_resistor_mohm' failed
+[    2.936954] ag620_swfgh: probe of fuel_gauge_hal-0 failed with error -22
+[    2.937037] idi_bus_match:brown_out-0-ag6x0_brown_out: Using peripheral type for registration process is deprecated
+[    2.937072] idi_bus_match:brown_out-0-ag6x0_brown_out: Please idi device id and driver id table
+[    2.937161] ag6x0_brown_out: brown_out_drv_probe: Getting PM state handlers: OK
+[    2.937681] ag6x0_bat_hal: bat_drv_hal_probe: Getting PM state handlers: OK
+[    2.937763] dt: parsing 'supp_batids-map' failed
+[    2.941020] ag620_meas: AGOLD TEMP_ALERT_REG 0x00000040 at boot
+[    2.941068] ag620_meas: AGOLD thermal protection disabled at 295749 mK,
+[    2.941089] ag620_meas: TEMP_ALERT_REG 0x00000050
+[    2.944419] intel_sofia_watchdog e4800000.watchdog: intel_sofia_watchdog_probe ok 141
+[    2.946563] ALSA device list:
+[    2.946607]   #0: xgold_afe-audio
+[    2.947239] Freeing unused kernel memory: 336K (8307f000 - 830d3000)
+[    2.947582] Write protecting the kernel text: 6880k
+[    2.947972] Write protecting the kernel read-only data: 2612k
+[    2.948002] NX-protecting the kernel data: 5408k
+[    2.974680] rk818-battery rk818-battery: limit current:0
+[    3.144614] vdump: Gadget fp=fffffffe open failed!
+[    3.175630] snd: jack: read_state: measured voltage 2084
+[    3.435279] snd: jack: read_state: measured voltage 2084
+[    3.435317] snd: jack: Headphone/headset removed
+[    3.435338] snd: jack: --> configure_vbias: XGOLD_VBIAS_ULP_ON
+[    3.435634] snd: jack: <-- configure_vbias
+[    3.494183] kpd-xgold e4200000.keypad: keypad open
+[    3.494229] keychord: using input dev kpd-xgold for fevent
+[    3.494277] keychord: using input dev xgold-on-button for fevent
+[    3.494325] keychord: using input dev xgold_afe-audio Headset for fevent
+[    3.531796] EXT4-fs (mmcblk0p14): mounted filesystem without journal. Opts: (null)
+[    3.533480] EXT4-fs (mmcblk0p15): Ignoring removed nomblk_io_submit option
+[    3.660257] EXT4-fs (mmcblk0p15): 2 orphan inodes deleted
+[    3.660309] EXT4-fs (mmcblk0p15): recovery complete
+[    3.668646] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.736698] EXT4-fs (mmcblk0p15): shmounted filesylst@sm with ordgrre/d  $d ata mode. Opts: noauto_da_alloc,discard,journal_async_commit
+[    3.737832] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    3.750332] EXT4-fs (mmcblk0p13): recovery complete
+[    3.751212] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.806684] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: (null)
+[    3.895634] EXT4-fs (mmcblk0p15): Unrecognized mount option "background_gc=on" or missing value
+[    3.912934] zram0: detected capacity change from 0 to 419430400
+[    3.925178] rk818-battery rk818-battery: set charge to analog termination mode
+[    4.027467] Adding 409596k swap on /dev/block/zram0.  Priority:-1 extents:1 across:409596k SS
+[    4.057025] binder: 146:146 transaction failed 29189, size 0-0
+[    4.075575] random: init urandom read with 72 bits of entropy available
+[    4.386424] android_usb: already disabled
+[    4.389591] EXT4-fs: Warning: mounting with data=journal disables delayed allocation and O_DIRECT support!
+[    4.394151] read descriptors
+[    4.394232] read strings
+[    4.394373] mtp_bind_config
+[    4.401071] dwc2 e2100000.usb: s3c_hsotg_corereset: reset failed, GRSTCTL=00000000
+[    4.411842] EXT4-fs (mmcblk0p5): recovery complete
+[    4.413197] EXT4-fs (mmcblk0p5): mounted filesystem with journalled data mode. Opts: data=journal
+[    4.524239] warning: `rpc-daemon' uses 32-bit capabilities (legacy support in use)
+[    4.568218] input: vtl_ts as /devices/virtual/input/input4
+[    4.674225] Loading modules backported from  version 
+[    4.674273] Backport generated by backports.git 
+[    4.837057] cfg80211: Calling CRDA to update world regulatory domain
+[    4.874689] oct: Gadget fp=fffffffe open failed!
+[    5.154668] vdump: Gadget fp=fffffffe open failed!
+[    5.355771] Intel(R) Wireless WiFi driver for Linux, in-tree:d
+[    5.355832] Copyright(c) 2003- 2014 Intel Corporation
+[    5.367601] IWL_IDI wifi-0: No Wifi clock available
+[    5.367679] IWL_IDI wifi-0: No RTC clock available
+[    5.368592] IWL_IDI wifi-0: Selected bus type = IDI
+[    5.368730] Init uCode memory dma successfully.
+[    5.564302] IWL_IDI wifi-0: loaded firmware version 25.228.9.0 op_mode iwlmvm
+[    5.765555] IWL_IDI wifi-0: Detected Intel(R) Dual Band Wireless BGN7999, REV=0x0
+[    5.855281] IWL_IDI wifi-0: Loaded NVM file nvmData (8800 bytes)
+[    5.858501] success to read saved mac addr.
+[    6.048500] graphics fb0: rockchip fb use 3 buffers
+[    6.097412] rockchip-vop vop0: blank mode:0
+[    6.790561] random: nonblocking pool is initialized
+[    6.884600] oct: Gadget fp=fffffffe open failed!
+[    7.164652] vdump: Gadget fp=fffffffe open failed!
+[    8.894599] oct: Gadget fp=fffffffe open failed!
+[    9.174644] vdump: vdump_get_config
+[    9.174749] vdump: fp_cfg:fffffffe
+[    9.174774] vdump: vdump config not exist
+[    9.174796] vdump: Kernel vdump Thread running.
+[   10.905675] oct: Gadget /dev/ttyGS1 open succeeded.
+[   14.472863] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[   14.472928] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[   14.472949] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[   14.472969] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[   14.472988] lowmemorykiller: oom_adj 3 => oom_score_adj 176
+[   14.473007] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[   14.473026] lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+[   15.755186] acc_open
+[   15.755307] acc_release
+[   17.280726] dwc2 e2100000.usb: _dwc2_hcd_resume()
+[   17.281586] dwc2 e2100000.usb: _dwc2_hcd_suspend()
+[   33.611664] rk_iommu e1000300.vop_mmu: Detached IOMMU with pgtable 0x36072000
+[   33.612834] rockchip-vop vop0: blank mode:4
+[   33.638032] PM: suspend entry 2013-01-21 08:50:40.204099809 UTC
+[   33.638190] suspend step=1
+[   33.638230] PM: Syncing filesystems ... done.
+[   33.667732] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[   33.670608] Freezing remaining freezable tasks ... (elapsed 0.002 seconds) done.
+[   33.672719] suspend step=2
+[   33.672748] Suspending console(s) (use no_console_suspend to debug)
+[     0.294]
+[     0.299]DDR Version 1.00 20151110
+[     0.312]In
+[     0.318]533MHz
+[     0.326]LPDDR3
+[     0.335](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.361]OUT
+[     0.410]--- Start PSI FLASH ---
+[     0.414]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.418]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.425]FPSI: SCU_RSTSR: 0x00208003
+[     0.535]logic_slb_loader command= status= recovery=
+[     0.558]Jump to SLB:0x00000500
+[     0.706]********the C1 SHTDWN RSTSR is 1 *********
+[     0.711]mode reason 3
+[     0.907]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.912]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     0.921]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.059]the rk818 chid is 818
+[     1.066]charger driver is success register
+[     1.071]the mea voltage is 3961
+[     1.074]Load SLB without any Charger
+[     1.078]the flag is 1
+[     1.081]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.087]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.092]slb_mode_detect_by_IRAM line=431 invalid mode in IRAM.
+[     1.118]Transition to mode 2
+[     1.212]------display screen start------
+[     1.223]width=600,height=600,bpp=4,start_block=1
+[     1.280]Display Driver Version: v1.1.7
+[     1.295]display_drv_update_screen: ret=0, boot logo on=1
+[     0.281]
+[     0.285]DDR Version 1.00 20151110
+[     0.298]In
+[     0.304]533MHz
+[     0.312]LPDDR3
+[     0.321](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.347]OUT
+[     0.397]--- Start PSI FLASH ---
+[     0.400]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.404]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.411]FPSI: SCU_RSTSR: 0x00108003
+[     0.521]logic_slb_loader command= status= recovery=
+[     0.543]Jump to SLB:0x00000500
+[     0.691]********the C0 SHTDWN RSTSR is 1 *********
+[     0.696]mode reason 3
+[     0.891]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.896]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     0.906]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.044]the rk818 chid is 818
+[     1.051]charger driver is success register
+[     1.056]the mea voltage is 3951
+[     1.059]Load SLB without any Charger
+[     1.063]the flag is 1
+[     1.066]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.071]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.077]slb_mode_detect_by_IRAM line=431 invalid mode in IRAM.
+[     1.103]Transition to mode 2
+[     1.197]------display screen start------
+[     1.208]width=600,height=600,bpp=4,start_block=1
+[     1.265]Display Driver Version: v1.1.7
+[     1.281]display_drv_update_screen: ret=0, boot logo on=1
+[     1.473]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.487]vmm compiled time:15-12-10/11:27:39
+[     1.491]Cleaning up before jumping to system: 0x1CC48A20
+[     0.281]
+[     0.285]DDR Version 1.00 20151110
+[     0.298]In
+[     0.304]533MHz
+[     0.312]LPDDR3
+[     0.321](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.347]OUT
+[     0.397]--- Start PSI FLASH ---
+[     0.400]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.404]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.411]FPSI: SCU_RSTSR: 0x00108003
+[     0.521]logic_slb_loader command= status= recovery=
+[     0.544]Jump to SLB:0x00000500
+[     0.692]********the C0 SHTDWN RSTSR is 1 *********
+[     0.697]mode reason 3
+[     0.892]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.897]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     0.907]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.044]the rk818 chid is 818
+[     1.052]charger driver is success register
+[     1.057]the mea voltage is 3951
+[     1.060]Load SLB without any Charger
+[     1.063]the flag is 1
+[     1.067]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.072]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.078]slb_mode_detect_by_IRAM line=431 invalid mode in IRAM.
+[     1.103]Transition to mode 2
+[     1.197]------display screen start------
+[     1.208]width=600,height=600,bpp=4,start_block=1
+[     1.265]Display Driver Version: v1.1.7
+[     1.281]display_drv_update_screen: ret=0, boot logo on=1
+[     1.472]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.487]vmm compiled time:15-12-10/11:27:39
+[     1.491]Cleaning up before jumping to system: 0x1CC48A20
+[     0.295]
+[     0.299]DDR Version 1.00 20151110
+[     0.312]In
+[     0.318]533MHz
+[     0.326]LPDDR3
+[     0.335](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.361]OUT
+[     0.411]--- Start PSI FLASH ---
+[     0.414]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.418]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.425]FPSI: SCU_RSTSR: 0x00108003
+[     0.535]logic_slb_loader command= status= recovery=
+[     0.557]Jump to SLB:0x00000500
+[     0.705]********the C0 SHTDWN RSTSR is 1 *********
+[     0.710]mode reason 3
+[     0.906]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.911]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     0.920]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.058]the rk818 chid is 818
+[     1.065]charger driver is success register
+[     1.070]the mea voltage is 3960
+[     1.073]Load SLB without any Charger
+[     1.077]the flag is 1
+[     1.081]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.086]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.091]slb_mode_detect_by_IRAM line=431 invalid mode in IRAM.
+[     1.117]Transition to mode 2
+[     1.211]------display screen start------
+[     1.222]width=600,height=600,bpp=4,start_block=1
+[     1.279]Display Driver Version: v1.1.7
+[     1.295]display_drv_update_screen: ret=0, boot logo on=1
+[     1.486]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.501]vmm compiled time:15-12-10/11:27:39
+[     1.505]Cleaning up before jumping to system: 0x1CC48A20
+[     0.418]
+[     0.419]DDR Version 1.00 20151110
+[     0.423]In
+[     0.424]533MHz
+[     0.427]LPDDR3
+[     0.431](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.438]OUT
+[     0.483]--- Start PSI FLASH ---
+[     0.486]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.490]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.497]FPSI: SCU_RSTSR: 0x80008003
+[     0.608]logic_slb_loader command= status= recovery=
+[     0.630]Jump to SLB:0x00000500
+[     0.788]-----BOOT_REASON_LONG_ON_KEY-----
+[     0.792]mode reason 1
+[     0.987]ptest_and_non_cali_detect valid_next_mode=1 
+
+[     0.992]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     1.002]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.139]the rk818 chid is 818
+[     1.147]charger driver is success register
+[     1.152]the mea voltage is 3965
+[     1.155]Load SLB without any Charger
+[     1.158]the flag is 1
+[     1.162]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.167]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.193]Transition to mode 2
+[     1.287]------display screen start------
+[     1.298]width=600,height=600,bpp=4,start_block=1
+[     1.355]Display Driver Version: v1.1.7
+[     1.371]display_drv_update_screen: ret=0, boot logo on=1
+[     1.562]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.577]vmm compiled time:15-12-10/11:27:39
+[     1.581]Cleaning up before jumping to system: 0x1CC48A20
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.14.0 (wlq@rk-intel-1) (gcc version 4.6.4 (Ubuntu/Linaro 4.6.4-6ubuntu2) ) #73 SMP PREEMPT Mon Dec 14 10:43:58 CST 2015
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000001bbfffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] bootconsole [earlyxgold0] enabled
+[    0.000000] APIC Verbosity level sofia not recognised use apic=verbose or apic=debug
+[    0.000000] Malformed early option 'apic'
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x00000000023fffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002400000-0x000000000248000f] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002480010-0x000000001bbfffff] usable
+[    0.000000] reserve setup_data: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] e820: last_pfn = 0x40000 max_arch_pfn = 0x1000000
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7050400070106, new 0x7010600070106
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000] init_memory_mapping: [mem 0x3fe00000-0x3fffffff]
+[    0.000000] init_memory_mapping: [mem 0x3c000000-0x3fdfffff]
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x1bbfffff]
+[    0.000000] init_memory_mapping: [mem 0x20000000-0x3bffffff]
+[    0.000000] Reserved memory: 'region@0' reserve CMA default limit 0x00000000, size 135 MiB
+[    0.000000] cma: CMA: reserved 136 MiB at 37800000
+[    0.000000] RAMDISK: [mem 0x00400000-0x005affff]
+[    0.000000] 0MB HIGHMEM available.
+[    0.000000] 1024MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 40000000
+[    0.000000]   low ram: 0 - 40000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   Normal   [mem 0x01000000-0x3fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009ffff]
+[    0.000000]   node   0: [mem 0x00100000-0x1bbfffff]
+[    0.000000]   node   0: [mem 0x20000000-0x3fffffff]
+[    0.000000] Using APIC driver sofia
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] e820: [mem 0x40000000-0xffffffff] available for PCI devices
+[    0.000000] Booting XGOLD kernel
+[    0.000000] setup_percpu: NR_CPUS:4 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 12 pages/cpu @b6f48000 s27392 r0 d21760 u49152
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 242591
+[    0.000000] Kernel command line: androidboot.bootloader=1550.400_M1S1 androidboot.serialno=0123456789012345678901234567890 pmu_rst_src=0x00010008 pmu_shutdwn_src=0x00000000 scu_rsts=0x80008003 scu_bcfg=0x00078100 loader_voltage=3965 androidboot.mode=normal panelsource=0 console=ttyFIQ0,115200n8 idle=halt earlyprintk=xgold notsc apic=sofia androidboot.hardware=sofiaboard nolapic_pm firmware_class.path=/system/vendor/firmware androidboot.selinux=permissive x86_intel_xgold_timer=soctimer_only vmalloc=512m slub_max_order=2 mvpipe.at_dbg_port=1
+[    0.000000] tsc: Kernel compiled with CONFIG_X86_TSC, cannot disable TSC completely
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] Initializing HighMem for node 0 (00000000:00000000)
+[    0.000000] Memory: 813944K/978556K available (6877K kernel code, 1248K rwdata, 2608K rodata, 336K init, 1872K bss, 164612K reserved, 0K highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfffa7000 - 0xfffff000   ( 352 kB)
+[    0.000000]     pkmap   : 0xff800000 - 0xffa00000   (2048 kB)
+[    0.000000]     vmalloc : 0xc0800000 - 0xff7fe000   (1007 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+[    0.000000]       .init : 0x8307f000 - 0x830d3000   ( 336 kB)
+[    0.000000]       .data : 0x82cb77b1 - 0x8307d040   (3862 kB)
+[    0.000000]       .text : 0x82600000 - 0x82cb77b1   (6877 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: HWalign=64, Order=0-2, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] NR_IRQS:16 nr_irqs:16 0
+[    0.000000] vpic_of_init: Initializing SoFIA vpic
+[    0.000000] vpic_of_init: xgold-vpic register remapping: Reg: c0800000, entries c0804000
+[    0.000000] irq-xgold: new irq domain: intel,sofia-main-hirq - 1 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_eint - 30 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_abb - 32 irqs
+[    0.000000] irq-xgold: new irq domain: intel,sofia-hirq - 512 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_pmu - 24 irqs
+[    0.000000] --> x86_xgold_time_init
+[    0.000000] Intel x86 xgold using soctimer only
+[    0.000000] xgold_of_timer_map:Initializing STM FAF to 0x319
+[    0.000000] xgold_of_timer_map:Clock event device rating set to 0x32
+[    0.000000] XGOLD STM:Clock frequency 26MHz
+[    0.000000] XGOLD STM:Clock event min precision 1000000ns
+[    0.000000] XGOLD STM:Clock event max precision 1000000000ns
+[    0.000000] xgold_of_timer_map: Masking cpu0 for STM usage
+[    0.000000] xgold_of_timer_map: Masking cpu1 for STM usage
+[    0.000000] XGOLD STM timer used to provide sched clock
+[    0.000000] sched_clock: 32 bits at 26MHz, resolution 38ns, wraps every 165191049177ns
+[    0.000000] XGOLD STM timer clkevent [1000000ns-1000000000ns]
+[    0.000000] xgold_timer_cc_init:Clock event device rating set to 0x32
+[    0.000000] xgold_timer_cc_init:Input clock rate set to 0x18cba80
+[    0.000000] xgold_timer_cc_init:Clock event min set to 1000000
+[    0.000000] xgold_timer_cc_init:Clock event max set to 1000000000
+[    0.000000] xgold_timer_cc_init: Set cpu2 as valid for CC usage
+[    0.000000] xgold_timer_cc_init: Set cpu3 as valid for CC usage
+[    0.000000] CAPCOM: Registering cc event HW:
+[    0.000000] 	26000000 Hz, mask c, rating 50
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 4,cc id 0, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 8,cc id 1, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] <-- x86_xgold_time_init
+[    0.000000] logger: created 256K log 'log_kern_bot'
+[    0.000000] console [logk-1] enabled
+[    0.000000] logger: register logcat console
+[    0.000000] xgold_calibrate_tsc: Run it for 10 ms
+[    0.000000] xgold_calibrate_tsc: LAPIC Timer frequency is 260.0326 MHz.
+[    0.000000] tsc: Detected 9372.182 MHz processor
+[    0.050000] Calibrating delay loop... 1036.28 BogoMIPS (lpj=5181440)
+[    0.080138] pid_max: default: 32768 minimum: 301
+[    0.084735] Security Framework initialized
+[    0.088724] SELinux:  Initializing.
+[    0.090114] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.096605] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.146846] Initializing cgroup subsys debug
+[    0.148275] Initializing cgroup subsys freezer
+[    0.150625] CPU: Physical Processor ID: 0
+[    0.153978] CPU: Processor Core ID: 2
+[    0.157776] Last level iTLB entries: 4KB 48, 2MB 0, 4MB 0
+[    0.157776] Last level dTLB entries: 4KB 128, 2MB 16, 4MB 16, 1GB 0
+[    0.157776] tlb_flushall_shift: 6
+[    0.163702] Freeing SMP alternatives memory: 24K (830d3000 - 830d9000)
+[    0.167800] smpboot: CPU0: Genuine Intel(R) CPU         @ 728 (fam: 06, model: 5d, stepping: 01)
+[    0.251864] last_log: 0x36a00000 map to 0xc0f81000 and copy to 0xc1003000, size 0x80000 early 0x295a (version 3.0)
+[    0.259440] Performance Events: generic architected perfmon, full-width counters, Intel PMU driver.
+[    0.265995] ... version:                3
+[    0.269996] ... bit width:              40
+[    0.270033] ... generic registers:      2
+[    0.273988] ... value mask:             000000ffffffffff
+[    0.279301] ... max period:             000000ffffffffff
+[    0.280032] ... fixed-purpose events:   3
+[    0.283988] ... event mask:             0000000700000003
+[    0.320055] Initializing Xgold Reset controller driver.
+[    0.323929] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.329191] Registering Xgold Reset controller @c0806000
+[    0.330047] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.336721] Registering Xgold Reset controller @c0856010
+[    0.340245] xgold_reset_do_sanity: Using R/W register access scheme
+[    0.346292] Registering Xgold Reset controller @c0858100
+[    0.370241] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.390410] x86: Booting SMP configuration:
+[    0.391746] .... node  #0, CPUs:      #1
+[    0.050000] Initializing CPU#1
+[    0.430776]  #2
+[    0.050000] Initializing CPU#2
+[    0.435488] TSC synchronization [CPU#0 -> CPU#2]:
+[    0.440000] Measured 1296 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.440000] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.480399]  #3
+[    0.050000] Initializing CPU#3
+[    0.500169] x86: Booted up 1 node, 4 CPUs
+[    0.504402] smpboot: Total of 4 processors activated (4145.15 BogoMIPS)
+[    0.520321] pinctrl core: initialized pinctrl subsystem
+[    0.522953] regulator-dummy: no parameters
+[    0.529212] NET: Registered protocol family 16
+[    0.531590] cpuidle: using governor ladder
+[    0.534051] cpuidle: using governor menu
+[    0.537973] RÇB¥Ñ*¹Ñ?¢½
+???2¥Å"	?ÉùjR´		&©&ÓS¦iëËk?«Ò+W/T©*LWY·X±¶ed
+[    0.5442[0] bootconsole [earlyxg ld0] disabled
+ 0.540671] console [ttyFIQ0] enabled
+[    0.544260] bootconsole [earlyxgold0] disabled
+[    0.548814] Registered fiq debugger ttyFIQ0
+[    0.550605] Initializing DMA ops for non coherent architecture
+[    0.550627] --> xgold_init_machine
+[    0.550807] register chip revision 0x10
+[    0.579277] rk_iommu e2d00800.vpu_mmu: (vpu) Enter
+[    0.579446] rk_iommu e2d00800.vpu_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579472] rk_iommu e2d00800.vpu_mmu: (vpu) Initialized
+[    0.579722] rk_iommu e2d00440.hevc_mmu: (hevc) Enter
+[    0.579832] rk_iommu e2d00440.hevc_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579857] rk_iommu e2d00440.hevc_mmu: (hevc) Initialized
+[    0.580114] rk_iommu e1000300.vop_mmu: (vop) Enter
+[    0.580235] rk_iommu e1000300.vop_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.580258] rk_iommu e1000300.vop_mmu: (vop) Initialized
+[    0.752211] <-- xgold_init_machine
+[    0.754075] xgold_pm_of_init: 120 pm users added
+[    0.755327] xgold_pm_of_init: 36 pm class added
+[    0.758220] pinctrl-single e4600000.pinmux: 640 pins at pa c0862000 size 2560
+[    0.758974] pinctrl-single e6300000.pinmux: 384 pins at pa c0864000 size 1536
+[    0.759687] gpio: gpio: io: linux-@:c0866000
+[    0.759709] gpio: XGold gpio probed base:0 num:106 gpios from gpio
+[    0.759929] gpio: missing property:intel,gpio-to-irq-num
+[    0.759960] gpio: gpio: io: linux-@:c0868000
+[    0.759978] gpio: XGold gpio probed base:107 num:45 gpios from gpio
+[    0.760552] VPOWER: Running in async mode
+[    0.760604] fmdev_init()
+[    0.760733] fmdev_init(): Success! retval: 0
+[    0.762864] pmic_reg_access: cannot find node 'vmm_pmic-ext'
+[    0.783978] bio: create slab <bio-0> at 0
+[    0.787288] xgold_cpuidle_init: Initializing xgold cpuidle driver
+[    0.787331] idle xgold: Name | latency | residency | power | flags | vmmid
+[    0.787352] 	S0 [mclk gated in MC4]	 22	 50	 3	 1 1
+[    0.787923] Enter xgold_dma_probe
+[    0.788656] pl08xdmac pl08xdmac: initialized 8 virtual memcpy channels
+[    0.788685] pl08xdmac pl08xdmac: initialized 15 virtual slave channels
+[    0.790468] pl08xdmac pl08xdmac: DMA: PL080 rev0 at 0xe0100000 irq 106
+[    0.791217] Registering device PM controlled regulator
+[    0.791712] lmmc1: 1800 <--> 2900 mV 
+[    0.792011] #PM: Error in dev
+[    0.792033] regulator regulator.2: Error while setting disable state
+[    0.792053] lemmc: 1800 <--> 2900 mV 
+[    0.792283] lcd: 2900 mV 
+[    0.792514] XGOLD Network On Chip (NoC) initialisation
+[    0.793034] xgold-noc ef000000.l1_noc: XGOLD NoC driver initialization ef000000.l1_noc
+[    0.793447] xgold-noc ef000000.l1_noc: 3 probe(s), 4 filter(s), 2 counter(s)
+[    0.793520] xgold-noc ef000000.l1_noc: intel,LCDC-qos-settings added to list(0)
+[    0.793583] xgold-noc ef000000.l1_noc: intel,VPU-qos-settings added to list(0)
+[    0.793632] xgold-noc ef000000.l1_noc: intel,VPU128R-qos-settings added to list(0)
+[    0.793689] xgold-noc ef000000.l1_noc: intel,CPU1-qos-settings added to list(1)
+[    0.793752] xgold-noc ef000000.l1_noc: intel,GPUGP-qos-settings added to list(0)
+[    0.793813] xgold-noc ef000000.l1_noc: intel,GPUPP-qos-settings added to list(0)
+[    0.793865] xgold-noc ef000000.l1_noc: intel,CIF-qos-settings added to list(0)
+[    0.793915] xgold-noc ef000000.l1_noc: intel,RGA-qos-settings added to list(0)
+[    0.796325] xgold-noc ef010000.l2_noc: XGOLD NoC driver initialization ef010000.l2_noc
+[    0.796767] xgold-noc ef010000.l2_noc: 1 probe(s), 4 filter(s), 2 counter(s)
+[    0.796793] xgold-noc ef010000.l2_noc: no QoS config list
+[    0.798358] SCSI subsystem initialized
+[    0.799113] usbcore: registered new interface driver usbfs
+[    0.799180] usbcore: registered new interface driver hub
+[    0.799517] usbcore: registered new device driver usb
+[    0.800884] intel-usb2phy e4800000.phy: iphy->otg_host_det 0
+[    0.800922] intel-usb2phy e4800000.phy: power budget set to 500 mA
+[    0.802338] intel-usb2phy e4800000.phy: OTG runtime idle
+[    0.803311] I2C: Enterring xgold_i2c_core_probe
+[    0.806973] i2c i2c-1: 1 i2c clients have been registered at 0x0c
+[    0.807513] i2c i2c-1: 2 i2c clients have been registered at 0x0c
+[    0.808114] i2c i2c-1: 3 i2c clients have been registered at 0x0c
+[    0.810031] I2C: Enterring xgold_i2c_core_probe
+[    0.814660] of_dma_request_slave_channel: dma-names property of node '/xgold/noc/l2_noc/ahb_per@1/i2c_4' missing or empty
+[    0.814692] I2C: Enterring xgold_i2c_core_probe
+[    0.820053] Linux video capture interface: v2.00
+[    0.821121] rk_ion heap cma-heap base:0x00000000 length:0x141557760 type 4
+[    0.822330] Advanced Linux Sound Architecture Driver Initialized.
+[    0.822953] i2c-core: driver [syr82x] using legacy suspend method
+[    0.822975] i2c-core: driver [syr82x] using legacy resume method
+[    0.823717] rk818 2-001c: RK81X chip id is rk818
+[    0.824226] rk818 2-001c: ON_SOURCE:0x10 OFF_SOURCE:0x00
+[    0.828777] rk818 2-001c: DATA18 = f1, DATA19 = f0
+[    0.828905] rk818 2-001c: rk818 irq number: 306, notify_usb_det: 0
+[    0.841105] i2c-core: driver [rk818] using legacy suspend method
+[    0.841133] i2c-core: driver [rk818] using legacy resume method
+[    0.841512] rk818-rtc rk818-rtc: rk818_rtc_probe,line=498
+[    0.851605] rk818-rtc rk818-rtc: rtc core: registered rk818 as rtc0
+[    0.851637] rk818-rtc rk818-rtc: per_irq = 313, alm_irq = 312
+[    0.853281] rk818-rtc rk818-rtc: rk818_rtc_probe:ok
+[    0.854697] Switched to clocksource xgold_stm_clocksource
+[    0.855054] i2c-core: driver [lvds] using legacy suspend method
+[    0.855075] i2c-core: driver [lvds] using legacy resume method
+[    0.855656] loader-logo-on:1
+[    0.855681] create rockchip ion client
+[    0.855728] rockchip-fb rockchip-fb: rockchip framebuffer driver probe
+[    0.856884] rockchip-screen screen.206: rockchip screen probe success
+[    0.857571] nanosilicon-lvds nanosilicon-lvds: nanosilicon lvds driver probe success
+[    0.859067] graphics fb0: rockchip framebuffer registered:fb0
+[    0.859720] graphics fb1: rockchip framebuffer registered:fb1
+[    0.859883] graphics fb2: rockchip framebuffer registered:fb2
+[    0.861456] rockchip-vop vop0: vop0: dclk:0>>fps:60 
+[    0.861483] rockchip-vop vop0: wakeup from standby!
+[    0.880168] graphics fb0: fb0:phy:10000000>>vir:c1981000>>len:0xc00000
+[    0.880206] graphics fb0: copy fb data 600 x 600  from  addr:0x10000200 to addr:0x10000000
+[    0.906586] rk_iommu e1000300.vop_mmu: Attached IOMMU with pgtable 0x36072000
+[    0.906617] rockchip-vop vop0: vop0 probe ok, iommu enabled
+[    0.907128] cat66121_hdmi 4-004c: cat66121_hdmi_i2c_probe, line=375
+[    0.907934] CAT66121: reg[0-3] = 0x[54].[49].[12].[16]
+[    0.926930] ----------------------------------------
+[    0.926930] Init HDMITX
+[    0.926930] ----------------------------------------
+[    0.929138] REG_TX_INT_STAT1=0
+[    0.929158] REG_TX_INT_STAT2=0
+[    0.929173] REG_TX_INT_STAT3=0
+[    0.931261] REG_TX_INT_STAT4=0
+[    0.931751] HPD unplug
+[    0.931831] cat66121_hdmi 4-004c: cat66121 hdmi i2c probe ok
+[    0.933876] NET: Registered protocol family 2
+[    0.934670] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.934869] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.934963] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.935058] TCP: reno registered
+[    0.935082] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.935117] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.935362] NET: Registered protocol family 1
+[    0.935401] <<-GTP-INFO->> GTP driver installing...
+[    0.955495] rk818-battery rk818-battery: v=3926, ov=4003, rv=0, c=-753, pwroff_min=0
+[    0.961148] rk818-battery rk818-battery: c=-753, v=3926, relax:0, ocv:=4003, est=4072, calib=-1
+[    0.989311] rk818-battery rk818-battery: battery driver version 3.0.0
+[    0.989696] Trying to unpack rootfs image as initramfs...
+[    1.098106] Freeing initrd memory: 1728K (80400000 - 805b0000)
+[    1.102145] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    1.102327] audit: initializing netlink subsys (disabled)
+[    1.109732] fuse init (API version 7.22)
+[    1.110110] Registering sdcardfs 2.1.3
+[    1.110243] msgmni has been set to 1865
+[    1.121592] alg: No test for stdrng (krng)
+[    1.121870] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    1.121895] io scheduler noop registered
+[    1.122023] io scheduler cfq registered (default)
+[    1.124591] pwm-backlight.203 supply power not found, using dummy regulator
+[    1.132525] rga: create rockchip ion client for RGA
+[    1.132687] rga: Driver loaded successfully
+[    1.133017] mvpipe enumerate instance name at
+[    1.133613] mvpipe enumerate instance name at2
+[    1.134112] mvpipe enumerate instance name atc
+[    1.134616] mvpipe enumerate instance name at2c
+[    1.135275] mvpipe enumerate instance name at-dbg
+[    1.135782] mvpipe enumerate instance name echo
+[    1.136283] mvpipe enumerate instance name secmd
+[    1.136802] mvpipe enumerate instance name sedat0
+[    1.137314] mvpipe enumerate instance name oec_dat
+[    1.137827] mvpipe enumerate instance name vpu
+[    1.138350] mvpipe enumerate instance name vpu_ion
+[    1.138877] mvpipe enumerate instance name GTI
+[    1.139399] mvpipe enumerate instance name veth_ctrl
+[    1.140280] NVM: probe nb_partition =3, name = /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.140682] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.140705] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID023
+[    1.140724] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID024
+[    1.140826] VOEMCRYPTO-FE: Initializing.
+[    1.141344] VOEMCRYPTO-FE: Initialized.
+[    1.141366] vdump: init
+[    1.141506] vdump: Kernel vdump Thread create.
+[    1.141786] vdump: Kernel vdump Thread: vdump Thread
+[    1.141826] vdump: Kernel vdump Thread enter.
+[    1.141848] vdump: vdump_detect[/system/etc/vdump.conf]
+[    1.141898] vdump: Gadget fp=fffffffe open failed!
+[    1.142124] mveth: virtual Ethernet device driver 1.0.
+[    1.142568] mveth enumerate instance name veth0
+[    1.143508] mveth enumerate instance name veth1
+[    1.143979] virtual Ethernet device driver initialized
+[    1.145175] TEE_RPC REGISTERED major : 233
+[    1.145945] IDI AG6x0 client init
+[    1.146009] Registering IDI driver
+[    1.148754] idi idi-0: : Rev: 4   Mod ID: 130   TS Rev: 777
+[    1.148783] idi idi-0: : Software check: 16 channels
+[    1.148802] idi idi-0: : SRB Multiple Source: 0x0000000c
+[    1.148820] idi idi-0: : SRB Error Config: 0x0000000c
+[    1.150304] AG6x0 idi_client-0: AGold using secure access
+[    1.153085] : Miss PM info
+[    1.153638] idi-error idierror-0: imc_idi_error_probe: probe return 0
+[    1.154868] idi_bus_match:btif-0-ttyBT: Using peripheral type for registration process is deprecated
+[    1.154898] idi_bus_match:btif-0-ttyBT: Please idi device id and driver id table
+[    1.154969] ttyBT btif-0: No kernel clock available
+[    1.154990] ttyBT btif-0: No BTIP 78M clock available
+[    1.155007] ttyBT btif-0: No BTIP 104M clock available
+[    1.155025] ttyBT btif-0: No BTIP 32kHz clock available
+[    1.155042] ttyBT btif-0: No BTIP VCXO request available
+[    1.155060] ttyBT btif-0: No BTIP PWM ON request available
+[    1.155077] ttyBT btif-0: No BTIP RF ON request available
+[    1.155195] BTIF device PM registration success
+[    1.155342] btif-0: ttyBT0 at MMIO 0xe7200000 (irq = 0, base_baud = 0) is a XGOLD/BTIF
+[    1.159585] XGOLD USIF serial driver
+[    1.160657] tadi_driver_probe: trace port:[mem 0x80000000-0x80ffffff] - ioremap:c2d80000
+[    1.160685] tadi_driver_probe: Register tdcons console
+[    1.161588] mali-utgard e2e00000.gpu: mali cores = 4
+[    1.161689] mali-utgard e2e00000.gpu: drv_data->pm_states[0].name = disable
+[    1.161713] mali-utgard e2e00000.gpu: drv_data->pm_states[1].name = low_perf
+[    1.161734] mali-utgard e2e00000.gpu: drv_data->pm_states[2].name = mid_perf
+[    1.161756] mali-utgard e2e00000.gpu: drv_data->pm_states[3].name = high_perf
+[    1.161777] mali-utgard e2e00000.gpu: drv_data->pm_states[4].name = ultra_high_perf
+[    1.161798] mali-utgard e2e00000.gpu: mali pm_state init 4[ultra_high_perf]
+[    1.162369] mali-utgard e2e00000.gpu: mali_platform_init, success
+[    1.162546] mali-utgard e2e00000.gpu: Already power up
+[    1.164830] Mali: Mali device driver loaded
+[    1.166397] brd: module loaded
+[    1.169283] loop: module loaded
+[    1.169704] zram: Created 1 device(s) ...
+[    1.170414] xgold Vibrator init
+[    1.170645] inv_mpu_probe    client->irq=303
+[    1.170725] /xgold/noc/l2_noc/ahb_per@1/i2c_3/mpu6xxx: arguments longer than property
+[    1.170773] int_config=16,level_shifter=0,client.addr=68,client.irq=12f
+[    1.170789] 0 -1 0 1 0 0 0 0 1 
+[    1.170845] data->sec_slave_type=2,data->sec_slave_id=18,data->secondary_i2c_addr=d 
+[    1.170862] -1 0 0 0 -1 0 0 0 1 
+[    1.170986] vibra-xgold e6501400.vibrator: AGold vibrator using secure access
+[    1.171013] vibra-xgold e6501400.vibrator: linux_vibrator_time_adjust = 10
+[    1.171034] vibra-xgold e6501400.vibrator: linux_vibrator_intensity = 100
+[    1.171228] vibra-xgold e6501400.vibrator: Vibrator driver probed
+[    1.171741] vcodec e2d00000.vpu_combo: probe device.
+[    1.171858] ->state: high_perf
+[    1.172069] e2d00000.vpu_combo: power on.
+[    1.175192] ->state: disable
+[    1.175329] e2d00000.vpu_combo: power off.
+[    1.175356] vcodec e2d00000.vpu_combo: init success.
+[    1.176503] tun: Universal TUN/TAP device driver, 1.6
+[    1.176528] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.176634] PPP generic driver version 2.4.2
+[    1.176774] PPP BSD Compression module registered
+[    1.176791] PPP Deflate Compression module registered
+[    1.176815] PPP MPPE Compression module registered
+[    1.176833] NET: Registered protocol family 24
+[    1.176930] usbcore: registered new interface driver catc
+[    1.176980] usbcore: registered new interface driver kaweth
+[    1.176999] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.177049] usbcore: registered new interface driver pegasus
+[    1.177099] usbcore: registered new interface driver rtl8150
+[    1.177149] usbcore: registered new interface driver r8152
+[    1.177211] usbcore: registered new interface driver asix
+[    1.177261] usbcore: registered new interface driver ax88179_178a
+[    1.177322] usbcore: registered new interface driver cdc_ether
+[    1.177374] usbcore: registered new interface driver cdc_eem
+[    1.177423] usbcore: registered new interface driver dm9601
+[    1.177473] usbcore: registered new interface driver sr9700
+[    1.177532] usbcore: registered new interface driver CoreChips
+[    1.177594] usbcore: registered new interface driver smsc75xx
+[    1.177656] usbcore: registered new interface driver smsc95xx
+[    1.177706] usbcore: registered new interface driver gl620a
+[    1.177762] usbcore: registered new interface driver net1080
+[    1.177813] usbcore: registered new interface driver plusb
+[    1.177862] usbcore: registered new interface driver rndis_host
+[    1.177919] usbcore: registered new interface driver cdc_subset
+[    1.177969] usbcore: registered new interface driver zaurus
+[    1.178021] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    1.178090] usbcore: registered new interface driver int51x1
+[    1.178141] usbcore: registered new interface driver ipheth
+[    1.178192] usbcore: registered new interface driver cx82310_eth
+[    1.178261] usbcore: registered new interface driver cdc_ncm
+[    1.178313] usbcore: registered new interface driver huawei_cdc_ncm
+[    1.178365] usbcore: registered new interface driver cdc_mbim
+[    1.179785] e2100000.usb supply vusb_d not found, using dummy regulator
+[    1.179874] e2100000.usb supply vusb_a not found, using dummy regulator
+[    1.214834] dwc2 e2100000.usb: EPs: 16, dedicated fifos, 4672 entries in SPRAM
+[    1.309074] inv_mpu_probe    st->irq=303
+[    1.309408] i2c i2c-3: mpu6050 is ready to go!
+[    2.076332] dwc2 e2100000.usb: DWC OTG Controller
+[    2.076380] dwc2 e2100000.usb: new USB bus registered, assigned bus number 1
+[    2.076427] dwc2 e2100000.usb: irq 51, io mem 0x00000000
+[    2.636457] hub 1-0:1.0: USB hub found
+[    2.636534] hub 1-0:1.0: 1 port detected
+[    2.637415] usbcore: registered new interface driver cdc_wdm
+[    2.637502] usbcore: registered new interface driver usb-storage
+[    2.637634] usbcore: registered new interface driver usbserial
+[    2.637685] usbcore: registered new interface driver option
+[    2.637731] usbserial: USB Serial support registered for GSM modem (1-port)
+[    2.637789] dwc_otg: version 3.10b 20-MAY-2013
+[    2.645127] mousedev: PS/2 mouse device common for all mice
+[    2.646163] xgold_keypad_init
+[    2.646702] xgold_keypad_probe main irq = 70
+[    2.646753] kpd-xgold e4200000.keypad: get keypad,kp_in0 error
+[    2.646776] kpd-xgold e4200000.keypad: get keypad,kp_in1 error
+[    2.646797] kpd-xgold e4200000.keypad: get keypad,kp_in2 error
+[    2.646821] kpd-xgold e4200000.keypad: get keypad,kp_in5 error
+[    2.646842] kpd-xgold e4200000.keypad: get keypad,kp_in6 error
+[    2.646862] kpd-xgold e4200000.keypad: get keypad,kp_in7 error
+[    2.646881] =============xgold_keypad_probe, here dump dts configs for kpd=======================
+[    2.646899] num_row_gpios = 4, num_col_gpios = 8
+[    2.646917] kpd-xgold e4200000.keypad: onre irq not found
+[    2.646935] kpd-xgold e4200000.keypad: onfe irq not found
+[    2.647177] input: kpd-xgold as /devices/soc0/e0000000.noc/ef010000.l2_noc/e4000000.ahb_per/e4200000.keypad/input/input0
+[    2.647412] kpd-xgold e4200000.keypad: keypad probed
+[    2.648602] input: xgold-on-button as /devices/soc0/e0000000.noc/ef010000.l2_noc/e6100000.idi_per/e6600000.agold/on_button.178/input/input1
+[    2.648983] i2c-core: driver [imc-ts] using legacy suspend method
+[    2.649002] i2c-core: driver [imc-ts] using legacy resume method
+[    2.649022] ==gsl_ts_init==
+[    2.649085] ret=0
+[    2.649294] 4-0001 supply i2c not found, using dummy regulator
+[    2.649366] 4-0001 supply i2ca not found, using dummy regulator
+[    2.649874] ===========================icn85xx_ts_init=====================
+[    2.650284] l3gd20_gyr: gyroscope sysfs driver init
+[    2.650354] lsm303dlhc_acc accelerometer driver init
+[    2.650404] lsm303dlhc_mag magnetometer driver init
+[    2.650519] sensor_register_slave:mma8452,id=17
+[    2.650540] sensor_register_slave:bma2xx_acc,id=24
+[    2.650556] sensor_register_slave:lsm303c_acc,id=25
+[    2.650573] sensor_register_slave:lsm6ds3_acc,id=26
+[    2.650589] sensor_register_slave:ls_cm36682,id=61
+[    2.650604] sensor_register_slave:ls_tmd2772,id=60
+[    2.650621] sensor_register_slave:ls_rpr0521,id=62
+[    2.650637] sensor_register_slave:ps_tmd2772,id=67
+[    2.650670] sensor_register_slave:ps_cm36682,id=68
+[    2.650686] sensor_register_slave:ps_rpr0521,id=69
+[    2.651337] i2c /dev entries driver
+[    2.651833] lm3642 1-0063: probing...
+[    2.651860] lm3642 1-0063: probing successful
+[    2.651961] wv511 1-000c-2: probing...
+[    2.651984] wv511 1-000c-2: probing successful
+[    2.652069] ad5823 1-000c: probing...
+[    2.652096] ad5823 1-000c: probing successful
+[    2.652232] vm149c 1-000c-1: probing...
+[    2.652254] vm149c 1-000c-1: probing successful
+[    2.652490] OV8858 1-0010: probing...
+[    2.652544] OV8858.pltfrm_camera_module_get_data: camera module has auto focus controller vm149c
+[    2.652636] OV8858.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.652663] OV8858.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.679886] i2c i2c-1: M13: NACK recvd.
+[    2.679917] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.679942] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.680002] i2c i2c-1: M13: NACK recvd.
+[    2.680021] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.680044] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300c failed with error -121
+[    2.680065] OV8858.OV8858_check_camera_id(2941) ERR: register read failed, camera module powered off?
+[    2.680084] OV8858.OV8858_check_camera_id(2976) ERR: failed with error (-121)
+[    2.680188] OV8858.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.680212] OV8858 1-0010: probing failed with error (-121)
+[    2.680260] OV8858: probe of 1-0010 failed with error -22
+[    2.680445] dw9714 1-000c-3: probing...
+[    2.680469] dw9714 1-000c-3: probing successful
+[    2.680840] ov2680 1-0036: probing...
+[    2.680925] ov2680.pltfrm_camera_module_get_data(409) ERR: could not get module rockchip,camera-module-orientation from dts!
+[    2.680952] ov2680.pltfrm_camera_module_get_data(420) ERR: could not get module rockchip,camera-module-flip from dts!
+[    2.680975] ov2680.pltfrm_camera_module_get_data(431) ERR: could not get module rockchip,camera-module-mirror from dts!
+[    2.680999] ov2680.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.681023] ov2680.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.681163] ov2680.pltfrm_camera_module_init_gpio: reset gpio has been inited, return!
+[    2.718275] i2c i2c-1: M13: NACK recvd.
+[    2.718307] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718332] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300a failed with error -121
+[    2.718393] i2c i2c-1: M13: NACK recvd.
+[    2.718413] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718435] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.718456] ov2680.ov2680_check_camera_id(850) ERR: register read failed, camera module powered off?
+[    2.718475] ov2680.ov2680_check_camera_id(868) ERR: failed with error (-121)
+[    2.718578] ov2680.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.718601] ov2680 1-0036: probing failed with error (-121)
+[    2.718646] ov2680: probe of 1-0036 failed with error -121
+[    2.720157] usbcore: registered new interface driver uvcvideo
+[    2.720180] USB Video Class driver (1.1.1)
+[    2.720195] FMR: Intel FM Radio driver version : 1.00
+[    2.720227] idi_bus_match:fmr-0-ag6x0_fmr: Using peripheral type for registration process is deprecated
+[    2.720249] idi_bus_match:fmr-0-ag6x0_fmr: Please idi device id and driver id table
+[    2.720322] FMR: Device probe called
+[    2.720341] FMR: V4l2 device registration
+[    2.720482] FMR: Registration with Frequency manager successful
+[    2.720543] FMR: FM Radio device PM registration successful
+[    2.720633] FMR: driver initialised successfully
+[    2.722050] spcu_thermal e4700000.spcu_thermal0: Thermal zone device registered, type=coretemp0
+[    2.722582] spcu_thermal e4700000.spcu_thermal1: Thermal zone device registered, type=coretemp1
+[    2.723193] spcu_thermal e4700000.spcu_thermal3: Thermal zone device registered, type=coretemp3
+[    2.723673] spcu_thermal e4700000.spcu_thermal4: Thermal zone device registered, type=coretemp4
+[    2.724156] spcu_thermal e4700000.spcu_thermal5: Thermal zone device registered, type=coretemp5
+[    2.724615] device-mapper: uevent: version 1.0.3
+[    2.724997] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    2.725352] idi_bus_match:gnss-0-ttyGNSS: Using peripheral type for registration process is deprecated
+[    2.725380] idi_bus_match:gnss-0-ttyGNSS: Please idi device id and driver id table
+[    2.725844] ttyGNSS gnss-0: missing usif reset controller
+[    2.726052] ttyGNSS gnss-0: default 50ms fci poll
+[    2.726074] ttyGNSS gnss-0: runtime_pm_enabled is disable
+[    2.726095] ttyGNSS gnss-0: runtime_pm_debug is disable
+[    2.726116] ttyGNSS gnss-0: rpm_suspend_delay set to 5000
+[    2.726135] ttyGNSS gnss-0: auto_suspend_enable is disable
+[    2.726153] ttyGNSS gnss-0: Data path property set to IDI
+[    2.726831] gnss-0: ttyGNSS0 at MMIO 0xe7700000 (irq = 296, base_baud = 6500000) is a XGOLD_USIF
+[    2.728610] xgold_cpufreq_probe:platform_get_irq_byname(CPU_CLK_CHANGE) (virq:302)
+[    2.729211] sdhci: Secure Digital Host Controller Interface driver
+[    2.729236] sdhci: Copyright(c) Pierre Ossman
+[    2.729250] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.729898] xgold-sdhci e2800000.emmc: sdhci: io: linux-@:c4100000
+[    2.730245] sdhci: e2800000.emmc, rpm = 1
+[    2.730483] mmc0: Failed to enable vqmmc regulator: -1
+[    2.730511] mmc0: no vmmc regulator found
+[    2.730840] xgold-sdhci e2800000.emmc: Set tap values to mode 0, val = 0x080400f5
+[    2.734952] dwc2 e2100000.usb: _dwc2_hcd_suspend()
+[    2.774813] mmc0: SDHCI controller on e2800000.emmc [e2800000.emmc] using ADMA
+[    2.775164] xgold-sdhci e1400000.sd: sdhci: io: linux-@:c4400000
+[    2.776291] sdhci: e1400000.sd, rpm = 1
+[    2.776521] mmc1: no vmmc regulator found
+[    2.776831] xgold-sdhci e1400000.sd: Set tap values to mode 0, val = 0x080400f5
+[    2.824879] mmc1: SDHCI controller on e1400000.sd [e1400000.sd] using ADMA
+[    2.826955] xgold keypad bl init
+[    2.828119] mmc0: BKOPS_EN bit is not set
+[    2.829144] usbcore: registered new interface driver usbhid
+[    2.829173] usbhid: USB HID core driver
+[    2.829225] ion_snapshot: 0x0x34c40000 map to 0xc1201000 and copy to 0x8324a3c0 (version 0.1)
+[    2.830751] xgold-sdhci e2800000.emmc: Set tap values to mode 1, val = 0x08040004
+[    2.831476] xgold-sdhci e2800000.emmc: Set tap values to mode 5, val = 0x000400b5
+[    2.831838] mmc0: new high speed DDR MMC card at address 0001
+[    2.832264] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832510] mmcblk0: mmc0:0001 Q7XSAB 7.28 GiB 
+[    2.832668] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832823] mmcblk0boot0: mmc0:0001 Q7XSAB partition 1 4.00 MiB
+[    2.832978] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.833125] mmcblk0boot1: mmc0:0001 Q7XSAB partition 2 4.00 MiB
+[    2.839337]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16
+[    2.843290]  mmcblk0boot1: unknown partition table
+[    2.844583]  mmcblk0boot0: unknown partition table
+[    2.857359] ashmem: initialized
+[    2.857511] logger: created 256K log 'log_kernel'
+[    2.857874] logger: created 256K log 'log_main'
+[    2.858052] logger: created 256K log 'log_events'
+[    2.858220] logger: created 256K log 'log_radio'
+[    2.858386] logger: created 256K log 'log_system'
+[    2.859930] ag620_meas meas-0: Initializing MEAS AG620 HAL
+[    2.860166] ag620_meas: meas_ag620_probe: agold_chip_rev=0x0021
+[    2.860231] ag620_meas meas-0: meas_ag620_probe: getting handlers for dev pm states...
+[    2.860746] intel_adc: Registering AGOLD 620 MEAS HAL, 10 channels available.
+[    2.860791] intel_adc: 	chan=0, id=21
+[    2.860811] intel_adc: 	chan=1, id=8
+[    2.860828] intel_adc: 	chan=2, id=17
+[    2.860845] intel_adc: 	chan=3, id=22
+[    2.860862] intel_adc: 	chan=4, id=23
+[    2.860878] intel_adc: 	chan=5, id=24
+[    2.860894] intel_adc: 	chan=6, id=0
+[    2.860911] intel_adc: 	chan=7, id=1
+[    2.860928] intel_adc: 	chan=8, id=2
+[    2.860944] intel_adc: 	chan=9, id=12
+[    2.860960] intel_adc: All HALs were registered, probing the abstraction layer...
+[    2.861007] ag620_meas meas-0: Probing the ADC
+[    2.862414] intel_adc_sensors: platform_name = ag620
+[    2.864121] oct: oct resource: [mem 0xe4d00000-0xe4dfffff] - ioremap: c4700000
+[    2.864121] 
+[    2.865394] oct: Kernel OCT Thread: OCT Thread
+[    2.865488] oct: Gadget fp=fffffffe open failed!
+[    2.867451] usbcore: registered new interface driver snd-usb-audio
+[    2.870013] dsp_audio_drv_probe: ioremap for [mem 0xe3600000-0xe3603fff] returned c0e10000
+[    2.870112] dsp_audio_drv_probe: ioremap for [mem 0xe3604000-0xe3803fff] returned c4880000
+[    2.870592] snd: dsp: read dsp-supply property failed
+[    2.870856] dsp_clock_init set state return 0
+[    2.873517] DSP initialization done 0
+[    2.874848] XGOLD_MACHINE sound.207: ASoC: CPU DAI (null) not registered
+[    2.874946] snd: mac: xgold_mc_probe: unable to register sound card err -517
+[    2.875014] platform sound.207: Driver XGOLD_MACHINE requests probe deferral
+[    2.876549] snd: voice: xgold_voice_probe :
+[    2.877500] xgold_bt_sco btauif-0: No 48k clock available
+[    2.877632] BTAUIF device PM registration success
+[    2.878008] u32 classifier
+[    2.878039]     Actions configured
+[    2.878080] Netfilter messages via NETLINK v0.30.
+[    2.878186] nf_conntrack version 0.5.0 (14921 buckets, 59684 max)
+[    2.878777] ctnetlink v0.93: registering with nfnetlink.
+[    2.879199] xt_time: kernel timezone is -0000
+[    2.879253] ip_set: protocol 6
+[    2.880772] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.881015] arp_tables: (C) 2002 David S. Miller
+[    2.881822] TCP: cubic registered
+[    2.881865] Initializing XFRM netlink socket
+[    2.882385] NET: Registered protocol family 10
+[    2.884113] mip6: Mobile IPv6
+[    2.884198] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.887656] sit: IPv6 over IPv4 tunneling driver
+[    2.888430] NET: Registered protocol family 17
+[    2.888515] NET: Registered protocol family 15
+[    2.888617] l2tp_core: L2TP core driver, V2.0
+[    2.888673] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    2.889367] pmic_swfg_hal: pmic_swfg_hal_init: was executed
+[    2.891782] Using IPI No-Shortcut mode
+[    2.892278] registered taskstats version 1
+[    2.892604] regulator-dummy: disabling
+[    2.894127] snd-soc-dummy snd-soc-dummy: ASoC: Failed to create platform debugfs directory
+[    2.894226] control 2:0:0:DSP Audio send cmd:0 is already present
+[    2.894255] Speech Probe speech_probe.176: ASoC: Failed to add DSP Audio send cmd: -16
+[    2.894337] snd: jack: xgold_jack_setup
+[    2.896568] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.896785] XGOLD_MACHINE sound.207: ag620_afe <-> pcm_voice.175 mapping ok
+[    2.898677] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.900801] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.901092] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.901307] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.901530] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.903457] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.906611] input: xgold_afe-audio Headset as /devices/sound.207/sound/card0/input2
+[    2.907441] snd: jack: ioremap c0e0ec00
+[    2.907702] snd: jack: could not get default pinstate
+[    2.907733] snd: jack: could not get sleep pinstate
+[    2.907753] snd: jack: could not get inactive pinstate
+[    2.907925] snd: jack: of_xgold_jack_probe: use ACD interrupt
+[    2.907956] snd: jack: of_xgold_jack_probe jack->jack_irq = 282
+[    2.908005] snd: jack: xgold_jack_acc_det_write: write val 0x800B, mode IO
+[    2.909375] snd: jack: xgold_jack_detection
+[    2.909428] snd: jack: --> configure_vbias: XGOLD_VBIAS_ENABLE
+[    2.910380] snd: jack: <-- configure_vbias
+[    2.910621] Getting PM state handlers: OK
+[    2.911165] ag620-vbus-det ag620_chrg-0: sofia charger detect driver probe
+[    2.911662] file system registered
+[    2.912465] ag620-vbus-det ag620_chrg-0: chg_ctl_reg_1 = 0x808cc523, c0_fs_reg_1 = 0x000001a2
+[    2.912962] using random self ethernet address
+[    2.913007] using random host ethernet address
+[    2.913129] Number of LUNs=2
+[    2.913153] Mass Storage Function, version: 2009/09/11
+[    2.913180] LUN: removable file: (no medium)
+[    2.913202] LUN: removable file: (no medium)
+[    2.913558] android_usb gadget: android_usb ready
+[    2.917398] intel-usb2phy e4800000.phy: Avail curr from USB = 0
+[    2.917430] rk818-battery rk818-battery: limit current:0
+[    2.917465] intel-usb2phy e4800000.phy: OTG runtime suspend
+[    2.917852] dwc2 e2100000.usb: bound driver android_usb
+[    2.918543] ===========================icn83xx_ts_init=====================
+[    2.918678] nvt_driver_init step
+[    2.918755] i2c-core: driver [NVT-ts] using legacy suspend method
+[    2.918785] i2c-core: driver [NVT-ts] using legacy resume method
+[    2.919800] i2c i2c-3: sensor_probe: ps_tmd2772,0xb613f800
+[    2.919977] i2c i2c-3: M13: NACK recvd.
+[    2.920013] i2c i2c-3: xgold_i2c_error_reg_status, device: 0x38 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.920057] [ALS/PS] tmd2772_init_client 220 : init dev: -121
+[    2.920086] sensor_initial:fail to init sensor
+[    2.920105] sensor_chip_init:fail to init sensor
+[    2.920129] i2c i2c-3: sensor_probe failed -121
+[    2.920129] 
+[    2.920196] sensors: probe of 3-0038 failed with error -121
+[    2.920310] i2c i2c-3: sensor_probe: ls_tmd2772,0xb610ae00
+[    2.920375] sensors 3-0039: could not get default pinstate
+[    2.920408] sensors 3-0039: could not get sleep pinstate
+[    2.920432] sensors 3-0039: could not get inactive pinstate
+[    2.921339] dll sensor_get_id:devid=0x39
+[    2.921370] sensor_chip_init:ls_tmd2772:devid=0x39,ops=0x83040140
+[    2.921636] input: lightsensor-level as /devices/soc0/e0000000.noc/ef010000.l2_noc/e1000000.ahb_per/e1600000.i2c_3/i2c-3/3-0039/input/input3
+[    2.921897] sensor_misc_device_register:miscdevice: lightsensor
+[    2.921930] sensor_probe:initialized ok,sensor name:ls_tmd2772,type:5,id=60
+[    2.921930] 
+[    2.922145] sensor_init: Probe name sensors
+[    2.922212] sensor-dev.c v1.4 add angle calculation support between two gsensors 2013-09-01
+[    2.924979] rk818-rtc rk818-rtc: setting system clock to 2013-01-21 08:50:59 UTC (1358758259)
+[    2.925076] idi_bus_match:i2c_5-0-xgold-i2c-idi: Using peripheral type for registration process is deprecated
+[    2.925111] idi_bus_match:i2c_5-0-xgold-i2c-idi: Please idi device id and driver id table
+[    2.925553] xgold-i2c-idi i2c_5: Error parsing intel,i2c,b100 propery of node i2c_5
+[    2.925597] xgold-i2c-idi i2c_5: Error during dts file parsing
+[    2.925665] xgold-i2c-idi: probe of i2c_5 failed with error -22
+[    2.926231] CIF ISP2.0 xgold_v4l2_drv_probe: probing...
+[    2.926378] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1233) ERR: could not get default pinstate
+[    2.926412] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1239) ERR: could not get pins_sleep pinstate
+[    2.926436] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1245) ERR: could not get pins_inactive pinstate
+[    2.926669] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.926777] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error shell@sofia3gr1:4/ 
+$[     2.926886] cif_isp20 e2000000.cif: failed with error 0
+[    2.926918] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-0
+[    2.926987] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.927087] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.927189] cif_isp20 e2000000.cif: failed with error 0
+[    2.927220] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-1
+[    2.927244] CIF ISP2.0 cif_isp20_img_srcs_init(1063) ERR: failed with error -14
+[    2.927266] CIF ISP2.0 cif_isp20_create(5676) ERR: failed with error -14
+[    2.927633] ag620_swfgh: dt: parsing 'sense_resistor_mohm' failed
+[    2.927695] ag620_swfgh: probe of fuel_gauge_hal-0 failed with error -22
+[    2.927779] idi_bus_match:brown_out-0-ag6x0_brown_out: Using peripheral type for registration process is deprecated
+[    2.927815] idi_bus_match:brown_out-0-ag6x0_brown_out: Please idi device id and driver id table
+[    2.927904] ag6x0_brown_out: brown_out_drv_probe: Getting PM state handlers: OK
+[    2.928350] ag6x0_bat_hal: bat_drv_hal_probe: Getting PM state handlers: OK
+[    2.928421] dt: parsing 'supp_batids-map' failed
+[    2.931705] ag620_meas: AGOLD TEMP_ALERT_REG 0x00000040 at boot
+[    2.931754] ag620_meas: AGOLD thermal protection disabled at 296750 mK,
+[    2.931775] ag620_meas: TEMP_ALERT_REG 0x00000050
+[    2.935318] intel_sofia_watchdog e4800000.watchdog: intel_sofia_watchdog_probe ok 141
+[    2.937319] ALSA device list:
+[    2.937366]   #0: xgold_afe-audio
+[    2.938017] Freeing unused kernel memory: 336K (8307f000 - 830d3000)
+[    2.938399] Write protecting the kernel text: 6880k
+[    2.938812] Write protecting the kernel read-only data: 2612k
+[    2.938844] NX-protecting the kernel data: 5408k
+[    2.964901] rk818-battery rk818-battery: limit current:0
+[    3.144860] vdump: Gadget fp=fffffffe open failed!
+[    3.165781] snd: jack: read_state: measured voltage 2084
+[    3.425714] snd: jack: read_state: measured voltage 2085
+[    3.425755] snd: jack: Headphone/headset removed
+[    3.425777] snd: jack: --> configure_vbias: XGOLD_VBIAS_ULP_ON
+[    3.427068] snd: jack: <-- configure_vbias
+[    3.478710] kpd-xgold e4200000.keypad: keypad open
+[    3.478754] keychord: using input dev kpd-xgold for fevent
+[    3.478804] keychord: using input dev xgold-on-button for fevent
+[    3.478854] keychord: using input dev xgold_afe-audio Headset for fevent
+[    3.516247] EXT4-fs (mmcblk0p14): mounted filesystem without journal. Opts: (null)
+[    3.517835] EXT4-fs (mmcblk0p15): Ignoring removed nomblk_io_submit option
+[    3.633624] EXT4-fs (mmcblk0p15): 2 orphan inodes deleted
+[    3.633677] EXT4-fs (mmcblk0p15): recovery complete
+[    3.642921] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.711051] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard,journal_async_commit
+[    3.712213] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    3.724418] EXT4-fs (mmcblk0p13): recovery complete
+[    3.725438] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.781575] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: (null)
+[    3.870856] EXT4-fs (mmcblk0p15): Unrecognized mount option "background_gc=on" or missing value
+[    3.888295] zram0: detected capacity change from 0 to 419430400
+[    3.915354] rk818-battery rk818-battery: set charge to analog termination mode
+[    4.001898] Adding 409596k swap on /dev/block/zram0.  Priority:-1 extents:1 across:409596k SS
+[    4.028186] binder: 146:146 transaction failed 29189, size 0-0
+[    4.047416] random: init urandom read with 69 bits of entropy available
+[    4.266704] Loading modules backported from  version 
+[    4.266752] Backport generated by backports.git 
+[    4.565136] input: vtl_ts as /devices/virtual/input/input4
+[    4.613247] cfg80211: Calling CRDA to update world regulatory domain
+[    4.874931] oct: Gadget fp=fffffffe open failed!
+[    5.154890] vdump: Gadget fp=fffffffe open failed!
+[    5.571692] android_usb: already disabled
+[    5.586973] graphics fb0: rockchip fb use 3 buffers
+[    5.595396] EXT4-fs: Warning: mounting with data=journal disables delayed allocation and O_DIRECT support!
+[    5.611225] read descriptors
+[    5.611304] read strings
+[    5.611374] mtp_bind_config
+[    5.617044] dwc2 e2100000.usb: s3c_hsotg_corereset: reset failed, GRSTCTL=00000000
+[    5.736490] EXT4-fs (mmcblk0p5): recovery complete
+[    5.743260] EXT4-fs (mmcblk0p5): mounted filesystem with journalled data mode. Opts: data=journal
+[    5.823724] warning: `rpc-daemon' uses 32-bit capabilities (legacy support in use)
+[    5.837533] rockchip-vop vop0: blank mode:0
+[    6.486407] Intel(R) Wireless WiFi driver for Linux, in-tree:d
+[    6.486492] Copyright(c) 2003- 2014 Intel Corporation
+[    6.487846] IWL_IDI wifi-0: No Wifi clock available
+[    6.487898] IWL_IDI wifi-0: No RTC clock available
+[    6.494976] IWL_IDI wifi-0: Selected bus type = IDI
+[    6.495744] Init uCode memory dma successfully.
+[    6.520025] IWL_IDI wifi-0: loaded firmware version 25.228.9.0 op_mode iwlmvm
+[    6.678226] IWL_IDI wifi-0: Detected Intel(R) Dual Band Wireless BGN7999, REV=0x0
+[    6.735621] IWL_IDI wifi-0: Loaded NVM file nvmData (8800 bytes)
+[    6.742297] success to read saved mac addr.
+[    6.884897] oct: Gadget fp=fffffffe open failed!
+[    6.924867] random: nonblocking pool is initialized
+[    7.165011] vdump: Gadget fp=fffffffe open failed!
+[    8.894828] oct: Gadget fp=fffffffe open failed!
+[    9.174788] vdump: vdump_get_config
+[    9.174883] vdump: fp_cfg:fffffffe
+[    9.174907] vdump: vdump config not exist
+[    9.174926] vdump: Kernel vdump Thread running.
+[   10.904975] oct: Gadget /dev/ttyGS1 open succeeded.
+[   14.528842] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[   14.528915] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[   14.528936] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[   14.528955] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[   14.528975] lowmemorykiller: oom_adj 3 => oom_score_adj 176
+[   14.528994] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[   14.529013] lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+[   15.822177] acc_open
+[   15.822341] acc_release
+[   17.372630] dwc2 e2100000.usb: _dwc2_hcd_resume()
+[   17.373579] dwc2 e2100000.usb: _dwc2_hcd_suspend()
+[   33.942929] rk_iommu e1000300.vop_mmu: Detached IOMMU with pgtable 0x36072000
+[   33.943742] rockchip-vop vop0: blank mode:4
+[   33.962335] PM: suspend entry 2013-01-21 08:51:30.537471232 UTC
+[   33.962451] suspend step=1
+[   33.962491] PM: Syncing filesystems ... done.
+[   33.992464] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[   33.995325] Freezing remaining freezable tasks ... (elapsed 0.002 seconds) done.
+[   33.997451] suspend step=2
+[   33.997479] Suspending console(s) (use no_console_suspend to debug)
+[     0.414]
+[     0.415]DDR Version 1.00 20151110
+[     0.418]In
+[     0.419]533MHz
+[     0.422]LPDDR3
+[     0.426](0x1)Bus Width=32 CS=2 Col=10/10 Bank=3/3 Row=14/14 Size=1024MB
+[     0.433]OUT
+[     0.478]--- Start PSI FLASH ---
+[     0.481]FPSI: PSI Flash Version: 1546.200_M1S1
+[     0.486]FPSI: IMC Chipset Info (ID: 0x00000061, Revision: 0x00000010)
+[     0.492]FPSI: SCU_RSTSR: 0x10008003
+[     0.603]logic_slb_loader command= status= recovery=
+[     0.625]Jump to SLB:0x00000500
+[     0.773]********the WDT RSTSR is 1 *********
+[     0.777]mode reason 3
+[     0.972]ptest_and_non_cali_detect valid_next_mode=2 
+
+[     0.977]ptest_and_non_cali_detect line=406 nvm_cali_sta_param1=0 ptest_non_cali_flag=0 
+
+[     0.987]kernel=0x2600000,ramdisk=0x400000,dtb=0x2400010,offset=0x9b1, ptestdtb=201646
+[     1.124]the rk818 chid is 818
+[     1.132]charger driver is success register
+[     1.137]the mea voltage is 3963
+[     1.140]Load SLB without any Charger
+[     1.143]the flag is 1
+[     1.147]storage_al_ftle_bcb_check_ptest msg->command=
+[     1.152]storage_al_ftle_bcb_check_normal msg->command= 
+
+[     1.177]Transition to mode 2
+[     1.271]------display screen start------
+[     1.282]width=600,height=600,bpp=4,start_block=1
+[     1.339]Display Driver Version: v1.1.7
+[     1.356]display_drv_update_screen: ret=0, boot logo on=1
+[     1.547]realloc_linux_kernel lst_dtb_location=0x1b9b1000 unused[0]=201646 
+
+[     1.562]vmm compiled time:15-12-10/11:27:39
+[     1.566]Cleaning up before jumping to system: 0x1CC48A20
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.14.0 (wlq@rk-intel-1) (gcc version 4.6.4 (Ubuntu/Linaro 4.6.4-6ubuntu2) ) #73 SMP PREEMPT Mon Dec 14 10:43:58 CST 2015
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000001bbfffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] bootconsole [earlyxgold0] enabled
+[    0.000000] APIC Verbosity level sofia not recognised use apic=verbose or apic=debug
+[    0.000000] Malformed early option 'apic'
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] extended physical RAM map:
+[    0.000000] reserve setup_data: [mem 0x0000000000000000-0x00000000023fffff] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002400000-0x000000000248000f] usable
+[    0.000000] reserve setup_data: [mem 0x0000000002480010-0x000000001bbfffff] usable
+[    0.000000] reserve setup_data: [mem 0x000000001bc00000-0x000000001fffffff] reserved
+[    0.000000] reserve setup_data: [mem 0x0000000020000000-0x000000003fffffff] usable
+[    0.000000] e820: last_pfn = 0x40000 max_arch_pfn = 0x1000000
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7050400070106, new 0x7010600070106
+[    0.000000] init_memory_mapping: [mem 0x00000000-0x000fffff]
+[    0.000000] init_memory_mapping: [mem 0x3fe00000-0x3fffffff]
+[    0.000000] init_memory_mapping: [mem 0x3c000000-0x3fdfffff]
+[    0.000000] init_memory_mapping: [mem 0x00100000-0x1bbfffff]
+[    0.000000] init_memory_mapping: [mem 0x20000000-0x3bffffff]
+[    0.000000] Reserved memory: 'region@0' reserve CMA default limit 0x00000000, size 135 MiB
+[    0.000000] cma: CMA: reserved 136 MiB at 37800000
+[    0.000000] RAMDISK: [mem 0x00400000-0x005affff]
+[    0.000000] 0MB HIGHMEM available.
+[    0.000000] 1024MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 40000000
+[    0.000000]   low ram: 0 - 40000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00001000-0x00ffffff]
+[    0.000000]   Normal   [mem 0x01000000-0x3fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00001000-0x0009ffff]
+[    0.000000]   node   0: [mem 0x00100000-0x1bbfffff]
+[    0.000000]   node   0: [mem 0x20000000-0x3fffffff]
+[    0.000000] Using APIC driver sofia
+[    0.000000] smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+[    0.000000] e820: [mem 0x40000000-0xffffffff] available for PCI devices
+[    0.000000] Booting XGOLD kernel
+[    0.000000] setup_percpu: NR_CPUS:4 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 12 pages/cpu @b6f48000 s27392 r0 d21760 u49152
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 242591
+[    0.000000] Kernel command line: androidboot.bootloader=1550.400_M1S1 androidboot.serialno=0123456789012345678901234567890 pmu_rst_src=0x00010008 pmu_shutdwn_src=0x00000000 scu_rsts=0x10008003 scu_bcfg=0x0C078101 loader_voltage=3963 androidboot.mode=normal panelsource=0 console=ttyFIQ0,115200n8 idle=halt earlyprintk=xgold notsc apic=sofia androidboot.hardware=sofiaboard nolapic_pm firmware_class.path=/system/vendor/firmware androidboot.selinux=permissive x86_intel_xgold_timer=soctimer_only vmalloc=512m slub_max_order=2 mvpipe.at_dbg_port=1
+[    0.000000] tsc: Kernel compiled with CONFIG_X86_TSC, cannot disable TSC completely
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] Initializing HighMem for node 0 (00000000:00000000)
+[    0.000000] Memory: 813944K/978556K available (6877K kernel code, 1248K rwdata, 2608K rodata, 336K init, 1872K bss, 164612K reserved, 0K highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfffa7000 - 0xfffff000   ( 352 kB)
+[    0.000000]     pkmap   : 0xff800000 - 0xffa00000   (2048 kB)
+[    0.000000]     vmalloc : 0xc0800000 - 0xff7fe000   (1007 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+[    0.000000]       .init : 0x8307f000 - 0x830d3000   ( 336 kB)
+[    0.000000]       .data : 0x82cb77b1 - 0x8307d040   (3862 kB)
+[    0.000000]       .text : 0x82600000 - 0x82cb77b1   (6877 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: HWalign=64, Order=0-2, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] NR_IRQS:16 nr_irqs:16 0
+[    0.000000] vpic_of_init: Initializing SoFIA vpic
+[    0.000000] vpic_of_init: xgold-vpic register remapping: Reg: c0800000, entries c0804000
+[    0.000000] irq-xgold: new irq domain: intel,sofia-main-hirq - 1 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_eint - 30 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_abb - 32 irqs
+[    0.000000] irq-xgold: new irq domain: intel,sofia-hirq - 512 irqs
+[    0.000000] irq-xgold: new irq domain: intel,xgold_pmu - 24 irqs
+[    0.000000] --> x86_xgold_time_init
+[    0.000000] Intel x86 xgold using soctimer only
+[    0.000000] xgold_of_timer_map:Initializing STM FAF to 0x319
+[    0.000000] xgold_of_timer_map:Clock event device rating set to 0x32
+[    0.000000] XGOLD STM:Clock frequency 26MHz
+[    0.000000] XGOLD STM:Clock event min precision 1000000ns
+[    0.000000] XGOLD STM:Clock event max precision 1000000000ns
+[    0.000000] xgold_of_timer_map: Masking cpu0 for STM usage
+[    0.000000] xgold_of_timer_map: Masking cpu1 for STM usage
+[    0.000000] XGOLD STM timer used to provide sched clock
+[    0.000000] sched_clock: 32 bits at 26MHz, resolution 38ns, wraps every 165191049177ns
+[    0.000000] XGOLD STM timer clkevent [1000000ns-1000000000ns]
+[    0.000000] xgold_timer_cc_init:Clock event device rating set to 0x32
+[    0.000000] xgold_timer_cc_init:Input clock rate set to 0x18cba80
+[    0.000000] xgold_timer_cc_init:Clock event min set to 1000000
+[    0.000000] xgold_timer_cc_init:Clock event max set to 1000000000
+[    0.000000] xgold_timer_cc_init: Set cpu2 as valid for CC usage
+[    0.000000] xgold_timer_cc_init: Set cpu3 as valid for CC usage
+[    0.000000] CAPCOM: Registering cc event HW:
+[    0.000000] 	26000000 Hz, mask c, rating 50
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 4,cc id 0, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] Initializing capcom clock events Clk event CapCom, mask 8,cc id 1, mult 353f7cf, shift 1f, max 1000000000, min 1000000
+[    0.000000] <-- x86_xgold_time_init
+[    0.000000] logger: created 256K log 'log_kern_bot'
+[    0.000000] console [logk-1] enabled
+[    0.000000] logger: register logcat console
+[    0.000000] xgold_calibrate_tsc: Run it for 10 ms
+[    0.000000] xgold_calibrate_tsc: LAPIC Timer frequency is 260.0339 MHz.
+[    0.000000] tsc: Detected 9372.211 MHz processor
+[    0.050000] Calibrating delay loop... 1036.28 BogoMIPS (lpj=5181440)
+[    0.080138] pid_max: default: 32768 minimum: 301
+[    0.084728] Security Framework initialized
+[    0.088718] SELinux:  Initializing.
+[    0.090114] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.096605] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.146840] Initializing cgroup subsys debug
+[    0.148268] Initializing cgroup subsys freezer
+[    0.150627] CPU: Physical Processor ID: 0
+[    0.153980] CPU: Processor Core ID: 2
+[    0.157777] Last level iTLB entries: 4KB 48, 2MB 0, 4MB 0
+[    0.157777] Last level dTLB entries: 4KB 128, 2MB 16, 4MB 16, 1GB 0
+[    0.157777] tlb_flushall_shift: 6
+[    0.163705] Freeing SMP alternatives memory: 24K (830d3000 - 830d9000)
+[    0.167803] smpboot: CPU0: Genuine Intel(R) CPU         @ 728 (fam: 06, model: 5d, stepping: 01)
+[    0.251867] last_log: 0x36a00000 map to 0xc0f81000 and copy to 0xc1003000, size 0x80000 early 0x295a (version 3.0)
+[    0.259445] Performance Events: generic architected perfmon, full-width counters, Intel PMU driver.
+[    0.265995] ... version:                3
+[    0.269997] ... bit width:              40
+[    0.270033] ... generic registers:      2
+[    0.273988] ... value mask:             000000ffffffffff
+[    0.279301] ... max period:             000000ffffffffff
+[    0.280032] ... fixed-purpose events:   3
+[    0.283988] ... event mask:             0000000700000003
+[    0.320057] Initializing Xgold Reset controller driver.
+[    0.323938] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.329199] Registering Xgold Reset controller @c0806000
+[    0.330049] xgold_reset_do_sanity: Using WO/WC/RO register access scheme
+[    0.336720] Registering Xgold Reset controller @c0856010
+[    0.340245] xgold_reset_do_sanity: Using R/W register access scheme
+[    0.346293] Registering Xgold Reset controller @c0858100
+[    0.370241] NMI watchdog: enabled on all CPUs, permanently consumes one hw-PMU counter.
+[    0.390410] x86: Booting SMP configuration:
+[    0.391749] .... node  #0, CPUs:      #1
+[    0.050000] Initializing CPU#1
+[    0.430780]  #2
+[    0.050000] Initializing CPU#2
+[    0.435490] TSC synchronization [CPU#0 -> CPU#2]:
+[    0.440000] Measured 1296 cycles TSC warp between CPUs, turning off TSC clock.
+[    0.440000] tsc: Marking TSC unstable due to check_tsc_sync_source failed
+[    0.480398]  #3
+[    0.050000] Initializing CPU#3
+[    0.500172] x86: Booted up 1 node, 4 CPUs
+[    0.504398] smpboot: Total of 4 processors activated (4145.15 BogoMIPS)
+[    0.520311] pinctrl core: initialized pinctrl subsystem
+[    0.522942] regulator-dummy: no parameters
+[    0.529213] NET: Registered protocol family 16
+[    0.531587] cpuidle: using governor ladder
+[    0.534050] cpuidle: using governor menu
+[    0.537972] RÅB¥Ñ*¹Ñ?¢½
+???2¥Å"	?ÉùjR´		&©¦&¦WH¬Ëk?«Ò+W/T©*LWY·X±¶ed
+[    0.544263] bootconsole [earlyxgold0] disabled
+ 0.540722] console [ttyFIQ0] enabled
+[    0.544263] bootconsole [earlyxgold0] disabled
+[    0.548817] Registered fiq debugger ttyFIQ0
+[    0.550607] Initializing DMA ops for non coherent architecture
+[    0.550629] --> xgold_init_machine
+[    0.550810] register chip revision 0x10
+[    0.579283] rk_iommu e2d00800.vpu_mmu: (vpu) Enter
+[    0.579452] rk_iommu e2d00800.vpu_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579476] rk_iommu e2d00800.vpu_mmu: (vpu) Initialized
+[    0.579727] rk_iommu e2d00440.hevc_mmu: (hevc) Enter
+[    0.579839] rk_iommu e2d00440.hevc_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.579863] rk_iommu e2d00440.hevc_mmu: (hevc) Initialized
+[    0.580124] rk_iommu e1000300.vop_mmu: (vop) Enter
+[    0.580243] rk_iommu e1000300.vop_mmu: IOVMM: Created 0x3ffff000 B IOVMM from 0x10000000.
+[    0.580266] rk_iommu e1000300.vop_mmu: (vop) Initialized
+[    0.752206] <-- xgold_init_machine
+[    0.754072] xgold_pm_of_init: 120 pm users added
+[    0.755332] xgold_pm_of_init: 36 pm class added
+[    0.758209] pinctrl-single e4600000.pinmux: 640 pins at pa c0862000 size 2560
+[    0.758960] pinctrl-single e6300000.pinmux: 384 pins at pa c0864000 size 1536
+[    0.759668] gpio: gpio: io: linux-@:c0866000
+[    0.759691] gpio: XGold gpio probed base:0 num:106 gpios from gpio
+[    0.759911] gpio: missing property:intel,gpio-to-irq-num
+[    0.759943] gpio: gpio: io: linux-@:c0868000
+[    0.759960] gpio: XGold gpio probed base:107 num:45 gpios from gpio
+[    0.760538] VPOWER: Running in async mode
+[    0.760591] fmdev_init()
+[    0.760719] fmdev_init(): Success! retval: 0
+[    0.762850] pmic_reg_access: cannot find node 'vmm_pmic-ext'
+[    0.783953] bio: create slab <bio-0> at 0
+[    0.787260] xgold_cpuidle_init: Initializing xgold cpuidle driver
+[    0.787302] idle xgold: Name | latency | residency | power | flags | vmmid
+[    0.787323] 	S0 [mclk gated in MC4]	 22	 50	 3	 1 1
+[    0.787901] Enter xgold_dma_probe
+[    0.788635] pl08xdmac pl08xdmac: initialized 8 virtual memcpy channels
+[    0.788664] pl08xdmac pl08xdmac: initialized 15 virtual slave channels
+[    0.790445] pl08xdmac pl08xdmac: DMA: PL080 rev0 at 0xe0100000 irq 106
+[    0.791191] Registering device PM controlled regulator
+[    0.791687] lmmc1: 1800 <--> 2900 mV 
+[    0.791984] #PM: Error in dev
+[    0.792006] regulator regulator.2: Error while setting disable state
+[    0.792026] lemmc: 1800 <--> 2900 mV 
+[    0.792256] lcd: 2900 mV 
+[    0.792487] XGOLD Network On Chip (NoC) initialisation
+[    0.793006] xgold-noc ef000000.l1_noc: XGOLD NoC driver initialization ef000000.l1_noc
+[    0.793421] xgold-noc ef000000.l1_noc: 3 probe(s), 4 filter(s), 2 counter(s)
+[    0.793495] xgold-noc ef000000.l1_noc: intel,LCDC-qos-settings added to list(0)
+[    0.793557] xgold-noc ef000000.l1_noc: intel,VPU-qos-settings added to list(0)
+[    0.793607] xgold-noc ef000000.l1_noc: intel,VPU128R-qos-settings added to list(0)
+[    0.793664] xgold-noc ef000000.l1_noc: intel,CPU1-qos-settings added to list(1)
+[    0.793727] xgold-noc ef000000.l1_noc: intel,GPUGP-qos-settings added to list(0)
+[    0.793788] xgold-noc ef000000.l1_noc: intel,GPUPP-qos-settings added to list(0)
+[    0.793840] xgold-noc ef000000.l1_noc: intel,CIF-qos-settings added to list(0)
+[    0.793891] xgold-noc ef000000.l1_noc: intel,RGA-qos-settings added to list(0)
+[    0.796303] xgold-noc ef010000.l2_noc: XGOLD NoC driver initialization ef010000.l2_noc
+[    0.796751] xgold-noc ef010000.l2_noc: 1 probe(s), 4 filter(s), 2 counter(s)
+[    0.796777] xgold-noc ef010000.l2_noc: no QoS config list
+[    0.798342] SCSI subsystem initialized
+[    0.799098] usbcore: registered new interface driver usbfs
+[    0.799163] usbcore: registered new interface driver hub
+[    0.799506] usbcore: registered new device driver usb
+[    0.800878] intel-usb2phy e4800000.phy: iphy->otg_host_det 0
+[    0.800916] intel-usb2phy e4800000.phy: power budget set to 500 mA
+[    0.802330] intel-usb2phy e4800000.phy: OTG runtime idle
+[    0.803304] I2C: Enterring xgold_i2c_core_probe
+[    0.806969] i2c i2c-1: 1 i2c clients have been registered at 0x0c
+[    0.807508] i2c i2c-1: 2 i2c clients have been registered at 0x0c
+[    0.808093] i2c i2c-1: 3 i2c clients have been registered at 0x0c
+[    0.810009] I2C: Enterring xgold_i2c_core_probe
+[    0.814636] of_dma_request_slave_channel: dma-names property of node '/xgold/noc/l2_noc/ahb_per@1/i2c_4' missing or empty
+[    0.814670] I2C: Enterring xgold_i2c_core_probe
+[    0.820039] Linux video capture interface: v2.00
+[    0.821105] rk_ion heap cma-heap base:0x00000000 length:0x141557760 type 4
+[    0.822314] Advanced Linux Sound Architecture Driver Initialized.
+[    0.822937] i2c-core: driver [syr82x] using legacy suspend method
+[    0.822959] i2c-core: driver [syr82x] using legacy resume method
+[    0.823694] rk818 2-001c: RK81X chip id is rk818
+[    0.824214] rk818 2-001c: ON_SOURCE:0x10 OFF_SOURCE:0x00
+[    0.828770] rk818 2-001c: DATA18 = f1, DATA19 = f0
+[    0.828897] rk818 2-001c: rk818 irq number: 306, notify_usb_det: 0
+[    0.841076] i2c-core: driver [rk818] using legacy suspend method
+[    0.841103] i2c-core: driver [rk818] using legacy resume method
+[    0.841485] rk818-rtc rk818-rtc: rk818_rtc_probe,line=498
+[    0.851602] rk818-rtc rk818-rtc: rtc core: registered rk818 as rtc0
+[    0.851633] rk818-rtc rk818-rtc: per_irq = 313, alm_irq = 312
+[    0.853284] rk818-rtc rk818-rtc: rk818_rtc_probe:ok
+[    0.854701] Switched to clocksource xgold_stm_clocksource
+[    0.855059] i2c-core: driver [lvds] using legacy suspend method
+[    0.855079] i2c-core: driver [lvds] using legacy resume method
+[    0.855657] loader-logo-on:1
+[    0.855682] create rockchip ion client
+[    0.855729] rockchip-fb rockchip-fb: rockchip framebuffer driver probe
+[    0.856893] rockchip-screen screen.206: rockchip screen probe success
+[    0.857591] nanosilicon-lvds nanosilicon-lvds: nanosilicon lvds driver probe success
+[    0.859105] graphics fb0: rockchip framebuffer registered:fb0
+[    0.859761] graphics fb1: rockchip framebuffer registered:fb1
+[    0.859924] graphics fb2: rockchip framebuffer registered:fb2
+[    0.861488] rockchip-vop vop0: vop0: dclk:0>>fps:60 
+[    0.861517] rockchip-vop vop0: wakeup from standby!
+[    0.880187] graphics fb0: fb0:phy:10000000>>vir:c1981000>>len:0xc00000
+[    0.880225] graphics fb0: copy fb data 600 x 600  from  addr:0x10000200 to addr:0x10000000
+[    0.907232] rk_iommu e1000300.vop_mmu: Attached IOMMU with pgtable 0x36072000
+[    0.907261] rockchip-vop vop0: vop0 probe ok, iommu enabled
+[    0.907770] cat66121_hdmi 4-004c: cat66121_hdmi_i2c_probe, line=375
+[    0.908576] CAT66121: reg[0-3] = 0x[54].[49].[12].[16]
+[    0.927589] ----------------------------------------
+[    0.927589] Init HDMITX
+[    0.927589] ----------------------------------------
+[    0.929800] REG_TX_INT_STAT1=0
+[    0.929820] REG_TX_INT_STAT2=0
+[    0.929833] REG_TX_INT_STAT3=0
+[    0.931925] REG_TX_INT_STAT4=0
+[    0.932415] HPD unplug
+[    0.932496] cat66121_hdmi 4-004c: cat66121 hdmi i2c probe ok
+[    0.934544] NET: Registered protocol family 2
+[    0.935463] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.935539] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.935630] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.935717] TCP: reno registered
+[    0.935740] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.935776] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.936010] NET: Registered protocol family 1
+[    0.936049] <<-GTP-INFO->> GTP driver installing...
+[    0.956163] rk818-battery rk818-battery: v=3907, ov=4003, rv=0, c=-713, pwroff_min=0
+[    0.961780] rk818-battery rk818-battery: c=-713, v=3907, relax:0, ocv:=4003, est=4046, calib=-1
+[    0.989913] rk818-battery rk818-battery: battery driver version 3.0.0
+[    0.990295] Trying to unpack rootfs image as initramfs...
+[    1.098712] Freeing initrd memory: 1728K (80400000 - 805b0000)
+[    1.102758] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    1.102940] audit: initializing netlink subsys (disabled)
+[    1.110375] fuse init (API version 7.22)
+[    1.110756] Registering sdcardfs 2.1.3
+[    1.110888] msgmni has been set to 1865
+[    1.122196] alg: No test for stdrng (krng)
+[    1.122473] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    1.122498] io scheduler noop registered
+[    1.122625] io scheduler cfq registered (default)
+[    1.125448] pwm-backlight.203 supply power not found, using dummy regulator
+[    1.133207] rga: create rockchip ion client for RGA
+[    1.133369] rga: Driver loaded successfully
+[    1.133699] mvpipe enumerate instance name at
+[    1.134295] mvpipe enumerate instance name at2
+[    1.134929] mvpipe enumerate instance name atc
+[    1.135452] mvpipe enumerate instance name at2c
+[    1.135955] mvpipe enumerate instance name at-dbg
+[    1.136457] mvpipe enumerate instance name echo
+[    1.136955] mvpipe enumerate instance name secmd
+[    1.137471] mvpipe enumerate instance name sedat0
+[    1.137978] mvpipe enumerate instance name oec_dat
+[    1.138490] mvpipe enumerate instance name vpu
+[    1.139014] mvpipe enumerate instance name vpu_ion
+[    1.139542] mvpipe enumerate instance name GTI
+[    1.140068] mvpipe enumerate instance name veth_ctrl
+[    1.140949] NVM: probe nb_partition =3, name = /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.141355] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID022
+[    1.141378] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID023
+[    1.141397] device id (179,3) name /dev/block/platform/soc0/e0000000.noc/by-name/ImcPartID024
+[    1.141499] VOEMCRYPTO-FE: Initializing.
+[    1.142012] VOEMCRYPTO-FE: Initialized.
+[    1.142033] vdump: init
+[    1.142172] vdump: Kernel vdump Thread create.
+[    1.142453] vdump: Kernel vdump Thread: vdump Thread
+[    1.142492] vdump: Kernel vdump Thread enter.
+[    1.142512] vdump: vdump_detect[/system/etc/vdump.conf]
+[    1.142562] vdump: Gadget fp=fffffffe open failed!
+[    1.142785] mveth: virtual Ethernet device driver 1.0.
+[    1.143229] mveth enumerate instance name veth0
+[    1.144168] mveth enumerate instance name veth1
+[    1.144643] virtual Ethernet device driver initialized
+[    1.145937] TEE_RPC REGISTERED major : 233
+[    1.146695] IDI AG6x0 client init
+[    1.146758] Registering IDI driver
+[    1.149484] idi idi-0: : Rev: 4   Mod ID: 130   TS Rev: 777
+[    1.149515] idi idi-0: : Software check: 16 channels
+[    1.149533] idi idi-0: : SRB Multiple Source: 0x0000000c
+[    1.149552] idi idi-0: : SRB Error Config: 0x0000000c
+[    1.151046] AG6x0 idi_client-0: AGold using secure access
+[    1.153826] : Miss PM info
+[    1.154393] idi-error idierror-0: imc_idi_error_probe: probe return 0
+[    1.155633] idi_bus_match:btif-0-ttyBT: Using peripheral type for registration process is deprecated
+[    1.155661] idi_bus_match:btif-0-ttyBT: Please idi device id and driver id table
+[    1.155729] ttyBT btif-0: No kernel clock available
+[    1.155748] ttyBT btif-0: No BTIP 78M clock available
+[    1.155766] ttyBT btif-0: No BTIP 104M clock available
+[    1.155785] ttyBT btif-0: No BTIP 32kHz clock available
+[    1.155802] ttyBT btif-0: No BTIP VCXO request available
+[    1.155820] ttyBT btif-0: No BTIP PWM ON request available
+[    1.155837] ttyBT btif-0: No BTIP RF ON request available
+[    1.155932] BTIF device PM registration success
+[    1.156079] btif-0: ttyBT0 at MMIO 0xe7200000 (irq = 0, base_baud = 0) is a XGOLD/BTIF
+[    1.160237] XGOLD USIF serial driver
+[    1.161307] tadi_driver_probe: trace port:[mem 0x80000000-0x80ffffff] - ioremap:c2d80000
+[    1.161337] tadi_driver_probe: Register tdcons console
+[    1.162260] mali-utgard e2e00000.gpu: mali cores = 4
+[    1.162359] mali-utgard e2e00000.gpu: drv_data->pm_states[0].name = disable
+[    1.162383] mali-utgard e2e00000.gpu: drv_data->pm_states[1].name = low_perf
+[    1.162404] mali-utgard e2e00000.gpu: drv_data->pm_states[2].name = mid_perf
+[    1.162425] mali-utgard e2e00000.gpu: drv_data->pm_states[3].name = high_perf
+[    1.162446] mali-utgard e2e00000.gpu: drv_data->pm_states[4].name = ultra_high_perf
+[    1.162467] mali-utgard e2e00000.gpu: mali pm_state init 4[ultra_high_perf]
+[    1.163058] mali-utgard e2e00000.gpu: mali_platform_init, success
+[    1.163221] mali-utgard e2e00000.gpu: Already power up
+[    1.165619] Mali: Mali device driver loaded
+[    1.167192] brd: module loaded
+[    1.170047] loop: module loaded
+[    1.170470] zram: Created 1 device(s) ...
+[    1.171187] xgold Vibrator init
+[    1.171399] inv_mpu_probe    client->irq=303
+[    1.171487] /xgold/noc/l2_noc/ahb_per@1/i2c_3/mpu6xxx: arguments longer than property
+[    1.171538] int_config=16,level_shifter=0,client.addr=68,client.irq=12f
+[    1.171555] 0 -1 0 1 0 0 0 0 1 
+[    1.171610] data->sec_slave_type=2,data->sec_slave_id=18,data->secondary_i2c_addr=d 
+[    1.171627] -1 0 0 0 -1 0 0 0 1 
+[    1.171760] vibra-xgold e6501400.vibrator: AGold vibrator using secure access
+[    1.171787] vibra-xgold e6501400.vibrator: linux_vibrator_time_adjust = 10
+[    1.171808] vibra-xgold e6501400.vibrator: linux_vibrator_intensity = 100
+[    1.172004] vibra-xgold e6501400.vibrator: Vibrator driver probed
+[    1.172503] vcodec e2d00000.vpu_combo: probe device.
+[    1.172617] ->state: high_perf
+[    1.172831] e2d00000.vpu_combo: power on.
+[    1.175972] ->state: disable
+[    1.176110] e2d00000.vpu_combo: power off.
+[    1.176138] vcodec e2d00000.vpu_combo: init success.
+[    1.177290] tun: Universal TUN/TAP device driver, 1.6
+[    1.177314] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.177423] PPP generic driver version 2.4.2
+[    1.177555] PPP BSD Compression module registered
+[    1.177572] PPP Deflate Compression module registered
+[    1.177596] PPP MPPE Compression module registered
+[    1.177614] NET: Registered protocol family 24
+[    1.177712] usbcore: registered new interface driver catc
+[    1.177763] usbcore: registered new interface driver kaweth
+[    1.177782] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.177831] usbcore: registered new interface driver pegasus
+[    1.177881] usbcore: registered new interface driver rtl8150
+[    1.177931] usbcore: registered new interface driver r8152
+[    1.177993] usbcore: registered new interface driver asix
+[    1.178042] usbcore: registered new interface driver ax88179_178a
+[    1.178099] usbcore: registered new interface driver cdc_ether
+[    1.178149] usbcore: registered new interface driver cdc_eem
+[    1.178199] usbcore: registered new interface driver dm9601
+[    1.178249] usbcore: registered new interface driver sr9700
+[    1.178308] usbcore: registered new interface driver CoreChips
+[    1.178370] usbcore: registered new interface driver smsc75xx
+[    1.178430] usbcore: registered new interface driver smsc95xx
+[    1.178480] usbcore: registered new interface driver gl620a
+[    1.178535] usbcore: registered new interface driver net1080
+[    1.178591] usbcore: registered new interface driver plusb
+[    1.178641] usbcore: registered new interface driver rndis_host
+[    1.178698] usbcore: registered new interface driver cdc_subset
+[    1.178748] usbcore: registered new interface driver zaurus
+[    1.178800] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    1.178870] usbcore: registered new interface driver int51x1
+[    1.178921] usbcore: registered new interface driver ipheth
+[    1.178972] usbcore: registered new interface driver cx82310_eth
+[    1.179040] usbcore: registered new interface driver cdc_ncm
+[    1.179093] usbcore: registered new interface driver huawei_cdc_ncm
+[    1.179144] usbcore: registered new interface driver cdc_mbim
+[    1.180563] e2100000.usb supply vusb_d not found, using dummy regulator
+[    1.180645] e2100000.usb supply vusb_a not found, using dummy regulator
+[    1.214835] dwc2 e2100000.usb: EPs: 16, dedicated fifos, 4672 entries in SPRAM
+[    1.309073] inv_mpu_probe    st->irq=303
+[    1.309406] i2c i2c-3: mpu6050 is ready to go!
+[    2.076276] dwc2 e2100000.usb: DWC OTG Controller
+[    2.076323] dwc2 e2100000.usb: new USB bus registered, assigned bus number 1
+[    2.076370] dwc2 e2100000.usb: irq 51, io mem 0x00000000
+[    2.636315] hub 1-0:1.0: USB hub found
+[    2.636395] hub 1-0:1.0: 1 port detected
+[    2.637276] usbcore: registered new interface driver cdc_wdm
+[    2.637364] usbcore: registered new interface driver usb-storage
+[    2.637493] usbcore: registered new interface driver usbserial
+[    2.637543] usbcore: registered new interface driver option
+[    2.637588] usbserial: USB Serial support registered for GSM modem (1-port)
+[    2.637646] dwc_otg: version 3.10b 20-MAY-2013
+[    2.645139] mousedev: PS/2 mouse device common for all mice
+[    2.646181] xgold_keypad_init
+[    2.646706] xgold_keypad_probe main irq = 70
+[    2.646757] kpd-xgold e4200000.keypad: get keypad,kp_in0 error
+[    2.646780] kpd-xgold e4200000.keypad: get keypad,kp_in1 error
+[    2.646800] kpd-xgold e4200000.keypad: get keypad,kp_in2 error
+[    2.646825] kpd-xgold e4200000.keypad: get keypad,kp_in5 error
+[    2.646846] kpd-xgold e4200000.keypad: get keypad,kp_in6 error
+[    2.646866] kpd-xgold e4200000.keypad: get keypad,kp_in7 error
+[    2.646885] =============xgold_keypad_probe, here dump dts configs for kpd=======================
+[    2.646904] num_row_gpios = 4, num_col_gpios = 8
+[    2.646922] kpd-xgold e4200000.keypad: onre irq not found
+[    2.646940] kpd-xgold e4200000.keypad: onfe irq not found
+[    2.647181] input: kpd-xgold as /devices/soc0/e0000000.noc/ef010000.l2_noc/e4000000.ahb_per/e4200000.keypad/input/input0
+[    2.647413] kpd-xgold e4200000.keypad: keypad probed
+[    2.648606] input: xgold-on-button as /devices/soc0/e0000000.noc/ef010000.l2_noc/e6100000.idi_per/e6600000.agold/on_button.178/input/input1
+[    2.648979] i2c-core: driver [imc-ts] using legacy suspend method
+[    2.648998] i2c-core: driver [imc-ts] using legacy resume method
+[    2.649018] ==gsl_ts_init==
+[    2.649082] ret=0
+[    2.649300] 4-0001 supply i2c not found, using dummy regulator
+[    2.649372] 4-0001 supply i2ca not found, using dummy regulator
+[    2.649879] ===========================icn85xx_ts_init=====================
+[    2.650284] l3gd20_gyr: gyroscope sysfs driver init
+[    2.650360] lsm303dlhc_acc accelerometer driver init
+[    2.650410] lsm303dlhc_mag magnetometer driver init
+[    2.650528] sensor_register_slave:mma8452,id=17
+[    2.650547] sensor_register_slave:bma2xx_acc,id=24
+[    2.650564] sensor_register_slave:lsm303c_acc,id=25
+[    2.650580] sensor_register_slave:lsm6ds3_acc,id=26
+[    2.650596] sensor_register_slave:ls_cm36682,id=61
+[    2.650611] sensor_register_slave:ls_tmd2772,id=60
+[    2.650627] sensor_register_slave:ls_rpr0521,id=62
+[    2.650643] sensor_register_slave:ps_tmd2772,id=67
+[    2.650676] sensor_register_slave:ps_cm36682,id=68
+[    2.650692] sensor_register_slave:ps_rpr0521,id=69
+[    2.651327] i2c /dev entries driver
+[    2.651835] lm3642 1-0063: probing...
+[    2.651861] lm3642 1-0063: probing successful
+[    2.651960] wv511 1-000c-2: probing...
+[    2.651983] wv511 1-000c-2: probing successful
+[    2.652067] ad5823 1-000c: probing...
+[    2.652089] ad5823 1-000c: probing successful
+[    2.652223] vm149c 1-000c-1: probing...
+[    2.652245] vm149c 1-000c-1: probing successful
+[    2.652489] OV8858 1-0010: probing...
+[    2.652543] OV8858.pltfrm_camera_module_get_data: camera module has auto focus controller vm149c
+[    2.652634] OV8858.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.652660] OV8858.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.679871] i2c i2c-1: M13: NACK recvd.
+[    2.679901] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.679926] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.679988] i2c i2c-1: M13: NACK recvd.
+[    2.680007] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x10 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.680030] OV8858.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300c failed with error -121
+[    2.680050] OV8858.OV8858_check_camera_id(2941) ERR: register read failed, camera module powered off?
+[    2.680070] OV8858.OV8858_check_camera_id(2976) ERR: failed with error (-121)
+[    2.680176] OV8858.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.680199] OV8858 1-0010: probing failed with error (-121)
+[    2.680245] OV8858: probe of 1-0010 failed with error -22
+[    2.680428] dw9714 1-000c-3: probing...
+[    2.680452] dw9714 1-000c-3: probing successful
+[    2.680807] ov2680 1-0036: probing...
+[    2.680891] ov2680.pltfrm_camera_module_get_data(409) ERR: could not get module rockchip,camera-module-orientation from dts!
+[    2.680916] ov2680.pltfrm_camera_module_get_data(420) ERR: could not get module rockchip,camera-module-flip from dts!
+[    2.680940] ov2680.pltfrm_camera_module_get_data(431) ERR: could not get module rockchip,camera-module-mirror from dts!
+[    2.680963] ov2680.pltfrm_camera_module_get_data(442) ERR: could not get module intel,camera-module-flash-support from dts!
+[    2.680987] ov2680.pltfrm_camera_module_get_data(453) ERR: could not get module intel,camera-module-i2c-slow-down from dts!
+[    2.681129] ov2680.pltfrm_camera_module_init_gpio: reset gpio has been inited, return!
+[    2.718239] i2c i2c-1: M13: NACK recvd.
+[    2.718269] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718294] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300a failed with error -121
+[    2.718355] i2c i2c-1: M13: NACK recvd.
+[    2.718375] i2c i2c-1: xgold_i2c_error_reg_status, device: 0x36 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.718396] ov2680.pltfrm_camera_module_read_reg(837) ERR: i2c read from offset 0x0000300b failed with error -121
+[    2.718417] ov2680.ov2680_check_camera_id(850) ERR: register read failed, camera module powered off?
+[    2.718436] ov2680.ov2680_check_camera_id(868) ERR: failed with error (-121)
+[    2.718538] ov2680.ov_camera_module_init(1225) ERR: failed with error -121
+[    2.718561] ov2680 1-0036: probing failed with error (-121)
+[    2.718604] ov2680: probe of 1-0036 failed with error -121
+[    2.720117] usbcore: registered new interface driver uvcvideo
+[    2.720140] USB Video Class driver (1.1.1)
+[    2.720155] FMR: Intel FM Radio driver version : 1.00
+[    2.720188] idi_bus_match:fmr-0-ag6x0_fmr: Using peripheral type for registration process is deprecated
+[    2.720209] idi_bus_match:fmr-0-ag6x0_fmr: Please idi device id and driver id table
+[    2.720271] FMR: Device probe called
+[    2.720290] FMR: V4l2 device registration
+[    2.720431] FMR: Registration with Frequency manager successful
+[    2.720490] FMR: FM Radio device PM registration successful
+[    2.720587] FMR: driver initialised successfully
+[    2.721983] spcu_thermal e4700000.spcu_thermal0: Thermal zone device registered, type=coretemp0
+[    2.722518] spcu_thermal e4700000.spcu_thermal1: Thermal zone device registered, type=coretemp1
+[    2.723131] spcu_thermal e4700000.spcu_thermal3: Thermal zone device registered, type=coretemp3
+[    2.723604] spcu_thermal e4700000.spcu_thermal4: Thermal zone device registered, type=coretemp4
+[    2.724078] spcu_thermal e4700000.spcu_thermal5: Thermal zone device registered, type=coretemp5
+[    2.724540] device-mapper: uevent: version 1.0.3
+[    2.724913] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    2.725268] idi_bus_match:gnss-0-ttyGNSS: Using peripheral type for registration process is deprecated
+[    2.725296] idi_bus_match:gnss-0-ttyGNSS: Please idi device id and driver id table
+[    2.725765] ttyGNSS gnss-0: missing usif reset controller
+[    2.725982] ttyGNSS gnss-0: default 50ms fci poll
+[    2.726005] ttyGNSS gnss-0: runtime_pm_enabled is disable
+[    2.726025] ttyGNSS gnss-0: runtime_pm_debug is disable
+[    2.726046] ttyGNSS gnss-0: rpm_suspend_delay set to 5000
+[    2.726066] ttyGNSS gnss-0: auto_suspend_enable is disable
+[    2.726084] ttyGNSS gnss-0: Data path property set to IDI
+[    2.726766] gnss-0: ttyGNSS0 at MMIO 0xe7700000 (irq = 296, base_baud = 6500000) is a XGOLD_USIF
+[    2.728554] xgold_cpufreq_probe:platform_get_irq_byname(CPU_CLK_CHANGE) (virq:302)
+[    2.729170] sdhci: Secure Digital Host Controller Interface driver
+[    2.729194] sdhci: Copyright(c) Pierre Ossman
+[    2.729209] sdhci-pltfm: SDHCI platform and OF driver helper
+[    2.729852] xgold-sdhci e2800000.emmc: sdhci: io: linux-@:c4100000
+[    2.730199] sdhci: e2800000.emmc, rpm = 1
+[    2.730436] mmc0: Failed to enable vqmmc regulator: -1
+[    2.730464] mmc0: no vmmc regulator found
+[    2.730796] xgold-sdhci e2800000.emmc: Set tap values to mode 0, val = 0x080400f5
+[    2.734950] dwc2 e2100000.usb: _dwc2_hcd_suspend()
+[    2.774818] mmc0: SDHCI controller on e2800000.emmc [e2800000.emmc] using ADMA
+[    2.775166] xgold-sdhci e1400000.sd: sdhci: io: linux-@:c4400000
+[    2.776301] sdhci: e1400000.sd, rpm = 1
+[    2.776529] mmc1: no vmmc regulator found
+[    2.776835] xgold-sdhci e1400000.sd: Set tap values to mode 0, val = 0x080400f5
+[    2.824904] mmc1: SDHCI controller on e1400000.sd [e1400000.sd] using ADMA
+[    2.827012] xgold keypad bl init
+[    2.828128] mmc0: BKOPS_EN bit is not set
+[    2.829233] usbcore: registered new interface driver usbhid
+[    2.829262] usbhid: USB HID core driver
+[    2.829315] ion_snapshot: 0x0x34c40000 map to 0xc1201000 and copy to 0x8324a3c0 (version 0.1)
+[    2.830728] xgold-sdhci e2800000.emmc: Set tap values to mode 1, val = 0x08040004
+[    2.831439] xgold-sdhci e2800000.emmc: Set tap values to mode 5, val = 0x000400b5
+[    2.831788] mmc0: new high speed DDR MMC card at address 0001
+[    2.832213] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832453] mmcblk0: mmc0:0001 Q7XSAB 7.28 GiB 
+[    2.832611] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.832802] mmcblk0boot0: mmc0:0001 Q7XSAB partition 1 4.00 MiB
+[    2.832963] mmc0: calculated max. discard sectors 3072 for timeout 2581 ms
+[    2.833145] mmcblk0boot1: mmc0:0001 Q7XSAB partition 2 4.00 MiB
+[    2.838678]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16
+[    2.842670]  mmcblk0boot1: unknown partition table
+[    2.843964]  mmcblk0boot0: unknown partition table
+[    2.857264] ashmem: initialized
+[    2.857423] logger: created 256K log 'log_kernel'
+[    2.857788] logger: created 256K log 'log_main'
+[    2.857970] logger: created 256K log 'log_events'
+[    2.858132] logger: created 256K log 'log_radio'
+[    2.858296] logger: created 256K log 'log_system'
+[    2.859819] ag620_meas meas-0: Initializing MEAS AG620 HAL
+[    2.860057] ag620_meas: meas_ag620_probe: agold_chip_rev=0x0021
+[    2.860124] ag620_meas meas-0: meas_ag620_probe: getting handlers for dev pm states...
+[    2.860636] intel_adc: Registering AGOLD 620 MEAS HAL, 10 channels available.
+[    2.860683] intel_adc: 	chan=0, id=21
+[    2.860702] intel_adc: 	chan=1, id=8
+[    2.860719] intel_adc: 	chan=2, id=17
+[    2.860736] intel_adc: 	chan=3, id=22
+[    2.860753] intel_adc: 	chan=4, id=23
+[    2.860769] intel_adc: 	chan=5, id=24
+[    2.860786] intel_adc: 	chan=6, id=0
+[    2.860803] intel_adc: 	chan=7, id=1
+[    2.860819] intel_adc: 	chan=8, id=2
+[    2.860835] intel_adc: 	chan=9, id=12
+[    2.860851] intel_adc: All HALs were registered, probing the abstraction layer...
+[    2.860899] ag620_meas meas-0: Probing the ADC
+[    2.862320] intel_adc_sensors: platform_name = ag620
+[    2.864046] oct: oct resource: [mem 0xe4d00000-0xe4dfffff] - ioremap: c4700000
+[    2.864046] 
+[    2.865295] oct: Kernel OCT Thread: OCT Thread
+[    2.865386] oct: Gadget fp=fffffffe open failed!
+[    2.867291] usbcore: registered new interface driver snd-usb-audio
+[    2.869834] dsp_audio_drv_probe: ioremap for [mem 0xe3600000-0xe3603fff] returned c0e10000
+[    2.869932] dsp_audio_drv_probe: ioremap for [mem 0xe3604000-0xe3803fff] returned c4880000
+[    2.870412] snd: dsp: read dsp-supply property failed
+[    2.870676] dsp_clock_init set state return 0
+[    2.873333] DSP initialization done 0
+[    2.874532] XGOLD_MACHINE sound.207: ASoC: CPU DAI (null) not registered
+[    2.874649] snd: mac: xgold_mc_probe: unable to register sound card err -517
+[    2.874860] platform sound.207: Driver XGOLD_MACHINE requests probe deferral
+[    2.876398] snd: voice: xgold_voice_probe :
+[    2.877354] xgold_bt_sco btauif-0: No 48k clock available
+[    2.877488] BTAUIF device PM registration success
+[    2.877865] u32 classifier
+[    2.877895]     Actions configured
+[    2.877935] Netfilter messages via NETLINK v0.30.
+[    2.878038] nf_conntrack version 0.5.0 (14921 buckets, 59684 max)
+[    2.878625] ctnetlink v0.93: registering with nfnetlink.
+[    2.879059] xt_time: kernel timezone is -0000
+[    2.879113] ip_set: protocol 6
+[    2.880642] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.880877] arp_tables: (C) 2002 David S. Miller
+[    2.881691] TCP: cubic registered
+[    2.881736] Initializing XFRM netlink socket
+[    2.882252] NET: Registered protocol family 10
+[    2.883851] mip6: Mobile IPv6
+[    2.883939] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.887607] sit: IPv6 over IPv4 tunneling driver
+[    2.888390] NET: Registered protocol family 17
+[    2.888475] NET: Registered protocol family 15
+[    2.888574] l2tp_core: L2TP core driver, V2.0
+[    2.888630] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    2.889330] pmic_swfg_hal: pmic_swfg_hal_init: was executed
+[    2.891760] Using IPI No-Shortcut mode
+[    2.892238] registered taskstats version 1
+[    2.892560] regulator-dummy: disabling
+[    2.894077] snd-soc-dummy snd-soc-dummy: ASoC: Failed to create platform debugfs directory
+[    2.894176] control 2:0:0:DSP Audio send cmd:0 is already present
+[    2.894206] Speech Probe speech_probe.176: ASoC: Failed to add DSP Audio send cmd: -16
+[    2.894278] snd: jack: xgold_jack_setup
+[    2.896509] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.896727] XGOLD_MACHINE sound.207: ag620_afe <-> pcm_voice.175 mapping ok
+[    2.898635] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.900572] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.900827] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.901050] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.901272] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> XGOLD_SPEECH_PROBE_A mapping ok
+[    2.903190] XGOLD_MACHINE sound.207: snd-soc-dummy-dai <-> pcm_music.174 mapping ok
+[    2.906257] input: xgold_afe-audio Headset as /devices/sound.207/sound/card0/input2
+[    2.907064] snd: jack: ioremap c0e0ec00
+[    2.907328] snd: jack: could not get default pinstate
+[    2.907358] snd: jack: could not get sleep pinstate
+[    2.907378] snd: jack: could not get inactive pinstate
+[    2.907549] snd: jack: of_xgold_jack_probe: use ACD interrupt
+[    2.907581] snd: jack: of_xgold_jack_probe jack->jack_irq = 282
+[    2.907629] snd: jack: xgold_jack_acc_det_write: write val 0x800B, mode IO
+[    2.909487] Getting PM state handlers: OK
+[    2.910071] ag620-vbus-det ag620_chrg-0: sofia charger detect driver probe
+[    2.910562] file system registered
+[    2.911372] ag620-vbus-det ag620_chrg-0: chg_ctl_reg_1 = 0x808cc523, c0_fs_reg_1 = 0x000001a2
+[    2.911869] using random self ethernet address
+[    2.911914] using random host ethernet address
+[    2.912036] Number of LUNs=2
+[    2.912061] Mass Storage Function, version: 2009/09/11
+[    2.912086] LUN: removable file: (no medium)
+[    2.912108] LUN: removable file: (no medium)
+[    2.912462] android_usb gadget: android_usb ready
+[    2.916130] dwc2 e2100000.usb: bound driver android_usb
+[    2.916802] ===========================icn83xx_ts_init=====================
+[    2.917068] intel-usb2phy e4800000.phy: Avail curr from USB = 0
+[    2.917102] rk818-battery rk818-battery: limit current:0
+[    2.917139] intel-usb2phy e4800000.phy: OTG runtime suspend
+[    2.917370] nvt_driver_init step
+[    2.917455] i2c-core: driver [NVT-ts] using legacy suspend method
+[    2.917486] i2c-core: driver [NVT-ts] using legacy resume method
+[    2.918576] i2c i2c-3: sensor_probe: ps_tmd2772,0xb613f800
+[    2.918750] i2c i2c-3: M13: NACK recvd.
+[    2.918786] i2c i2c-3: xgold_i2c_error_reg_status, device: 0x38 ERR_INT 0x30 recvd msg len: 2, state: 1
+[    2.918829] [ALS/PS] tmd2772_init_client 220 : init dev: -121
+[    2.918858] sensor_initial:fail to init sensor
+[    2.918878] sensor_chip_init:fail to init sensor
+[    2.918901] i2c i2c-3: sensor_probe failed -121
+[    2.918901] 
+[    2.918970] sensors: probe of 3-0038 failed with error -121
+[    2.919084] i2c i2c-3: sensor_probe: ls_tmd2772,0xb610ae00
+[    2.919149] sensors 3-0039: could not get default pinstate
+[    2.919183] sensors 3-0039: could not get sleep pinstate
+[    2.919206] sensors 3-0039: could not get inactive pinstate
+[    2.920118] dll sensor_get_id:devid=0x39
+[    2.920150] sensor_chip_init:ls_tmd2772:devid=0x39,ops=0x83040140
+[    2.920404] input: lightsensor-level as /devices/soc0/e0000000.noc/ef010000.l2_noc/e1000000.ahb_per/e1600000.i2c_3/i2c-3/3-0039/input/input3
+[    2.920661] sensor_misc_device_register:miscdevice: lightsensor
+[    2.920695] sensor_probe:initialized ok,sensor name:ls_tmd2772,type:5,id=60
+[    2.920695] 
+[    2.920907] sensor_init: Probe name sensors
+[    2.920975] sensor-dev.c v1.4 add angle calculation support between two gsensors 2013-09-01
+[    2.923584] rk818-rtc rk818-rtc: setting system clock to 2013-01-21 08:52:10 UTC (1358758330)
+[    2.923674] idi_bus_match:i2c_5-0-xgold-i2c-idi: Using peripheral type for registration process is deprecated
+[    2.923710] idi_bus_match:i2c_5-0-xgold-i2c-idi: Please idi device id and driver id table
+[    2.924144] xgold-i2c-idi i2c_5: Error parsing intel,i2c,b100 propery of node i2c_5
+[    2.924185] xgold-i2c-idi i2c_5: Error during dts file parsing
+[    2.924253] xgold-i2c-idi: probe of i2c_5 failed with error -22
+[    2.925009] CIF ISP2.0 xgold_v4l2_drv_probe: probing...
+[    2.925155] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1233) ERR: could not get default pinstate
+[    2.925189] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1239) ERR: could not get pins_sleep pinstate
+[    2.925213] CIF ISP2.0 cif_isp20_pltfrm_dev_init(1245) ERR: could not get pins_inactive pinstate
+[    2.925454] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.925563] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.925673] cif_isp20 e2000000.cif: failed with error 0
+[    2.925706] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-0
+[    2.925776] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.925877] CIF ISP2.0 cif_isp20_img_src_to_img_src(79) ERR: failed with error -14
+[    2.925981] cif_isp20 e2000000.cif: failed with error 0
+[    2.926010] CIF ISP2.0 cif_isp20_img_srcs_init WARN: nothing connected to CIF CSI-1
+[    2.926034] CIF ISP2.0 cif_isp20_img_srcs_init(1063) ERR: failed with error -14
+[    2.926057] CIF ISP2.0 cif_isp20_create(5676) ERR: failed with error -14
+[    2.926434] ag620_swfgh: dt: parsing 'sense_resistor_mohm' failed
+[    2.926491] ag620_swfgh: probe of fuel_gauge_hal-0 failed with error -22
+[    2.926574] idi_bus_match:brown_out-0-ag6x0_brown_out: Using peripheral type for registration process is deprecated
+[    2.926608] idi_bus_match:brown_out-0-ag6x0_brown_out: Please idi device id and driver id table
+[    2.926700] ag6x0_brown_out: brown_out_drv_probe: Getting PM state handlers: OK
+[    2.927131] ag6x0_bat_hal: bat_drv_hal_probe: Getting PM state handlers: OK
+[    2.927211] dt: parsing 'supp_batids-map' failed
+[    2.930446] ag620_meas: AGOLD TEMP_ALERT_REG 0x00000040 at boot
+[    2.930492] ag620_meas: AGOLD thermal protection disabled at 297500 mK,
+[    2.930513] ag620_meas: TEMP_ALERT_REG 0x00000050
+[    2.933769] intel_sofia_watchdog e4800000.watchdog: intel_sofia_watchdog_probe ok 141
+[    2.936003] ALSA device list:
+[    2.936053]   #0: xgold_afe-audio
+[    2.936703] Freeing unused kernel memory: 336K (8307f000 - 830d3000)
+[    2.937084] Write protecting the kernel text: 6880k
+[    2.937501] Write protecting the kernel read-only data: 2612k
+[    2.937531] NX-protecting the kernel data: 5408k
+[    2.964889] rk818-battery rk818-battery: limit current:0
+[    3.144848] vdump: Gadget fp=fffffffe open failed!
+[    3.477345] kpd-xgold e4200000.keypad: keypad open
+[    3.477392] keychord: using input dev kpd-xgold for fevent
+[    3.477443] keychord: using input dev xgold-on-button for fevent
+[    3.477492] keychord: using input dev xgold_afe-audio Headset for fevent
+[    3.515025] EXT4-fs (mmcblk0p14): mounted filesystem without journal. Opts: (null)
+[    3.516479] EXT4-fs (mmcblk0p15): Ignoring removed nomblk_io_submit option
+[    3.638815] EXT4-fs (mmcblk0p15): 2 orphan inodes deleted
+[    3.638867] EXT4-fs (mmcblk0p15): recovery complete
+[    3.648092] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.716321] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,discard,journal_async_commit
+[    3.717376] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    3.729633] EXT4-fs (mmcblk0p13): recovery complete
+[    3.730557] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=remount-ro
+[    3.786094] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: (null)
+[    3.876029] EXT4-fs (mmcblk0p15): Unrecognized mount option "background_gc=on" or missing value
+[    3.893370] zram0: detected capacity change from 0 to 419430400
+[    3.915331] rk818-battery rk818-battery: set charge to analog termination mode
+[    4.006573] Adding 409596k swap on /dev/block/zram0.  Priority:-1 extents:1 across:409596k SS
+[    4.032898] binder: 146:146 transaction failed 29189, size 0-0
+[    4.051205] random: init urandom read with 72 bits of entropy available
+[    4.290468] Loading modules backported from  version 
+[    4.290520] Backport generated by backports.git 
+[    4.450461] cfg80211: Calling CRDA to update world regulatory domain
+[    4.565144] input: vtl_ts as /devices/virtual/input/input4
+shell@sofia3gr:/ $ [    4.874941] oct: Gadget fp=fffffffe open failed!
+[    5.027970] android_usb: already disabled
+[    5.048540] EXT4-fs: Warning: mounting with data=journal disables delayed allocation and O_DIRECT support!
+[    5.066085] read descriptors
+[    5.066176] read strings
+[    5.066242] mtp_bind_config
+[    5.071825] dwc2 e2100000.usb: s3c_hsotg_corereset: reset failed, GRSTCTL=00000000
+[    5.154908] vdump: Gadget fp=fffffffe open failed!
+[    5.160523] EXT4-fs (mmcblk0p5): recovery complete
+[    5.161821] EXT4-fs (mmcblk0p5): mounted filesystem with journalled data mode. Opts: data=journal
+[    5.381502] graphics fb0: rockchip fb use 3 buffers
+[    5.449363] rockchip-vop vop0: blank mode:0
+[    5.586177] warning: `rpc-daemon' uses 32-bit capabilities (legacy support in use)
+[    5.941100] Intel(R) Wireless WiFi driver for Linux, in-tree:d
+[    5.941195] Copyright(c) 2003- 2014 Intel Corporation
+[    5.943521] IWL_IDI wifi-0: No Wifi clock available
+[    5.943571] IWL_IDI wifi-0: No RTC clock available
+[    5.944246] IWL_IDI wifi-0: Selected bus type = IDI
+[    5.944403] Init uCode memory dma successfully.
+[    5.996841] IWL_IDI wifi-0: loaded firmware version 25.228.9.0 op_mode iwlmvm
+[    6.292441] IWL_IDI wifi-0: Detected Intel(R) Dual Band Wireless BGN7999, REV=0x0
+[    6.335526] IWL_IDI wifi-0: Loaded NVM file nvmData (8800 bytes)
+[    6.336500] success to read saved mac addr.
+[    6.710951] random: nonblocking pool is initialized
+[    6.884930] oct: Gadget fp=fffffffe open failed!
+[    7.164864] vdump: Gadget fp=fffffffe open failed!
+[    8.894886] oct: Gadget fp=fffffffe open failed!
+[    9.175028] vdump: vdump_get_config
+[    9.175125] vdump: fp_cfg:fffffffe
+[    9.175147] vdump: vdump config not exist
+[    9.175168] vdump: Kernel vdump Thread running.
+[   10.906885] oct: Gadget /dev/ttyGS1 open succeeded.
+[   14.245831] lowmemorykiller: lowmem_shrink: convert oom_adj to oom_score_adj:
+[   14.245922] lowmemorykiller: oom_adj 0 => oom_score_adj 0
+[   14.245945] lowmemorykiller: oom_adj 1 => oom_score_adj 58
+[   14.245965] lowmemorykiller: oom_adj 2 => oom_score_adj 117
+[   14.245983] lowmemorykiller: oom_adj 3 => oom_score_adj 176
+[   14.246002] lowmemorykiller: oom_adj 9 => oom_score_adj 529
+[   14.246021] lowmemorykiller: oom_adj 15 => oom_score_adj 1000
+[   20.397614] acc_open
+[   20.397773] acc_release
+[   21.971291] dwc2 e2100000.usb: _dwc2_hcd_resume()
+[   21.979043] dwc2 e2100000.usb: _dwc2_hcd_suspend()

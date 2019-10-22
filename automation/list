@@ -1,0 +1,25 @@
+handle:65798 
+title:[]
+class:[SynTrackCursorWindowClass]
+
+handle:65842 
+title:[]
+class:[Shell_TrayWnd]
+
+handle:131470 
+title:[]
+class:[Shell_SecondaryTrayWnd]
+
+handle:269172 
+title:[cmd - python  go_through_windows.py ]
+class:[VirtualConsoleClass]
+
+handle:660572 
+title:[go_through_windows.py (C:\posv_cv_script-scripts\automation) - GVIM1]
+class:[Vim]
+
+handle:397616 
+title:[Xvnc: lingkong on sccj018021:7 - VNC Viewer]
+class:[vwr::CDesktopWin]
+
+handle:1312182 

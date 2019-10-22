@@ -1,0 +1,132 @@
+#alias .     pwd
+alias grep    "grep --color=always"
+alias ..      "cd .."
+alias ...     "cd ../.."
+alias ....    "cd ../../.."
+alias j       "bjobs"
+alias g       "/usr/intel/pkgs/vim/7.4/bin/gvim"
+alias f       "grep -C 2 FINISHED"
+alias v       "vim"
+alias pc      "cd /local/lingkong/sf_lte/modem/mhw_drv_src/power_control"
+alias dpc     "cd drv_power_control"
+alias spcu    "cd /local/lingkong/sf_lte/modem/mhw_drv_src/power_control/spcu"
+alias scu     "cd /local/lingkong/sf_lte/modem/mhw_drv_src/core_drivers/scu"
+alias cgu     "cd /local/lingkong/sf_lte/modem/mhw_drv_src/power_control/cgu"
+alias emif    "cd /local/lingkong/sf_lte/modem/mhw_drv_src/power_control/emif"
+alias pow     "cd /local/lingkong/sf_lte/modem/mhw_drv_src/power_control/pow"
+alias cd7     "cd xgold726"
+alias ls      "ls -h --color=always"
+alias ll      "ls -lh"
+alias lt      "ls -lt"
+alias la      "ls -a"
+alias cdj     "cd xgold726"
+alias cdf     "cd xgold726"
+alias dpc     "cd drv_power_control/"
+alias fe      "grep Error /local/lingkong/sf_lte/modem/system-build/make/HW/XMM7260_V1_REV_2.0_NAND/MODEM_DEBUG/err/drv_power_control/*"
+alias obj     "cd obj/drv_power_control/"
+alias inc     "cd inc"
+alias src     "cd src"
+alias lte_src "cd /vobs/umts3-hw2-prj/test/src/xian/lte_chip/lte_chip_ch0_wr/ltetop/l1cc/src"
+alias lte_out "cd /vobs/umts3-hw2-prj/simulation/tmp/xian/lte_chip/lte_chip_ch0_wr/ltetop/l1cc/out/bin/AlbertRTL"
+alias lsrc    "cd /vobs/umts3-hw2-prj/test/src/xian/lte_chip/lte_chip_ch0_wr/ltetop/l1cc/src"
+alias lout    "cd /vobs/umts3-hw2-prj/simulation/tmp/xian/lte_chip/lte_chip_ch0_wr/ltetop/l1cc/out/bin/AlbertRTL ; ls -l *.txt"
+alias lte     "cd ~/lte; ./copy_files"
+alias doc     "cd doc"
+alias lib     "cd lib/drv_power_control/"
+alias sb      "cd /local/lingkong/sf_lte/modem/system-build/"
+alias mini    "cd /local/lingkong/sf_lte/modem/system-build/mini_sys"
+alias hw      "cd /local/lingkong/sf_lte/modem/system-build/make/HW"
+alias mk_clean "make cleanall USER_CFG_FILE:=user_config/sf_lte_default_config.cfg"
+alias nfs     "cd /local/lingkong/sf_lte/modem/system-build/make/NFS"
+alias ferr    "find -size +0"
+alias h       history
+alias src     "cd src"
+#alias xterm   "xterm -sl 20000 -fg black -bg lightyellow -cr red"
+alias gt      "gnome-terminal --geometry=130x30&"
+alias view    "cleartool lsview | grep "
+alias poff    "cd /local/lingkong/sf_lte/modem/system-build/make/HW/XMM7260_V1_REV_2.0_NAND_PSV_OFF/MODEM_DEBUG"
+alias pon     "cd /local/lingkong/sf_lte/modem/system-build/make/HW/XMM7260_V1_REV_2.0_NAND/MODEM_DEBUG"
+alias obj     "cd /local/lingkong/sf_lte/modem/system-build/make/HW/XMM7260_V1_REV_2.0_NAND/MODEM_DEBUG/obj/drv_power_control"
+alias err     "cd /local/lingkong/sf_lte/modem/system-build/make/HW/XMM7260_V1_REV_2.0_NAND/MODEM_DEBUG/err/drv_power_control"
+alias sf      "cl /local/lingkong/sf_lte"
+alias soclib  "sf; cl soclib/devices"
+alias mobilevisor  "sf; cl mobilevisor"
+alias sx      "cl /local/lingkong/xmm7360"
+alias mx      "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7360"
+alias ltegmake      "cl /local/lingkong/xmm7460/lte_phy/lte_fw/fw/system-build/gmake"
+alias ltemini_l1cc  "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7460/ltephy/lte_test/bootAllCPUs_Example/ltetop/l1cc" 
+alias ltecv  "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7460/ltephy/cv_lte"
+alias ltecvmk  "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7460/ltephy/cv_lte/mk"
+alias sshlk   "ssh lingkong-mobl3"
+alias gs      "git status"
+alias gg      "ltecv; cd ..; git grep -in "
+alias ub      "cd /local/lingkong/posv_cv-u-boot"
+alias drv     "ub; cd drivers/xgold/csc"
+module load ipsxe
+setenv CSCOPE_EDITOR vim
+alias cl      "source ~/lst"
+alias cdls    cl
+alias lte6  "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7460/ltephy/cv_lte"
+alias lte8  "cl /local/lingkong/mini_os/posv_cv-plfcv/XMM7480/ltephy/cv_lte"
+alias cd2   "cd ../.."
+alias cd3   "cd ../../.."
+alias cd4   "cd ../../../.."
+alias tree   "tree -C"
+alias cdo                 cd $workHostMatlab
+alias cdo8                cd $workHostMatlab/7480/
+alias cdo6                cd $workHostMatlab/7460/
+alias cdo736              cd $workHostMatlab/7360/
+alias cdworkAlgorithms    cd $workAlgorithms
+alias cdworkAlgorithmsHw  "cdworkAlgorithms; cd lteHw"
+alias cdworkAlgorithmsSw  "cdworkAlgorithms; cd lteSw"
+alias cdworkArchitecture  cd $workArchitecture
+alias cdworkIpXact        cd $workIpXact
+alias cdworkLteIpTools    cd $workLteIpTools
+alias cdworkSoftware      cd /vobs/lte_ip_testcases/test/fw/fw
+alias cdworkHostMatlab    "cdworkLteIpTools;  cd bwcHostMatlab"
+alias cdcs                "cdvob; cd config/global/algo_se"
+alias cdfpga              cd /vobs/lte_ip/FPGA
+alias cdtfpga             cd /vobs/lte_ip_testcases/test/src/lte_fpga_lib/lte_fpga_top
+alias cv                  cd /vobs/lte_ip_testcases/test/src/lte_hw_cv
+alias cdregmap            cd /vobs/lte_ip_ipxact/libunits/bwc_lte_lib/bwc_lte/source/inc/gen
+#alias vim   /usr/intel/pkgs/vim/7.4/bin/vim
+#alias gvim  /usr/intel/pkgs/vim/7.4/bin/gvim
+#alias msf     "cl /local/lingkong/mini_os/posv_cv-plfcv/SF_LTE"
+#alias test    "msf;cd modem/cv_test/spcu/testcases"
+#alias muc     "msf; make all USER_CFG_FILE:=user_config/sf_lte_default_config.cfg; cd -"
+#alias mk      "msf; mk_clean; muc; cd -"
+#alias out     "msf;cd out/sf_lte_default_config/ES_3_0_SILICON/SOFIA_LTE_ES30_BU"
+alias ilte     "inway7_lsf lte_ip"
+alias rmout    "find . -name out |  xargs rm -rf"
+
+switch ($TERM)
+    case "xterm*":
+        #alias precmd 'echo -n "\033]0;${HOST}:$cwd\007"'
+        alias precmd 'echo -n "\033]0;$cwd\007"'
+        breaksw
+    default:
+        breaksw
+endsw
+
+## Add these lines to your ~/.cshrc.mine file on the linux grace machines...
+## don't worry too much about what they mean.
+#
+## Colors!
+#set     red="%{\033[1;31m%}"
+#set   green="%{\033[0;32m%}"
+#set  yellow="%{\033[1;33m%}"
+#set    blue="%{\033[1;34m%}"
+#set magenta="%{\033[1;35m%}"
+#set    cyan="%{\033[1;36m%}"
+#set   white="%{\033[0;37m%}"
+#set     end="%{\033[0m%}" # This is needed at the end... :(
+#
+## Setting the actual prompt.  I made two separate versions for you to try, pick
+## whichever one you like better, and change the colors as you want.  Just don't
+## mess with the ${end} guy in either line...  Comment out or delete the prompt you don't use.
+#
+##set prompt="${green}%n${blue}@%m ${white}%~ ${green}%%${end} "
+#set prompt="[${green}%n${blue}@%m ${red}%~ ]${end} "
+#
+## Clean up after ourselves...
+#unset red green yellow blue magenta cyan yellow white end

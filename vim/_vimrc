@@ -1,0 +1,87 @@
+set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
+set ignorecase
+
+"set window size
+set lines=35 columns=95
+"set guifont=Courier\ New:h11
+set guifont=Consolas:h12
+set autoindent
+set smartindent
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set nu
+set ruler
+set showmatch
+set showcmd
+set showfulltag
+set showmode
+set smartcase
+set imcmdline
+set nowrap
+set cursorline
+set bsdir=buffer
+set autochdir
+set backspace=indent,eol,start
+
+" no backup files and swap files will be created -begin
+set nobackup 
+set nowritebackup
+set noswapfile
+" no backup files and swap files will be created -end
+
+set previewwindow
+set nowrap
+set guitablabel=%N/\ %t\ %M
+set hlsearch
+set incsearch
+syntax enable
+syntax on
+autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif
+filetype plugin indent on
+autocmd FileType python setlocal et sta sw=4 sts=4
+colorscheme evening
+map <C-t> :tabedit ./
+
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+
+"set list
+"source Session.vim
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+      let eq = '"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+endfunction
+
+map ,ch :call SetColorColumn()<CR>
+function! SetColorColumn()
+    let col_num = virtcol(".")
+    let cc_list = split(&cc, ',')
+    if count(cc_list, string(col_num)) <= 0
+        execute "set cc+=".col_num
+    else
+        execute "set cc-=".col_num
+    endif
+endfunction

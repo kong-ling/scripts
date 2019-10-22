@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sslRoute
+    xmlns="http://www.w3school.com.cn"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3school.com.cn sslRoute.xsd">
+    <row><entry>SSL24ML0</entry><entry>CAM1_SNK</entry><entry>INO_SRC</entry></row> 
+    <row><entry>SSL32ML0</entry><entry>SSL32NOC_SNK</entry><entry>SSL2AHB1_SRC</entry></row> 
+    <row><entry>SSL24ML1</entry><entry>CAM1_SNK</entry><entry>INO_SRC</entry></row> 
+    <row><entry>SSL32ML1</entry><entry>SSL32NOC_SNK</entry><entry>SSL2AHB1_SRC</entry></row> 
+    <row><entry>SSL24ML0</entry><entry>CAM1_SNK</entry><entry>INO_SRC</entry></row> 
+    <row><entry>SSL32ML0</entry><entry>SSL32NOC_SNK</entry><entry>SSL2AHB1_SRC</entry></row> 
+</sslRoute>

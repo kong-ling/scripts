@@ -1,3 +1,4 @@
+#<<<<<<< HEAD
 #!/usr/bin/python
 # -*- coding: UTF-8 
 import json
@@ -87,3 +88,11 @@ if __name__ == '__main__':
             except:
                 #print(name)
                 pass
+#=======
+#import requests as req
+#r= req.get('http://www.weather.com.cn/data/sk/101020100.html')
+#print(r.status_code)
+#print(r.contents)
+#print(r.json())
+#
+#>>>>>>> 12bb23d86a12f1c17a463d0b319dad9655366fd0
